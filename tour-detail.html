@@ -19,12 +19,32 @@
 		rel="stylesheet" />
 
 	<!-- BASE CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	
+
+<!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 	<link href="css/style.css" rel="stylesheet" />
 	<link href="css/vendors.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<style>
+		@media only screen and (min-width: 992px)
+{
+	.main-menu > ul > li span > a {
+  color: #1b3960;
+      font-weight: 400;
+    line-height: 1.5;
+}
+}
+@media(min-width:600px)
+{
+	.header{
+	border-bottom: 1px solid #e9edef;
+}
+}
+	</style>
 </head>
 
 <body class="datepicker_mobile_full">
@@ -64,7 +84,7 @@
 						<span><a href="#">Contact</a></span>
 					</li>
 					<li>
-						<span><a href="#">Help</a></span>
+						<span><a href="#"> Help Center</a></span>
 					</li>
 					<li>
 						<span><a href="#">Blog</a></span>
@@ -78,11 +98,21 @@
 		<!-- /header -->
 
 		<main>
-			<section class="hero_in tours_detail">
+			
+			<!--/hero_in-->
+
+			<div class="bg_colorfd">
+				
+				<div class="container margin_60_35 ">
+					<div class="row mt30">
+						<div class="col-lg-8">
+							<div class="titletourhead">
+                               <small>Bridgetown, Barbados</small>
+							   <h4>Barbados</h4>
+							</div>
+				<section class="hero_in tours_detail">
 				<div class="wrapper">
-					<div class="container">
-						<h1 class="fadeInUp"><span></span>Tour detail page</h1>
-					</div>
+					
 					<span class="magnific-gallery">
 						<a href="img/gallery/tour_list_1.jpg" class="btn_photos" title="Photo title"
 							data-effect="mfp-zoom-in">View photos</a>
@@ -90,11 +120,8 @@
 						<a href="img/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
 					</span>
 				</div>
-			</section>
-			<!--/hero_in-->
-
-			<div class="bg_colorfd">
-				<nav class="secondary_nav sticky_horizontal">
+			</section>     
+								<nav class="secondary_nav sticky_horizontal">
 					<div class="container">
 						<ul class="clearfix">
 							<li><a href="#ticketprice" class="active">Price</a></li>
@@ -106,9 +133,6 @@
 						</ul>
 					</div>
 				</nav>
-				<div class="container margin_60_35">
-					<div class="row">
-						<div class="col-lg-8">
 							<section id="ticketprice">
 								<h2>Ticket Price</h2>
 
@@ -118,11 +142,13 @@
 									<div class="rating pdright">
 									<i class="icon_star voted"></i><i class="icon_star voted"></i><i
 										class="icon_star voted"></i><i class="icon_star voted"></i><i
-										class="icon_star"></i>
+										class="icon_star voted"></i>
 								</div>
 							</div>
 							<div class="flexba">
-								<a class="mdlbtn">More about the hotel</a>
+								<button type="button" class="mdlbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  More about the hoteL
+</button>
 							</div>
 								</div>
 
@@ -131,19 +157,19 @@
 									<thead>
 										<tr>
 											<th width="25%">Room</th>
-											<th width="25%">Advantages</th>
+											<th width="25%">Included</th>
 											<th width="20%">Duration</th>
-											<th width="20%">Ticket per price.</th>
+											<th width="20%">Price per pers.</th>
 											<th width="10%"></th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>
-												Breakfast
+												Junior Suite w Breakfast
 											</td>
 											<td>
-												<ul class="bullets2">
+												<ul class="bullets2 list">
 													<li>Event Tickets</li>
 													<li>Costume</li>
 													<li>Airport & Event Transfers</li>
@@ -153,8 +179,12 @@
 													<li>Personal Concierge</li>
 													<li>Travel Insurance</li>
 													<li>Welcome Bag (Branded Gear)</li>
+												
 
 												</ul>
+												  <button id="next" class="showmo">More benefits 
+													  <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+												  </button>
 
 
 											</td>
@@ -204,21 +234,22 @@
 													<li>Welcome Bag (Branded Gear)</li>
 
 												</ul>
+												
 										</div>
 									</div>
 								<hr />
 							</section>
 							<section id="overview">
-								<h3>ABOUT THE Trip</h3>
+								<h4>About the trip</h4>
 								<p>
 									Enjoy carnival on the streets of Bridgetown, Barbados. Spring Gardens we coming!
 									<br>
 									Let’s go to Oistins for the Fish Friday, then on to the world famous Harrison’s Cave and Bathsheba Bay.
 
 								</p>
-								<h5>
+								<h6>
                                    	Our customizable experiences are designed for persons who:
-								</h5>
+								</h6>
 								<p>
 								are too busy and you don’t have time to plan anything.<br>
 								want to experience everything Carnival.<br>
@@ -233,43 +264,77 @@
 							<!-- /section -->
 
 							<section id="Itinerary">
-							<h2>Itinerary</h2>
-
-							
-									<br>	
+							<h4>Itinerary</h4>
+									<ul class="cbp_tmtimeline">
+								<li>
+									<time class="cbp_tmtime" datetime="09:30"><span>30 min.</span><span>09:30</span>
+									</time>
+									<div class="cbp_tmicon">
+										<i class="icon_clock_alt"></i>
+									</div>
+									<div class="cbp_tmlabel">
+										<div class="hidden-xs">
+													</div>
+										<h4>Interior of the cathedral</h4>
+										<p>
+											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
+										</p>
+									</div>
+								</li>
+								<li>
+									<time class="cbp_tmtime" datetime="11:30"><span>2 hours</span><span>11:30</span>
+									</time>
+									<div class="cbp_tmicon">
+										2
+									</div>
+									<div class="cbp_tmlabel">
+										<div class="hidden-xs">
+												</div>
+										<h4>Statue of Saint Reparata</h4>
+										<p>
+											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
+										</p>
+									</div>
+								</li>
+								<li>
+									<time class="cbp_tmtime" datetime="13:30"><span>1 hour</span><span>13:30</span>
+									</time>
+									<div class="cbp_tmicon">
+										3
+									</div>
+									<div class="cbp_tmlabel">
+										<div class="hidden-xs">
+										</div>
+										<h4>Huge clock decorated</h4>
+										<p>
+											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
+										</p>
+									</div>
+								</li>
+								<li>
+									<time class="cbp_tmtime" datetime="14:30"><span>2 hours</span><span>14:30</span>
+									</time>
+									<div class="cbp_tmicon">
+										4
+									</div>
+									<div class="cbp_tmlabel">
+										<div class="hidden-xs">
+													</div>
+										<h4>Vasari's fresco</h4>
+										<p>
+											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
+										</p>
+									</div>
+								</li>
+							</ul>
 								
-								<p>
-									Mea appareat omittantur eloquentiam ad, nam ei quas
-									<strong>oportere democritum</strong>. Prima causae admodum
-									id est, ei timeam inimicus sed. Sit an meis aliquam, cetero
-									inermis vel ut. An sit illum euismod facilisis, tamquam
-									vulputate pertinacia eum at.
-								</p>
-								<div class="row">
-									<div class="col-lg-6">
-										<ul class="bullets">
-											<li>Dolorem mediocritatem</li>
-											<li>Mea appareat</li>
-											<li>Prima causae</li>
-											<li>Singulis indoctum</li>
-										</ul>
-									</div>
-									<div class="col-lg-6">
-										<ul class="bullets">
-											<li>Timeam inimicus</li>
-											<li>Oportere democritum</li>
-											<li>Cetero inermis</li>
-											<li>Pertinacia eum</li>
-										</ul>
-									</div>
-								</div>
 								<hr />
 								<!-- /row -->
 							</section>
 							<!-- /section -->
 
 							<section id="Notes">
-								<h2>Additional Information</h2>
+								<h4>Travel Information</h4>
 								<br>
 								<b>ALL travellers into Barbados, inclusive of those deemed fully vaccinated, are asked to review, and indicate their acceptance of the following:</b> <br>
 									ALL travellers must travel with a valid negative Standard COVID-19 PCR test result. <br>
@@ -298,7 +363,7 @@
 							<!-- /section -->
 
 							<section id="reviews">
-								<h2>Reviews</h2>
+								<h4>Reviews</h4>
 								<div class="reviews-container">
 									<div class="row">
 										<div class="col-lg-3">
@@ -388,9 +453,7 @@
 										</figure>
 										<div class="rev-content">
 											<div class="rating">
-												<i class="icon_star voted"></i><i class="icon_star voted"></i><i
-													class="icon_star voted"></i><i class="icon_star voted"></i><i
-													class="icon_star"></i>
+												<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
 											</div>
 											<div class="rev-info">Admin – April 03, 2016:</div>
 											<div class="rev-text">
@@ -409,9 +472,8 @@
 										</figure>
 										<div class="rev-content">
 											<div class="rating">
-												<i class="icon-star voted"></i><i class="icon_star voted"></i><i
-													class="icon_star voted"></i><i class="icon_star voted"></i><i
-													class="icon_star"></i>
+												<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+										
 											</div>
 											<div class="rev-info">Ahsan – April 01, 2016:</div>
 											<div class="rev-text">
@@ -430,9 +492,8 @@
 										</figure>
 										<div class="rev-content">
 											<div class="rating">
-												<i class="icon-star voted"></i><i class="icon_star voted"></i><i
-													class="icon_star voted"></i><i class="icon_star voted"></i><i
-													class="icon_star"></i>
+													<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+										
 											</div>
 											<div class="rev-info">Sara – March 31, 2016:</div>
 											<div class="rev-text">
@@ -503,11 +564,6 @@
 
 									<span>€ 505 <span class="oldprice">
 											€ 798</span> </span>
-
-									<hr />
-									<div class="text-center">
-										<small>Booking.com rating 8.0 based on 38 reviews</small>
-									</div>
 								</div>
 								<h6><b>Included in the price</b></h6>
 								<p>
@@ -535,7 +591,7 @@
 									</span>
 								</p>
 
-								<a href="checkout.html" class="btn_1 full-width purchase">Book Now</a>
+								<a href="checkout.html" class="btn_1 full-width purchase">Reserve</a>
 							</div>
 						</aside>
 					</div>
@@ -550,7 +606,7 @@
 		<footer>
 			<div class="container margin_60_35">
 				<div class="row">
-					<div class="col-lg-5 col-md-12 p-r-5">
+					<div class="col-lg-4 col-md-12 p-r-5">
 						<p><img src="img/logo.svg" width="250" height="36" alt="" /></p>
 						<p>
 							Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea.
@@ -580,12 +636,23 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 ml-lg-auto">
-						<h5>Useful links</h5>
+						<h5>Information</h5>
 						<ul class="links">
-							<li><a href="#">Destinations</a></li>
+							<li><a href="#">About Carnival Utopia</a></li>
+							<li><a href="#">Help Center</a></li>
 							<li><a href="#">Contact</a></li>
-							<li><a href="#">Hlep</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms of Condition</a></li>
+							<li><a href="#">Offers</a></li>
+						</ul>
+					</div>
+						<div class="col-lg-2 col-md-6 ml-lg-auto">
+						<h5>Destinations</h5>
+						<ul class="links">
+							<li><a href="#">Trinidad</a></li>
+							<li><a href="#">Barbados</a></li>
+							<li><a href="#">Jamaica</a></li>
+							<li><a href="#">St Lucia</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6">
@@ -595,7 +662,7 @@
 								<a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a>
 							</li>
 							<li>
-								<a href="mailto:info@carnival utopia.com"><i class="ti-email"></i> info@abcd.com</a>
+								<a href="mailto:info@carnival utopia.com"><i class="ti-email"></i> info@carnivalutopia.com</a>
 							</li>
 						</ul>
 					</div>
@@ -626,49 +693,156 @@
 	<div id="toTop"></div>
 	<!-- Back to top button -->
 
-	<!-- COMMON SCRIPTS -->
+	
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">South Beach Hotel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       	<div class="htldivmain">
+							<div class="htldivmain2">
+								<h4>South Beach Hotel</h4>
+									<div class="rating pdright">
+										<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+										
+								</div>
+							</div>
+							<div class="flexba">
+								<button type="button" class="mdlbtn2" >See location</button>
+							</div>
+								</div>
+
+								<section class="hero_in tours_detail">
+				<div class="wrapper">
+					
+					<span class="magnific-gallery">
+						<a href="img/gallery/tour_list_1.jpg" class="btn_photos" title="Photo title"
+							data-effect="mfp-zoom-in">View photos</a>
+						<a href="img/gallery/tour_list_2.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
+						<a href="img/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
+					</span>
+				</div>
+			</section>   
+			<br>
+			<p>
+				Located just off the beach, the hotel has a buffet restaurant serving Mediterranean and international food. There is also a children’s menu. There is also a swimming pool and free sun loungers next to it, so you can enjoy sunbathing. The hotel hosts various events. There is a playground for children. The front desk is open 24 hours a day and free Wi-Fi is available throughout the hotel.
+
+
+			</p> 
+<hr class="modalhr">
+<h6>
+	About the Hotel
+</h6>
+<br>
+	<div class="row">
+									<div class="col-lg-6">
+										<ul class="bullets">
+											<li>Dolorem mediocritatem</li>
+											<li>Mea appareat</li>
+											<li>Prima causae</li>
+											<li>Singulis indoctum</li>
+										</ul>
+									</div>
+									<div class="col-lg-6">
+										<ul class="bullets">
+											<li>Timeam inimicus</li>
+											<li>Oportere democritum</li>
+											<li>Cetero inermis</li>
+											<li>Pertinacia eum</li>
+										</ul>
+									</div>
+								</div>
+								<br>
+								<hr class="modalhr">
+								<h6>
+	About the location of the hotel
+</h6>
+<br>
+<p>
+150 meters to the beach. The nearest airport is 12 km away.
+
+
+</p>
+<p>
+City: Tragaki, Greece;
+
+</p>
+<p>
+	
+Street: Tragaki, 29100;
+</p>
+		
+								<hr class="modalhr">
+								<h6>
+Reviews:
+</h6>
+<br>
+<p>
+<i>Very helpful staff, delicious food.</i>
+</p>
+<p>
+<i>The kids enjoyed the playground. The room was tidy, clean.</i>
+</p>
+
+      </div>
+      <div class="modal-footer">
+       <div class="">
+			<small>Price per person from</small>
+					<div class="price">
+
+					<h2>€ 505 </h2>
+
+						</div>
+      </div>
+	  <div>
+		  <a href="#" class="btn_1">See the rooms</a>
+	  </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+      var list = $(".list li");
+      var numToShow = 3;
+      var button = $("#next");
+      var numInList = list.length;
+      list.hide();
+      if (numInList > numToShow) {
+        button.show();
+      }
+      list.slice(0, numToShow).show();
+
+      button.click(function(){
+          var showing = list.filter(':visible').length;
+          list.slice(showing - 1, showing + numToShow).fadeIn();
+          var nowShowing = list.filter(':visible').length;
+          if (nowShowing >= numInList) {
+            button.hide();
+          }
+      });
+
+});
+		</script>
+
+	<!-- COMMON SCRIPTS --> 
+	 <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
 	<script src="js/common_scripts.js"></script>
 	<script src="js/main.js"></script>
-	<script src="assets/validate.js"></script>
 
-	<!-- Map -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/map_single_tour.js"></script>
-	<script src="js/infobox.js"></script>
-
-	<!-- DATEPICKER  -->
-	<script>
-		$(function () {
-			$('input[name="dates"]').daterangepicker({
-				autoUpdateInput: false,
-				parentEl: ".scroll-fix",
-				minDate: new Date(),
-				opens: "left",
-				locale: {
-					cancelLabel: "Clear",
-				},
-			});
-			$('input[name="dates"]').on(
-				"apply.daterangepicker",
-				function (ev, picker) {
-					$(this).val(
-						picker.startDate.format("MM-DD-YY") +
-						" > " +
-						picker.endDate.format("MM-DD-YY")
-					);
-				}
-			);
-			$('input[name="dates"]').on(
-				"cancel.daterangepicker",
-				function (ev, picker) {
-					$(this).val("");
-				}
-			);
-		});
-	</script>
 
 	<!-- INPUT QUANTITY  -->
 	<script src="js/input_qty.js"></script>
+
 </body>
 
 </html>
