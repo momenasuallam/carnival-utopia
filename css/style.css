@@ -478,11 +478,13 @@ ul, ol {
 }
 .main_title_2 h2 {
   margin: 25px 0 0 0;
+   color: #1b3960;
 }
 @media (max-width: 767px) {
   .main_title_2 h2 {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 20px;
+    margin-bottom: 24px;
+   
   }
 }
 .main_title_2 h3 {
@@ -619,8 +621,7 @@ a.btn_1,
 }
 a.btn_1:hover,
 .btn_1:hover {
-  background: #0054a6;
-  color: #fff;
+background: #ff1493b0;
 }
 a.btn_1.full-width,
 .btn_1.full-width {
@@ -839,7 +840,7 @@ ul#top_menu li:last-child {
 }
 @media (max-width: 430px) {
   ul#top_menu li:first-child {
-    display: none;
+  
   }
 }
 
@@ -849,6 +850,9 @@ ul#top_menu li a {
 ul#top_menu li a:hover {
   color: #fff;
   opacity: 0.7;
+}
+.loginkdaj{
+  display: none !important;
 }
 ul#top_menu li a.login, ul#top_menu li a.wishlist_bt_top, ul#top_menu li a.cart-menu-btn {
   display: block;
@@ -871,7 +875,7 @@ ul#top_menu li a.login:before, ul#top_menu li a.wishlist_bt_top:before, ul#top_m
   font-family: 'Glyphter';
   font-size: 21px;
   font-size: 1.3125rem;
-  color: #fff;
+  color: #FF1493;
   text-indent: 0;
   position: absolute;
   left: 0;
@@ -1125,6 +1129,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
 }
 .hero_in.tours_detail {
   height: 425px;
+  margin-bottom: 20px;
 }
 @media (max-width: 575px) {
   .hero_in.tours_detail {
@@ -1160,6 +1165,8 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
 .titletourhead small{
 font-size: 14px;
 color: #FF1493;
+margin-bottom: 12px;
+display: block;
 }
 .titletourhead h4{
     font-size: 20px;
@@ -1277,7 +1284,47 @@ color: #FF1493;
 .hero_in a.btn_photos:hover {
   color: #FF1493;
 }
-
+.nbfdj {
+      margin-top: 64px;
+       border-bottom: 1px solid #ededed;
+       padding-bottom: 15px;
+}
+#ticketprice h5{
+      font-weight: 500;
+    line-height: 1;
+    color: #1f3c63;
+    font-size: 32px;
+        margin-bottom: 30px;
+    
+}
+.hjfgeiau{
+  margin-top: 20px
+}
+#reviews{
+  padding: 20px 0;
+}
+@media(max-width:600px){
+  .hero_in a.btn_photos{
+    left: unset;
+    right: 20px;
+  }
+  .secondary_nav{
+    display: none;
+  }
+  .nbfdj {
+      margin-top: 32px;
+      padding-bottom: 0px;
+}
+  #ticketprice h5{
+    font-size: 20px;
+}
+}
+@media (min-width: 1200px)
+{
+  .container {
+    max-width: 1170px!important;
+}
+}
 /* Animations */
 @keyframes pop-in {
   0% {
@@ -1310,7 +1357,7 @@ color: #FF1493;
 
 /* Main */
 main {
-  background-color: #f8f8f8;
+  background-color: #fdfdfd;
   position: relative;
   z-index: 1;
 }
@@ -3353,13 +3400,13 @@ a.box_feat h3 {
 }
 
 .box_grid {
-  background-color: #fff;
+  background-color: #fdfdfd;
   display: block;
   position: relative;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  /* -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); */
 }
 .box_grid .price {
   display: inline-block;
@@ -3495,7 +3542,7 @@ a.box_feat h3 {
   transform: translate(-50%, -50%) scale(1);
 }
 .box_grid .wrapper {
-  padding: 25px 25px 15px;
+  padding: 25px 10px 15px;
 }
 .box_grid .wrapper h3 {
   font-size: 20px;
@@ -3525,6 +3572,9 @@ a.box_feat h3 {
 
 .rating {
   color: #ccc;
+}
+.rating img{
+margin-right: 4px;
 }
 .rating .voted {
   color: #FF1493;
@@ -3946,7 +3996,7 @@ a.boxed_list:hover i {
 
 /*-------- 2.4 Detail page --------*/
 .secondary_nav {
-  background: #fff;
+  background: #fdfdfd;
   border-bottom: 1px solid #ededed;
   padding: 15px 0;
 }
@@ -3962,17 +4012,38 @@ a.boxed_list:hover i {
   display: inline-block;
   margin-right: 20px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
+  position: relative;
 }
 .secondary_nav ul li a {
   color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
 }
 .secondary_nav ul li a:hover {
   color: #FF1493;
+   
+}
+.sdghhhhh{
+  font-size: 12px !important;
 }
 .secondary_nav ul li a.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: #FF1493;
+}
+
+.secondary_nav ul li a::after {
+content: "";
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #FF1493;
+    position: absolute;
+    bottom: -16px;
+    opacity: 0;
+}
+.secondary_nav ul li a.active:after {
+    content: "";
+    opacity: 1;
 }
 .secondary_nav ul li:last-child {
   display: none;
@@ -4184,6 +4255,7 @@ section#reviews {
   -ms-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 .price hr{
   margin: 15px 0 15px 0;
@@ -5026,7 +5098,14 @@ span.infobox_rate {
   line-height: 36px !important;
   background-color: #FF1493;
 }
-
+.mbtys{
+  color: #FF1493;
+}
+.morebene{
+  color: #FF1493 !important;
+  margin-left: 8px;
+  font-size: 16px !important;
+}
 .cluster-visible:before {
   border: 7px solid #FF1493;
   opacity: 0.2;
@@ -8140,14 +8219,19 @@ ul.bullets2 li {
   padding-bottom: 6px;;
 }
 ul.bullets2 li:before {
-  content: "";
+  /* content: "";
   color: #FF1493;
   position: absolute;
   left: 0px; 
   top: 3px;
   width: 26px;
   height: 26px;
-  background: url("../img/check-circle.svg") no-repeat;
+  background: url("../img/tick.png") no-repeat; */
+    content: '\f00c';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #FF1493;
 }
 
 /*-------- 3.4 Spacing --------*/
@@ -8268,7 +8352,7 @@ ul.bullets2 li:before {
 }
 @media (max-width: 575px) {
   .margin_80_0 {
-    padding-top: 45px;
+    padding-top: 25px;
   }
 }
 
@@ -9389,8 +9473,14 @@ ul.plan-features {
     display: none;
   }
 }
-.showmesignin{
+@media(max-width: 600px)
+{
+  .showmesignin{
 display: none !important;
+}
+.loginkdaj{
+  display: block !important;
+}
 }
 @media(max-width:640px)
 {
@@ -9398,10 +9488,7 @@ display: none !important;
     color: #fff !important;
       padding: 8px 20px !important;
   }
-  .showmesignin{
-    display: block !important;
-    margin: 20px !important;
-  }
+
 }
 @media(max-width:430px)
 {
@@ -9478,6 +9565,7 @@ display: none !important;
 .flexspb{
       display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 @media(max-width:430px)
 {
@@ -9500,9 +9588,8 @@ display: none !important;
 font-size: 20px;
 }
 .pdright{
-    margin-left: 20px;
-    position: relative;
-    top: 2px;
+    margin-left: 10px;
+  
 }
 .modalhr {
     margin: 18px 0 18px 0;
@@ -9546,7 +9633,7 @@ font-size: 20px;
 .showmo{
  
     border: 0px solid #e9edef;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 1.71;
     color: #FF1493;
@@ -9554,7 +9641,10 @@ font-size: 20px;
     cursor: pointer;
 }
 .showmo:hover{
-     color: #1f3c63;
+     color: #FF1493;
+}
+.Amenitiesw {
+  padding-bottom: 30px;
 }
 @media(max-width: 600px)
 {
@@ -9616,7 +9706,7 @@ text-decoration: line-through;
 }
 .mt10-24{
   margin-top: 10px !important;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 .mavUYJ{
   position: absolute;

@@ -21,45 +21,69 @@
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/vendors.css" rel="stylesheet">
 
+	<style>
+				.hamburger-inner {
+    background-color: #fff !important;
+}
+.hamburger-inner::before {
+    background-color: #fff !important;
+}
+.hamburger-inner::after {
+    background-color: #fff !important;
+}
+	</style>
+
 </head>
 
 <body>
 	
 	<div id="page">
 		
-<header class="header menu_fixed">
-		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Page Preload -->
-		<div id="logo">
-			<a href="index.html">
-				<img src="img/logo.svg" width="250" height="36" alt="" class="logo_normal">
-				<img src="img/logo.svg" width="250" height="36" alt="" class="logo_sticky">
-			</a>
-		</div>
-			<ul id="top_menu">
-			
-		  <li><a href="#" class="btn_1 rounded btnhead"  id="sign-in" class="login" title="Sign In">Sign in</a></li>
-			
-		</ul>
-		<!-- /top_menu -->
-		<a href="#menu" class="btn_mobile">
-			<div class="hamburger hamburger--spin" id="hamburger">
-				<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
-				</div>
+	<header class="header menu_fixed">
+			<div id="preloader">
+				<div data-loader="circle-side"></div>
 			</div>
-		</a>
-		<nav id="menu" class="main-menu">
-			<ul>
-				
-				<li><span><a href="#">Destinations</a></span></li>
-				<li><span><a href="#">Contact</a></span></li>
-				<li><span><a href="#"> Help Center</a></span></li>
-				<li><span><a href="#">Blog</a></span></li>
-                <li><a href="#" class="btn_1 rounded btnhead showmesignin">Sign in</a></li>
-				
+			<!-- /Page Preload -->
+		<div class="container">
+          	<div id="logo">
+				<a href="index.html">
+					<img src="img/logo.svg" width="250" height="36" alt="" class="logo_normal" />
+					<img src="img/logo.svg" width="250" height="36" alt="" class="logo_sticky" />
+				</a>
+			</div>
+			<ul id="top_menu">
+				<li>
+					<a href="#" class="btn_1 rounded btnhead showmesignin">Sign in</a>
+					<a href="#"  class="login loginkdaj" title="Sign In">Sign in</a>
+				</li>
 			</ul>
-		</nav>
-	</header>
+			<!-- /top_menu -->
+			<a href="#menu" class="btn_mobile">
+				<div class="hamburger hamburger--spin" id="hamburger">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<nav id="menu" class="main-menu">
+				<ul>
+					<li>
+						<span><a href="#">Destinations</a></span>
+					</li>
+					<li>
+						<span><a href="#">Contact</a></span>
+					</li>
+					<li>
+						<span><a href="#"> Help Center</a></span>
+					</li>
+					<li>
+						<span><a href="#">Blog</a></span>
+					</li>
+				
+				</ul>
+			</nav>
+		</div>
+		</header>
 	<!-- /header -->
 	
 	<main>

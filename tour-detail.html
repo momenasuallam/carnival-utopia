@@ -56,7 +56,8 @@
 				<div data-loader="circle-side"></div>
 			</div>
 			<!-- /Page Preload -->
-			<div id="logo">
+		<div class="container">
+          	<div id="logo">
 				<a href="index.html">
 					<img src="img/logo.svg" width="250" height="36" alt="" class="logo_normal" />
 					<img src="img/logo.svg" width="250" height="36" alt="" class="logo_sticky" />
@@ -64,7 +65,8 @@
 			</div>
 			<ul id="top_menu">
 				<li>
-					<a href="#" class="btn_1 rounded btnhead" id="sign-in" class="login" title="Sign In">Sign in</a>
+					<a href="#" class="btn_1 rounded btnhead showmesignin">Sign in</a>
+					<a href="#"  class="login loginkdaj" title="Sign In">Sign in</a>
 				</li>
 			</ul>
 			<!-- /top_menu -->
@@ -89,11 +91,10 @@
 					<li>
 						<span><a href="#">Blog</a></span>
 					</li>
-					<li>
-						<a href="#" class="btn_1 rounded btnhead showmesignin">Sign in</a>
-					</li>
+				
 				</ul>
 			</nav>
+		</div>
 		</header>
 		<!-- /header -->
 
@@ -107,8 +108,8 @@
 					<div class="row mt30">
 						<div class="col-lg-8">
 							<div class="titletourhead">
-                               <small>Bridgetown, Barbados</small>
-							   <h4>Barbados</h4>
+                               <small>Bridgetown , Barbados</small>
+							   <h4>Barbados Crop Over</h4>
 							</div>
 				<section class="hero_in tours_detail">
 				<div class="wrapper">
@@ -122,7 +123,7 @@
 				</div>
 			</section>     
 								<nav class="secondary_nav sticky_horizontal">
-					<div class="container">
+					<div class="container" style="padding: 0px;">
 						<ul class="clearfix">
 							<li><a href="#ticketprice" class="active">Price</a></li>
 							<li><a href="#overview">Overview</a></li>
@@ -133,21 +134,19 @@
 						</ul>
 					</div>
 				</nav>
-							<section id="ticketprice">
-								<h2>Ticket Price</h2>
+							<section id="ticketprice" class="nbfdj">
+								<h5>Ticket Price</h5>
 
 								<div class="htldivmain">
 							<div class="htldivmain2">
 								<h4>South Beach Hotel</h4>
 									<div class="rating pdright">
-									<i class="icon_star voted"></i><i class="icon_star voted"></i><i
-										class="icon_star voted"></i><i class="icon_star voted"></i><i
-										class="icon_star voted"></i>
+									<img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" />
 								</div>
 							</div>
 							<div class="flexba">
 								<button type="button" class="mdlbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  More about the hoteL
+  More about the hotel
 </button>
 							</div>
 								</div>
@@ -166,10 +165,12 @@
 									<tbody>
 										<tr>
 											<td>
-												Junior Suite w Breakfast
+												<a class="mbtys">Junior Suite</a>
+												<br>
+												Breakfast
 											</td>
 											<td>
-												<ul class="bullets2 list">
+												<ul class="bullets2 expandible ">
 													<li>Event Tickets</li>
 													<li>Costume</li>
 													<li>Airport & Event Transfers</li>
@@ -182,9 +183,7 @@
 												
 
 												</ul>
-												  <button id="next" class="showmo">More benefits 
-													  <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
-												  </button>
+												 
 
 
 											</td>
@@ -216,13 +215,13 @@
 										</div>
 											<div class="pricd1mbl2 mtop10">
 											<div class="flexspb">
-												<h5>€ 568</h5>
+												<h4>€ 568</h4>
 											<span>	<a href="checkout.html" class="btn_1">Order</a></span>
 											</div>
 										</div>
-										<div class="pricd1mbl2 mtop10">
-											<h6>Advantages</h6>
-												<ul class="bullets2">
+										<div class="pricd1mbl2 Amenitiesw mtop10">
+											<h6>Amenities</h6>
+												<ul class="bullets2 expandible ">
 													<li>Event Tickets</li>
 													<li>Costume</li>
 													<li>Airport & Event Transfers</li>
@@ -232,16 +231,15 @@
 													<li>Personal Concierge</li>
 													<li>Travel Insurance</li>
 													<li>Welcome Bag (Branded Gear)</li>
-
 												</ul>
-												
+											
 										</div>
 									</div>
-								<hr />
+							
 							</section>
-							<section id="overview">
+							<section id="overview" class="nbfdj">
 								<h4>About the trip</h4>
-								<p>
+								<p class="hjfgeiau">
 									Enjoy carnival on the streets of Bridgetown, Barbados. Spring Gardens we coming!
 									<br>
 									Let’s go to Oistins for the Fish Friday, then on to the world famous Harrison’s Cave and Bathsheba Bay.
@@ -259,11 +257,10 @@
 								</p>
 							
 
-								<hr />
 							</section>
 							<!-- /section -->
 
-							<section id="Itinerary">
+							<section id="Itinerary" class="nbfdj">
 							<h4>Itinerary</h4>
 									<ul class="cbp_tmtimeline">
 								<li>
@@ -285,7 +282,7 @@
 									<time class="cbp_tmtime" datetime="11:30"><span>2 hours</span><span>11:30</span>
 									</time>
 									<div class="cbp_tmicon">
-										2
+											<i class="icon_clock_alt"></i>
 									</div>
 									<div class="cbp_tmlabel">
 										<div class="hidden-xs">
@@ -300,7 +297,7 @@
 									<time class="cbp_tmtime" datetime="13:30"><span>1 hour</span><span>13:30</span>
 									</time>
 									<div class="cbp_tmicon">
-										3
+											<i class="icon_clock_alt"></i>
 									</div>
 									<div class="cbp_tmlabel">
 										<div class="hidden-xs">
@@ -315,7 +312,7 @@
 									<time class="cbp_tmtime" datetime="14:30"><span>2 hours</span><span>14:30</span>
 									</time>
 									<div class="cbp_tmicon">
-										4
+											<i class="icon_clock_alt"></i>
 									</div>
 									<div class="cbp_tmlabel">
 										<div class="hidden-xs">
@@ -328,12 +325,12 @@
 								</li>
 							</ul>
 								
-								<hr />
+						
 								<!-- /row -->
 							</section>
 							<!-- /section -->
 
-							<section id="Notes">
+							<section id="Notes" class="nbfdj">
 								<h4>Travel Information</h4>
 								<br>
 								<b>ALL travellers into Barbados, inclusive of those deemed fully vaccinated, are asked to review, and indicate their acceptance of the following:</b> <br>
@@ -356,14 +353,15 @@
 									</ul>
 								<!-- /row -->
 
-								<hr />
+						
 
 								<!-- End Map -->
 							</section>
 							<!-- /section -->
 
-							<section id="reviews">
-								<h4>Reviews</h4>
+							<section id="reviews" class="">
+								<h3>Reviews</h3>
+								<br>
 								<div class="reviews-container">
 									<div class="row">
 										<div class="col-lg-3">
@@ -453,7 +451,7 @@
 										</figure>
 										<div class="rev-content">
 											<div class="rating">
-												<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+<img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" />
 											</div>
 											<div class="rev-info">Admin – April 03, 2016:</div>
 											<div class="rev-text">
@@ -472,7 +470,7 @@
 										</figure>
 										<div class="rev-content">
 											<div class="rating">
-												<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+<img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" />
 										
 											</div>
 											<div class="rev-info">Ahsan – April 01, 2016:</div>
@@ -492,7 +490,7 @@
 										</figure>
 										<div class="rev-content">
 											<div class="rating">
-													<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+	<img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" />
 										
 											</div>
 											<div class="rev-info">Sara – March 31, 2016:</div>
@@ -510,7 +508,7 @@
 								<!-- /review-container -->
 							</section>
 							<!-- /section -->
-							<hr />
+							
 
 							<div class="add-review">
 								<h5>Leave a Review</h5>
@@ -591,7 +589,7 @@
 									</span>
 								</p>
 
-								<a href="checkout.html" class="btn_1 full-width purchase">Reserve</a>
+								<a href="checkout.html" class="btn_1 full-width">Reserve</a>
 							</div>
 						</aside>
 					</div>
@@ -707,7 +705,7 @@
 							<div class="htldivmain2">
 								<h4>South Beach Hotel</h4>
 									<div class="rating pdright">
-										<i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i><i class="fa fa-star voted"></i>
+										<img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" /><img src="./img/star.svg" style="width: 14px; height: 14px;" />
 										
 								</div>
 							</div>
@@ -805,32 +803,31 @@ Reviews:
   </div>
 </div>
 
+ <!-- <button class="showmo benenext">More benefits 
+													
+												  </button> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-
-      var list = $(".list li");
-      var numToShow = 3;
-      var button = $("#next");
-      var numInList = list.length;
-      list.hide();
-      if (numInList > numToShow) {
-        button.show();
-      }
-      list.slice(0, numToShow).show();
-
-      button.click(function(){
-          var showing = list.filter(':visible').length;
-          list.slice(showing - 1, showing + numToShow).fadeIn();
-          var nowShowing = list.filter(':visible').length;
-          if (nowShowing >= numInList) {
-            button.hide();
-          }
-      });
-
+<script>
+	$('ul.expandible').each(function(){
+    var $ul = $(this),
+        $lis = $ul.find('li:gt(2)'),
+        isExpanded = $ul.hasClass('expanded');
+    $lis[isExpanded ? 'show' : 'hide']();
+    
+    if($lis.length > 0){
+        $ul
+            .append($('<span class="showmo"><a class="showmo">' + (isExpanded ? 'More benefits ' : 'More benefits ') + '   <i class="fa fa-angle-right morebene" aria-hidden="true"></i></a></span>')
+            .click(function(event){
+                var isExpanded = $ul.hasClass('expanded');
+                event.preventDefault();
+                // $(this).html(isExpanded ? 'More benefits ' : 'More benefits');
+                $ul.toggleClass('expanded');
+                $lis.toggle();
+            }));
+    }
 });
-		</script>
+	</script>
 
 	<!-- COMMON SCRIPTS --> 
 	 <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
