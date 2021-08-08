@@ -252,7 +252,7 @@ body{
 }
 
 /*-------- Preloader --------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -262,9 +262,9 @@ body{
   bottom: 0;
   background-color: #fff;
   z-index: 99999999999 !important;
-}
+} */
 
-[data-loader="circle-side"] {
+/* [data-loader="circle-side"] {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -284,9 +284,9 @@ body{
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
-}
+} */
 
-@-webkit-keyframes circle {
+/* @-webkit-keyframes circle {
   0% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -349,7 +349,7 @@ body{
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */
 /*-------- 1.1 Typography --------*/
 /* rem reference
 10px = 0.625rem
@@ -381,12 +381,22 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: #1f3c63;
 }
 
 p {
   margin-bottom: 30px;
-  color: #62758c;
+      font-size: 14px;
+    color: #62758c;
+    line-height: 2;
+    font-weight: 400;
+}
+table td{
+    color: #62758c;
+}
+
+ul li{
+   color: #62758c; 
 }
 
 strong {
@@ -478,7 +488,7 @@ ul, ol {
 }
 .main_title_2 h2 {
   margin: 25px 0 0 0;
-   color: #1b3960;
+   /* color: #1f3c63; */
 }
 @media (max-width: 767px) {
   .main_title_2 h2 {
@@ -606,7 +616,7 @@ a.btn_1,
   text-decoration: none;
   padding: 15px 30px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   line-height: 1;
   -moz-transition: all 0.3s ease-in-out;
@@ -1149,6 +1159,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-radius: 4px;
 }
 .hero_in.hotels_detail {
   height: 550px;
@@ -1196,6 +1207,7 @@ display: block;
 .titletourhead h4{
     font-size: 20px;
     color: #1b3960;
+    font-weight: 900;
 }
 
 .hero_in.hotels_detail:before {
@@ -1306,6 +1318,7 @@ display: block;
   padding: 10px 15px;
   color: #444;
   font-weight: 400;
+  font-size: 16px;
 }
 .hero_in a.btn_photos:hover {
   color: #FF1493;
@@ -1318,7 +1331,7 @@ display: block;
 #ticketprice h5{
       font-weight: 500;
     line-height: 1;
-    color: #1f3c63;
+    /* color: #1f3c63; */
     font-size: 32px;
         margin-bottom: 30px;
     
@@ -3438,6 +3451,7 @@ a.box_feat h3 {
   display: inline-block;
   font-weight: 500;
   color: #999;
+      max-width: 97px;
 }
 .box_grid .price strong {
   color: #32a067;
@@ -3483,6 +3497,7 @@ a.box_feat h3 {
   overflow: hidden;
   position: relative;
   height: 210px;
+  border-radius: 4px;
 }
 .box_grid figure small {
   position: absolute;
@@ -4282,6 +4297,7 @@ section#reviews {
   border-radius: 5px;
   margin-bottom: 30px;
   margin-top: 15px;
+  max-width: 385px;
 }
 .price hr{
   margin: 15px 0 15px 0;
@@ -4296,6 +4312,7 @@ section#reviews {
   font-size: 31px;
   font-size: 1.9375rem;
   font-weight: 600;
+  color: #1f3c63
 }
 .box_detail .price > span > small {
   font-size: 11px;
@@ -5216,13 +5233,14 @@ span.infobox_rate {
 
 /*-------- 2.8 404 page --------*/
 #error_page {
-  width: 100%;
-  height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #0054a6 url(../img/pattern_1.svg) center bottom repeat-x;
-  color: #fff;
+ width: 100%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: #0054a6 url(../img/pattern_1.svg) center bottom repeat-x; */
+    color: #1f3c63;
+    padding-top: 70px;
 }
 @media (max-width: 767px) {
   #error_page {
@@ -5233,7 +5251,7 @@ span.infobox_rate {
   margin-top: 30px;
   font-size: 140px;
   font-size: 8.75rem;
-  color: #fff;
+  color: #1f3c63;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
@@ -5245,25 +5263,41 @@ span.infobox_rate {
   #error_page h2 {
     font-size: 72px;
     font-size: 4.5rem;
+    color: #1f3c63;
   }
 }
 #error_page p {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 14px;
+   color: #1f3c63 !important;
+   margin-bottom: 15px;
+}
+#error_page h3 {
+     font-size: 32px;
+   color: #1f3c63 !important;
+   font-weight: bold;
 }
 @media (max-width: 767px) {
   #error_page p {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 14px;
+
   }
+  #error_page h3 {
+     font-size: 24px;
+   color: #1f3c63 !important;
+}
 }
 @media (max-width: 767px) {
   #error_page {
-    padding: 0;
-    height: 500px;
+    height: 300px;
+    padding-top: 70px;
   }
 }
-
+@media(max-width: 600px)
+{
+  #error_page a{
+    width: 100% !important;
+  }
+}
 .search_bar_error {
   position: relative;
   margin-bottom: 60px;
@@ -8120,6 +8154,7 @@ ul.share-buttons li i {
   text-align: center;
   font-size: 21px;
   color: #fff;
+  display: none !important;
   cursor: pointer;
 }
 #toTop:after {
@@ -8259,7 +8294,22 @@ ul.bullets2 li:before {
   margin-left: -1.5em;
   color: #FF1493;
 }
-
+ul.bullets2 .cross:before {
+    content: '\f00d' !important;
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #FF1493;
+}
+ul.bbbhssgdu li:before {
+    content: '\f111' !important;
+  font-family: 'FontAwesome';
+  float: left;
+ margin-left: -16px;
+    color: #FF1493;
+    font-size: 5px;
+    margin-top: 6px;
+}
 /*-------- 3.4 Spacing --------*/
 .add_bottom_15 {
   margin-bottom: 15px;
@@ -9507,6 +9557,9 @@ display: none !important;
 .loginkdaj{
   display: block !important;
 }
+.hero_in a.btn_photos{
+  font-size: 12px;
+}
 }
 @media(max-width:640px)
 {
@@ -9528,10 +9581,17 @@ display: none !important;
 }
 .iconspace{
   margin-right: 10px;
+  position: absolute;
+    left: -20px;
 }
 .pricedtailsd{
   display: block;
   margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 2;
+    color: #62758c;
+        position: relative;
+    left: 20px;
 }
 .oldprice{
   text-decoration: line-through;
@@ -9604,13 +9664,14 @@ display: none !important;
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
+  margin-top: 20px;
 }
 .htldivmain2{
   display: flex;
   justify-content: space-between;
 }
 .htldivmain2 h4{
- color: #1f3c63; 
+ /* color: #1f3c63;  */
 font-size: 20px;
 }
 .pdright{
@@ -9620,6 +9681,12 @@ font-size: 20px;
 .modalhr {
     margin: 18px 0 18px 0;
     border-color: #e9edef;
+}
+.bbbhssgdu li{
+  font-size: 14px !important;
+      line-height: 1.14 !important;
+    color: #1f3c63 !important;
+    margin-bottom: 15px;
 }
 .bg_colorfd{
   background-color: #fdfdfd;
@@ -9642,7 +9709,7 @@ font-size: 20px;
   color: #fff;
 }
 .mdlbtn2{
-  width: 167px;
+  width: 140px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #e9edef;
@@ -9650,12 +9717,14 @@ font-size: 20px;
     font-weight: 500;
     line-height: 1.71;
     color: #1f3c63;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color .2s linear;
     cursor: pointer;
 }
+
 .showmo{
  
     border: 0px solid #e9edef;
@@ -9681,6 +9750,10 @@ font-size: 20px;
     width: 100%;
   }
   .flexba{
+    flex-basis: 100%;
+      margin: 10px 0px;
+  }
+  .flexba2{
     flex-basis: 100%;
       margin: 10px 0px;
   }
@@ -9721,11 +9794,15 @@ font-size: 20px;
 text-decoration: line-through;
     font-size: 15px;
     color: #62758c;
+    position: relative;
+    top: 6px;
 }
 .pricehp h2{
   display: inline;
     font-size: 28px;
     font-weight: 500;
+    position: absolute;
+    right: 0px
 }
 .colorli{
      color: #62758c !important;
@@ -9736,7 +9813,8 @@ text-decoration: line-through;
 }
 .mavUYJ{
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
+  right: 15px;
 }
 @media(max-width:450px)
 {
@@ -9748,4 +9826,28 @@ text-decoration: line-through;
   .hjsajdf{
     font-size: 12px;
   }
+}
+.flexbnjh{
+  display: flex;
+justify-content: space-between;
+position: relative;
+}
+.sharbtn{
+  width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #e9edef;
+    background-color: #fff;
+    margin-left: 16px;
+}
+.sharbtn .fa{
+ font-size: 20px;
+}
+.btsgar{
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
 }
