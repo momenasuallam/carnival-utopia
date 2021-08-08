@@ -1165,8 +1165,26 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
 @media(max-width: 600px)
 {
   .titletourhead{
-  padding: 20px 0px 20px;
+  padding: 20px 14px 20px;
 
+}
+#ticketprice{
+  padding: 0px 14px;
+}
+#overview{
+  padding: 0px 14px;
+}
+#Itinerary{
+  padding: 0px 14px;
+}
+#Notes{
+  padding: 0px 14px;
+}
+.gduuuuu{
+  padding: 30px 14px !important;
+}
+.add-review{
+  padding: 0px 14px !important;
 }
 }
 .titletourhead small{
