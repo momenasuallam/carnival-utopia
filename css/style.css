@@ -1133,7 +1133,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
 }
 @media (max-width: 575px) {
   .hero_in.tours_detail {
-    height: 500px;
+    height: 350px;
   }
 }
 .hero_in.tours_detail:before {
@@ -1159,8 +1159,15 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
   }
 }
 .titletourhead{
-  padding: 20px 0px;
+  padding: 20px 0px 30px;
 
+}
+@media(max-width: 600px)
+{
+  .titletourhead{
+  padding: 20px 0px 20px;
+
+}
 }
 .titletourhead small{
 font-size: 14px;
@@ -1172,6 +1179,7 @@ display: block;
     font-size: 20px;
     color: #1b3960;
 }
+
 .hero_in.hotels_detail:before {
   background: url(../img/hero_in_hotels_detail.jpg) center center no-repeat;
   -webkit-background-size: cover;
