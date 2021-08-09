@@ -27,8 +27,7 @@ body{
     z-index: 9;
     width: auto;
     top: 8px;
-    left: 0px;
-    
+    left: 245px;
     float: auto;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -61,7 +60,7 @@ body{
     padding: 0 8px 15px 8px;
     font-size: 14px;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   header.sticky .main-menu > ul > li span > a {
@@ -1063,6 +1062,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
 
 #logo {
   float: left;
+  position: absolute;
 }
 @media (max-width: 991px) {
   #logo {
@@ -1207,7 +1207,7 @@ display: block;
 .titletourhead h4{
     font-size: 20px;
     color: #1b3960;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .hero_in.hotels_detail:before {
@@ -3511,7 +3511,7 @@ a.box_feat h3 {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  padding: 7px 10px 4px 10px;
+  padding: 4px 10px 4px 10px;
   line-height: 1;
 }
 .box_grid figure .read_more {
@@ -4134,7 +4134,7 @@ section#reviews {
 
 #review_summary {
   text-align: center;
-  background-color: #0054a6;
+  background-color: #FF1493;
   color: #fff;
   padding: 20px 10px;
   -webkit-border-radius: 5px 5px 5px 0;
@@ -4233,7 +4233,7 @@ section#reviews {
   margin-bottom: 12px;
 }
 .reviews-container .progress-bar {
-  background-color: #0054a6;
+  background-color: #FF1493;
 }
 .reviews-container .review-box {
   position: relative;
@@ -5143,6 +5143,9 @@ span.infobox_rate {
 }
 .mbtys{
   color: #FF1493;
+  background-color: #fff;
+  border: 0px solid;
+  padding: 0px ;
 }
 .morebene{
   color: #FF1493 !important;
@@ -5292,7 +5295,7 @@ span.infobox_rate {
     padding-top: 70px;
   }
 }
-@media(max-width: 600px)
+@media(max-width: 600px) 
 {
   #error_page a{
     width: 100% !important;
@@ -9582,7 +9585,7 @@ display: none !important;
 .iconspace{
   margin-right: 10px;
   position: absolute;
-    left: -20px;
+    left: -24px;
 }
 .pricedtailsd{
   display: block;
@@ -9591,7 +9594,8 @@ display: none !important;
   line-height: 2;
     color: #62758c;
         position: relative;
-    left: 20px;
+    left: 24px;
+        max-width: 200px;
 }
 .oldprice{
   text-decoration: line-through;
@@ -9608,6 +9612,7 @@ display: none !important;
 .tbl1 thead th{
  padding: 10px 0px;
  font-weight: 400;
+ color: #1f3c63;
 }
 .tbl1 tbody td{
     vertical-align: top;
@@ -9694,7 +9699,7 @@ font-size: 20px;
 .mdlbtn{
       font-size: 14px;
     color: #FF1493;
-    width: 162px;
+    width: 140px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #FF1493;
@@ -9705,6 +9710,20 @@ font-size: 20px;
     background-color: #fff;
 }
 .mdlbtn:hover{
+  background-color: #FF1493;
+  color: #fff;
+}
+.mdlbtn3{
+      font-size: 14px;
+    color: #FF1493;
+     padding: 6px 16px;
+    border-radius: 4px;
+    border: 1px solid #FF1493;
+  
+    cursor: pointer;
+    background-color: #fff;
+}
+.mdlbtn3:hover{
   background-color: #FF1493;
   color: #fff;
 }
@@ -9796,6 +9815,7 @@ text-decoration: line-through;
     color: #62758c;
     position: relative;
     top: 6px;
+    padding-right: 60px;
 }
 .pricehp h2{
   display: inline;
@@ -9850,4 +9870,18 @@ position: relative;
   position: absolute;
   bottom: 20px;
   right: 0px;
+}
+.locatxt{
+  color: rgb(255, 20, 147) !important;
+}
+.titltxt{
+  color: #1b3960;
+}
+.dubuji{
+      font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    color: #1f3c63;
+    margin-bottom: 25px;
+ 
 }

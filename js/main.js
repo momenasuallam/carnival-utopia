@@ -311,7 +311,7 @@
 		var $target = $(target);
 		$('html, body').animate({
 			'scrollTop': $target.offset().top - 140
-		}, 800, 'swing');
+		}, 100, 'swing');
 	});
 	$sticky_nav.find('ul li a').on('click', function () {
 		$sticky_nav.find('ul li a.active').removeClass('active');
