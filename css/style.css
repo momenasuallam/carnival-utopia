@@ -1077,6 +1077,11 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
     width: auto;
     height: 30px;
     margin: 12px 0 0 0;
+    position: relative;
+    left: -8px;
+    height: 30px;
+    margin: 12px 0 0 0;
+    width: 180px;
   }
 }
 
@@ -9717,7 +9722,7 @@ font-size: 20px;
 .bbbhssgdu li{
   font-size: 14px !important;
       line-height: 1.14 !important;
-    color: #1f3c63 !important;
+    /* color: #1f3c63 !important; */
     margin-bottom: 15px;
 }
 .bg_colorfd{
@@ -9869,6 +9874,7 @@ text-decoration: line-through;
     position: absolute;
     top: -85px;
     right: 6px;
+    padding-right: 0px;
   }
   .hjsajdf{
     font-size: 12px;
@@ -9915,6 +9921,7 @@ position: relative;
 .newsletter1{
       border-top: 1px solid #e9edef;
           border-bottom: 1px solid #e9edef;
+          background-color: #fcfcfc;
 }
 .nescy{
       padding-top: 64px;
@@ -10003,7 +10010,7 @@ position: relative;
     border-radius: 4px;
     box-shadow: 0 2px 6px 0 rgb(160 165 187 / 10%);
     border: 1px solid #e9edef;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding-right: 0;
     padding-left: 48px;
     height: 40px;
