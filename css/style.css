@@ -10110,15 +10110,21 @@ b, strong {
     left: 0;
     right: 0;
     margin-left: 0;
+        padding-bottom: 0px;
     top: 50px;
     padding-top: 0;
     border-radius: 0;
     border: 0;
     border-bottom: 1px solid #e9edef;
+    /* border-top: 1px solid #e9edef; */
     z-index: 1;
     /* max-height: 47px; */
     transition: all .2s linear;
     overflow: hidden;
+}
+header{
+ border-bottom: 1px solid #e9edef !important;
+ height: 55px;
 }
 .side-nav ul li {
     padding-top: 0;
@@ -10142,7 +10148,14 @@ b, strong {
     font-size: 24px;
     margin-bottom: 16px;
 }
-
+.side-nav ul li .notactive{
+  display: none;
+}
+}
+@media(min-width:576px){
+  .side-nav ul li .notactive{
+  display: block !important;
+}
 }
 .user-nav-arrow-icon {
     display: none;
