@@ -9978,7 +9978,7 @@ position: relative;
     height: 48px;
     border-radius: 4px;
     border: 0;
-    background-color: #ff7340;
+    background-color: #FF1493;
     padding-left: 26px;
     padding-right: 26px;
 }
@@ -10024,4 +10024,235 @@ position: relative;
     height: 40px;
     margin-top: 16px;
 }
+}
+.side-nav {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgb(160 165 187 / 10%);
+    border: 1px solid #e9edef;
+    background-color: #fff;
+    width: 268px;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 15px;
+    position: absolute;
+}
+.section-privacy-box {
+    padding: 32px 32px 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgb(160 165 187 / 10%);
+    border: 1px solid #e9edef;
+    background-color: #fff;
+}
+.section-privacy-box h1 {
+    font-size: 32px;
+    color: #1b3960;
+}
+.section-privacy-box p{
+      text-align: left;
+    font-size: 14px;
+    color: #62758c;
+    line-height: 2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+.side-nav ul li {
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+.side-nav ul li a {
+    font-size: 12px;
+    line-height: 1.33;
+    color: #1b3960;
+    position: relative;
+    padding: 6px 24px;
+}
+.section-privacy-box h2 {
+    color: #1b3960;
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.section-privacy-box h3 {
+    font-size: 1.75rem;
+}
+@media (max-width: 1200px)
+{
+  .side-nav {
+    width: 220px;
+}
+.side-nav ul li {
+    display: flex;
+}
+}
+@media (max-width: 991px)
+{
+  .side-nav {
+    width: 100%;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 16px;
+}
+}
+@media (max-width: 576px)
+{
+  .contentwrapperabut{
+    padding-top: 126px !important;
+  }
+  .side-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    top: 50px;
+    padding-top: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #e9edef;
+    z-index: 1;
+    /* max-height: 47px; */
+    transition: all .2s linear;
+    overflow: hidden;
+}
+.side-nav ul li {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.side-nav ul li a {
+    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgba(191,197,210,.3);
+    width: 100%;
+}
+.section-privacy-box {
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    background-color: transparent;
+}
+.section-privacy-box h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+}
+.user-nav-arrow-icon {
+    display: none;
+}
+@media (max-width: 576px)
+{
+  .side-nav .user-nav-arrow-icon {
+    display: flex;
+    right: 24px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(0);
+    transition: transform .2s linear;
+    z-index: 1;
+    cursor: pointer;
+}
+.side-nav.side-nav--open:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(139,151,168,.5);
+}
+.side-nav.side-nav--open .user-nav-arrow-icon {
+    transform: rotate(
+180deg
+);
+}
+.side-nav .user-nav-arrow-icon {
+    display: flex;
+    right: 24px;
+    top: 0px;
+    position: absolute;
+    transform: rotate(0);
+    transition: transform .2s linear;
+    z-index: 1;
+        padding: 19px;
+    width: 50px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.side-nav ul {
+    padding-left: 0;
+    margin: 0;
+}
+@media(max-width: 576px){
+  .side-nav ul {
+    width: 100%;
+    position: relative;
+    padding-top: 47px;
+    background: #fff;
+}
+}
+
+@media (max-width: 767px)
+{
+  .section-privacy-box p {
+    font-size: 12px;
+}
+
+}
+.contentwrapperabut {
+    padding-top: 106px;
+    padding-bottom: 50px;
+}
+.paddingphy{
+
+}
+
+.side-nav ul li a.active {
+    color: #FF1493;
+}
+@media(min-width:576px){
+  .side-nav ul li a.active:before {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #FF1493;
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+}
+@media (max-width: 576px)
+{
+  .side-nav ul li a.active {
+    border-top: 0;
+    position: absolute;
+    top: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+}
+
+/* .side-nav--open {
+    max-height: 100%;
+}
+.side-nav--open{
+  min-height: 47px !important;
+} */
+
+@media(max-width:576px)
+{
+  .notdisact{
+    display: none;
+  }
 }
