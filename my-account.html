@@ -141,6 +141,20 @@
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link"
+                    id="mytrip-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#mytrip"
+                    type="button"
+                    role="tab"
+                    aria-controls="mytrip"
+                    aria-selected="true"
+                  >
+                    My Trips
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
                     id="paymentmethod-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#paymentmethod"
@@ -149,7 +163,7 @@
                     aria-controls="paymentmethod"
                     aria-selected="false"
                   >
-                    Billing Payment
+                    Payment
                   </button>
                 </li>
               </ul>
@@ -365,6 +379,136 @@
                         </div>
                       </div>
                     </form>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="mytrip"
+                  role="tabpanel"
+                  aria-labelledby="mytrip-tab"
+                >
+                  <div>
+                    <div class="row mt2form2">
+                      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="card mb-3">
+                          <img
+                            src="./img/tour_1.jpg"
+                            class="card-img-top"
+                            alt="Trip Image"
+                          />
+                          <div class="card-body">
+                            <div class="tripsinfo1">
+                              <h5 class="card-title">Arc Triomphe</h5>
+                              <span class="badge bg-success">Active</span>
+                            </div>
+
+                            <div class="tripsinfo1">
+                              <p class="card-text" style="margin-bottom: 0px">
+                                <small class="text-muted"
+                                  >08 08 08 - 15 08 2021</small
+                                >
+                              </p>
+                              <span class="tripinfospan1">$451</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="card mb-3">
+                          <img
+                            src="./img/tour_2.jpg"
+                            class="card-img-top"
+                            alt="Trip image"
+                          />
+                          <div class="card-body">
+                            <div class="tripsinfo1">
+                              <h5 class="card-title">Arc Triomphe</h5>
+                              <span class="badge bg-secondary">Completed</span>
+                            </div>
+
+                            <div class="tripsinfo1">
+                              <p class="card-text" style="margin-bottom: 0px">
+                                <small class="text-muted"
+                                  >08 08 08 - 15 08 2021</small
+                                >
+                              </p>
+                              <span class="tripinfospan1">$451</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mt2form2">
+                      <div class="card-header">
+                        <!-- Title -->
+                        <h4 class="card-header-title">Invoices</h4>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-sm table-nowrap card-table">
+                          <thead>
+                            <tr>
+                              <th>Invoice ID</th>
+                              <th>Date</th>
+                              <th>Amount</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody class="fs-base">
+                            <tr>
+                              <td>
+                                <a href="invoice.html">Invoice #10395</a>
+                              </td>
+                              <td>
+                                <time datetime="2020-04-24">Apr. 24, 2020</time>
+                              </td>
+                              <td>$29.00</td>
+                              <td>
+                                <span class="badge bg-secondary"
+                                  >Outstanding</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="invoice.html">Invoice #10244</a>
+                              </td>
+                              <td>
+                                <time datetime="2020-03-24">Mar. 24, 2020</time>
+                              </td>
+                              <td>$29.00</td>
+                              <td>
+                                <span class="badge bg-success">Paid</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="invoice.html">Invoice #10119</a>
+                              </td>
+                              <td>
+                                <time datetime="2020-02-24">Feb. 24, 2020</time>
+                              </td>
+                              <td>$29.00</td>
+                              <td>
+                                <span class="badge bg-success">Paid</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="invoice.html">Invoice #10062</a>
+                              </td>
+                              <td>
+                                <time datetime="2020-01-24">Jan. 24, 2020</time>
+                              </td>
+                              <td>$29.00</td>
+                              <td>
+                                <span class="badge bg-success">Paid</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div

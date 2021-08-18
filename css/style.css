@@ -10569,3 +10569,12 @@ tbody th {
 .displayblcok {
   display: block;
 }
+.tripsinfo1{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 8px;
+}
+.tripinfospan1{
+      font-size: 20px;
+}
