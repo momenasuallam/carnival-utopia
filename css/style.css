@@ -59,7 +59,7 @@ body {
   /*First level styles */
   .main-menu > ul > li span > a {
     color: #fff;
-    padding: 0 8px 15px 8px;
+    padding: 0 8px 4px 8px;
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 400;
@@ -791,7 +791,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 15px 30px;
+  padding: 10px 30px;
   z-index: 99999999;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
@@ -9674,6 +9674,10 @@ ul.plan-features {
     font-size: 12px;
   }
 }
+  .btnhead {
+
+    padding: 10px 20px !important;
+  }
 @media (max-width: 640px) {
   .btnhead {
     color: #fff !important;
