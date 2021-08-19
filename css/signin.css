@@ -372,15 +372,21 @@ select {
 .text-center {
   text-align: center !important;
 }
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+.linehei{
+      line-height: 18px;
+}
+
+  .container2{
+    max-width: 850px !important;
+  }
+
+@media (max-width: 750px) {
+  .container2 {
+    max-width: 345px !important;
   }
 }
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+ 
   .col-md-5 {
     flex: 0 0 auto;
     width: 41.66667%;
@@ -390,11 +396,7 @@ select {
     font-size: 1.625rem;
   }
 }
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
+
 .form-control:focus {
   background-color: #fff;
   border-color: #2c7be5;
@@ -488,4 +490,7 @@ a:hover {
 }
 .signinpgpad{
   padding: 46px 10px 30px;
+}
+.forgetpasspgpad{
+  padding: 75px 10px 30px;
 }
