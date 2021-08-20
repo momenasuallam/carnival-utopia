@@ -512,6 +512,15 @@ a:hover {
   padding: 24px 35px 24px;
 }
 
+@media(max-width:600px)
+{
+  .signinpgpad{
+  padding: 24px 16px 24px;
+}
+.forgetpasspgpad2{
+  padding: 24px 16px 24px;
+}
+}
 
 
 @keyframes btRotate {
@@ -561,10 +570,10 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -16px 0 0 -16px;
+  margin: -8px 0 0 -16px;
   padding: 4px 0;
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #ffffff80;
   border-left-color: #fff;
   border-radius: 50%;
