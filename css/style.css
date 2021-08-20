@@ -859,7 +859,7 @@ ul#top_menu li:last-child {
 }
 
 ul#top_menu li a {
-  color: #fff;
+  color: #fff !important;
 }
 ul#top_menu li a:hover {
   color: #fff;
@@ -7978,7 +7978,7 @@ a.btn_explore:hover {
 .custom-select-form .nice-select:active,
 .custom-select-form .nice-select.open,
 .custom-select-form .nice-select:focus {
-  border-color: #80bdff;
+  border-color: none;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -10582,3 +10582,59 @@ tbody th {
 .tripinfospan1{
       font-size: 20px;
 }
+
+.cardimg1{
+  width: 100px;
+    position: absolute;
+    top: 37px;
+    right: 10px;
+}
+.cardnuminput{
+  padding-right: 116px;
+}
+.btnaddmeth{
+      margin: auto;
+    display: table;
+    margin-top: 28px;
+    margin-bottom: 20px !important;
+    width:250px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0;
+    content: "";
+    border-top: 0 solid;
+    border-right: 0 solid transparent;
+    border-bottom: 0;
+    border-left: 0 solid transparent;
+}
+.dropdown-menu{
+  margin: 3px 0 !important;
+}
+.colordrop{
+  color: #95aac9 !important;
+}
+.colordrop .fa{
+  font-size: 20px;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0rem;
+}
+.phontinu::placeholder{
+   color: #95aac9 !important;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #000;
+    background-color: transparent;
+}
+
