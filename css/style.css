@@ -1,14 +1,36 @@
-/*
+@font-face {
+  font-family: "SF-pro";
+  src: url(./../fonts/SF-Pro-Display-Thin.otf);
+  font-weight: 100;
+}
+@font-face {
+   font-family: "SF-pro";
+  src: url(./../fonts/SF-Pro-Display-Light.otf);
+  font-weight: 300;
+}
+@font-face {
+   font-family: "SF-pro";
+  src: url(./../fonts/SF-Pro-Display-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+   font-family: "SF-pro";
+  src: url(./../fonts/SF-Pro-Display-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+   font-family: "SF-pro";
+  src: url(./../fonts/SF-Pro-Display-Semibold.otf);
+  font-weight: 600;
+}
+@font-face {
+   font-family: "SF-pro";
+  src: url(./../fonts/SF-Pro-Display-Bold.otf);
+  font-weight: 700;
+}
 
-/*============================================================================================*/
-/* 1.  SITE STRUCTURE and TYPOGRAPHY */
-/*============================================================================================*/
-/* MAIN NAVIGATION */
-/* All styles for screen size over 992px*/
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: SF-pro !important;
 }
 @media only screen and (min-width: 992px) {
   nav#menu.main-menu {
@@ -367,6 +389,7 @@ body {
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    font-family: SF-pro !important;
 }
 
 body {
@@ -384,6 +407,7 @@ h4,
 h5,
 h6 {
   color: #1f3c63;
+    font-family: SF-pro !important;
 }
 
 p {
@@ -10445,7 +10469,10 @@ strong {
   margin-bottom: 0px !important;
 }
 .bglight2 {
-  background-color: #b0bec5 !important;
+      background-color: rgba(80,102,144,.1) !important;
+    color: #506690 !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
 }
 .card-table {
   margin-bottom: 0;
@@ -10614,10 +10641,10 @@ tbody th {
   margin: 3px 0 !important;
 }
 .colordrop{
-  color: #95aac9 !important;
+  color: #c6d3e6!important;
 }
 .colordrop .fa{
-  font-size: 20px;
+  font-weight: 400;
 }
 .card-body {
     flex: 1 1 auto;
@@ -10638,3 +10665,27 @@ tbody th {
     background-color: transparent;
 }
 
+
+@media(min-width: 500px)
+{
+  .modaldiswidth {
+    max-width: 500px;
+}
+}
+.errortxtst{
+  line-height: 20px;
+  margin-bottom: 0px !important;
+  margin-top: 4px;
+}
+.fa {
+    font-family: 'FontAwesome' !important;
+}
+.paymentcards{
+margin-bottom: 25px;
+}
+.paymentcards img{
+  width: 40px
+}
+.follow_us ul{
+  margin-bottom: 0px !important;
+}
