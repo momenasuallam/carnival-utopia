@@ -184,7 +184,7 @@
                       class="form-control"
                       placeholder="Email"
                     />
-                    <p class="emailmsg font2 colorred" style="display: none">
+                    <p class="emailmsg errortxtst colorred" style="display: none">
                       Looks like this email is incomplete.
                     </p>
                   </div>
@@ -225,8 +225,8 @@
                       id="mypass"
                       placeholder="Choose your password"
                     />
-                    <p class="passmsg font2 colorred" style="display: none">
-                      Password is required
+                    <p class="passmsg errortxtst colorred" style="">
+                      8 characters or longer. Combine upper and lowercase letters and numbers.
                     </p>
                   </div>
 
@@ -241,7 +241,7 @@
                           id="firstname"
                         />
                         <p
-                          class="fnamemsg font2 colorred"
+                          class="fnamemsg errortxtst colorred"
                           style="display: none"
                         >
                           First Name is required
@@ -255,7 +255,7 @@
                           id="lastname"
                         />
                         <p
-                          class="lnamemsg font2 colorred"
+                          class="lnamemsg errortxtst colorred"
                           style="display: none"
                         >
                           Last Name is required
@@ -275,7 +275,7 @@
                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
                     />
                     <!-- (₋₋₋)₋₋₋⁻₋₋₋₋ -->
-                    <p class="phonemsg font2 colorred" style="display: none">
+                    <p class="phonemsg errortxtst colorred" style="display: none">
                       Phone is required
                     </p>
                   </div>
@@ -427,8 +427,9 @@
       });
 
       $("#mypass").keyup(function () {
+        var patternpass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
         var mypass = $("#mypass").val();
-        if (mypass !== "") {
+        if (patternpass.test(mypass) && mypass !== "") {
           $("#mypass").css("border", "1px solid #d2ddec");
           $(".passmsg").fadeOut("fast");
         } else {
@@ -551,8 +552,9 @@
         var error_fname = false;
         var error_phone = false;
 
+         var patternpass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
         var mypass = $("#mypass").val();
-        if (mypass !== "") {
+        if (patternpass.test(mypass) && mypass !== "") {
           $("#mypass").css("border", "1px solid #d2ddec");
           $(".passmsg").fadeOut("fast");
         } else {
@@ -562,6 +564,7 @@
           error_pass = true;
         }
 
+    
         var firstname = $("#firstname").val();
         if (firstname !== "") {
           $("#firstname").css("border", "1px solid #d2ddec");
