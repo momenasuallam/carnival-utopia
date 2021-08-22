@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "SF-pro";
   src: url(./../fonts/SF-Pro-Display-Thin.otf);
   font-weight: 100;
@@ -27,10 +27,10 @@
    font-family: "SF-pro";
   src: url(./../fonts/SF-Pro-Display-Bold.otf);
   font-weight: 700;
-}
+} */
 
 body {
-  font-family: SF-pro !important;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 @media only screen and (min-width: 992px) {
   nav#menu.main-menu {
@@ -389,7 +389,7 @@ body {
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    font-family: SF-pro !important;
+     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 
 body {
@@ -407,7 +407,7 @@ h4,
 h5,
 h6 {
   color: #1f3c63;
-    font-family: SF-pro !important;
+     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 
 p {
@@ -818,6 +818,7 @@ header {
   padding: 10px 30px;
   z-index: 99999999;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
+  background-color: #fff;
 }
 @media (max-width: 767px) {
   header {
@@ -10616,15 +10617,31 @@ tbody th {
     top: 37px;
     right: 10px;
 }
+.cardimg2{
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
+.inputgroip3{
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+}
+.inputgroip4{
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+}
 .cardnuminput{
   padding-right: 116px;
 }
 .btnaddmeth{
       margin: auto;
     display: table;
-    margin-top: 28px;
+    margin-top: 5px;
     margin-bottom: 20px !important;
-    width:250px;
+    width: 135px;
+}
+.prel{
+  position: relative;
 }
 
 .dropdown-toggle::after {
@@ -10676,6 +10693,7 @@ tbody th {
   line-height: 20px;
   margin-bottom: 0px !important;
   margin-top: 4px;
+      color: #62758c;
 }
 .fa {
     font-family: 'FontAwesome' !important;
@@ -10688,4 +10706,83 @@ margin-bottom: 25px;
 }
 .follow_us ul{
   margin-bottom: 0px !important;
+}
+.dialogsign{
+  width: 100% !important;
+ height: 100%;
+  margin: 0px !important;
+
+  top: 55px !important;
+
+}
+.modal{
+  overflow-y: scroll ;
+}
+.notlikebutton{
+  border: 0px solid !important;
+  background-color: transparent;
+  color: #ff1493 !important;
+}
+.notlikebutton:hover {
+    color: #ff1493b0 !important;
+}
+.dialogsign .modal-body{
+  padding: 0px !important;
+}
+.dialogsign .modal-content{
+  border: 0px solid !important
+}
+.disnotsign{
+  border-bottom: 0px solid !important;
+}
+.btnclosesign{
+  background-color: transparent;
+  border: 0px solid !important;
+  width: 100%;
+  position: relative;
+}
+.btnclosesign .fa{
+      position: absolute;
+    right: 27px;
+    font-size: 22px;
+    color: #9e9e9e;
+}
+@media (min-width: 576px)
+{
+  .dialogsign {
+    max-width: 400px !important;
+     top: 85px !important;
+        box-shadow: 0 0 8px #95979d;
+        height: auto !important;
+         border-radius: 4px;
+         margin: auto !important;
+}
+.disnotsign{
+  display: none;
+}
+}
+@media(max-width: 567px)
+{
+  .modalsign {
+    z-index: 999999999999;
+    background-color: #fff !important;
+}
+}
+
+.imgindexdesk{
+
+}
+.imgindexmbl{
+display: none;
+}
+@media(max-width: 600px){
+.imgindexdesk{
+display: none;
+}
+.imgindexmbl{
+    display: initial;
+}
+.imgupbt{
+  padding: 12px 20px !important;
+}
 }
