@@ -661,6 +661,7 @@ a.btn_1,
 a.btn_1:hover,
 .btn_1:hover {
   background: #ff1493b0;
+  color: #fff !important;
 }
 a.btn_1.full-width,
 .btn_1.full-width {
@@ -5774,7 +5775,7 @@ ul.cart_details li span {
 }
 .box_cart a.btn_1.outline:hover,
 .box_cart .btn_1.outline:hover {
-  color: #fff;
+  color: #fff !important;
   border: 2px solid #0054a6;
 }
 

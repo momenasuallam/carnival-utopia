@@ -198,7 +198,6 @@ $("#signupp2").click(function (e) {
   }
 });
 
-
 // $("#resetpasswrd").on("hidden.bs.modal", function () {
 //   $(".header").css("display", "block");
 // });
@@ -211,26 +210,25 @@ $("#signupp2").click(function (e) {
 //   $(".header").css("display", "block");
 // });
 
-
 $(".resetbtnjs").click(function () {
   $("#signinmodal").modal("hide");
   $("#signupmodal").modal("hide");
   $("#resetpasswrd").modal("show");
-//   $(".header").css("display","none");
+  //   $(".header").css("display","none");
 });
 
 $(".signinbtnjs").click(function () {
   $("#resetpasswrd").modal("hide");
   $("#signupmodal").modal("hide");
   $("#signinmodal").modal("show");
-//   $(".header").css("display", "none");
+  //   $(".header").css("display", "none");
 });
 
 $(".signupbtnjs").click(function () {
   $("#resetpasswrd").modal("hide");
   $("#signinmodal").modal("hide");
   $("#signupmodal").modal("show");
-//   $(".header").css("display", "none");
+  //   $(".header").css("display", "none");
 });
 
 // $(".signinmodal").click(function () {
@@ -244,5 +242,73 @@ $(".signupbtnjs").click(function () {
 //   $(".header").css("display", "none");
 // });
 
+$(".benefitsshowmore").click(function () {
+  if ($(".benefitstext").hasClass("benefitsshow-more-height")) {
+    $(this).html("Hide Benefits <i class='fa fa-angle-up'></i>");
+  } else {
+    $(this).html("Show Benefits <i class='fa fa-angle-down'></i>");
+  }
 
+  $(".benefitstext").toggleClass("benefitsshow-more-height");
+});
 
+$(".enternamedid").click(function () {
+  $(".enternamedid").css("display", "none");
+  $("#enternamediv").css("display", "flex");
+});
+
+$(".creditcardactive").click(function () {
+  $(".maindivcreditcard").css("display", "block");
+});
+
+$(".plusadults").click(function () {
+  $("#inputadults1").val(parseInt($("#inputadults1").val()) + 1);
+
+  if ($("#inputadults1").val() >= 14) {
+    $(".plusadults").attr("disabled", true);
+  }
+  if ($("#inputadults1").val() >= 1) {
+    $(".minusadults").removeAttr("disabled");
+  }
+});
+
+$(".minusadults").click(function () {
+  $("#inputadults1").val(parseInt($("#inputadults1").val()) - 1);
+
+  if ($("#inputadults1").val() < 1) {
+    $(".minusadults").attr("disabled", true);
+  }
+
+  if ($("#inputadults1").val() <= 13) {
+    $(".plusadults").removeAttr("disabled");
+  }
+});
+
+$(".pluschild").click(function () {
+  $("#inputchild").val(parseInt($("#inputchild").val()) + 1);
+
+  if ($("#inputchild").val() >= 6) {
+    $(".pluschild").attr("disabled", true);
+  }
+  if ($("#inputchild").val() >= 1) {
+    $(".minuschild").removeAttr("disabled");
+  }
+});
+
+$(".minuschild").click(function () {
+  $("#inputchild").val(parseInt($("#inputchild").val()) - 1);
+
+  if ($("#inputchild").val() <= 0) {
+    $(".minuschild").attr("disabled", true);
+  }
+
+  if ($("#inputchild").val() <= 5) {
+    $(".pluschild").removeAttr("disabled");
+  }
+});
+
+// $("#continuetopay").submit(function () {
+//   // e.preventDefault();
+//    window.location.href = "./checkout3.html";
+
+// });
