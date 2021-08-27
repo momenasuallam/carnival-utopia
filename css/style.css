@@ -50,7 +50,7 @@ body {
     position: relative;
     z-index: 9;
     width: 388px;
-    top: 8px;
+    top: 3px;
     left: 32%;
     float: auto;
     -moz-transition: all 0.3s ease-in-out;
@@ -9684,6 +9684,15 @@ ul.plan-features {
 .colors li a {
   border-radius: 3px;
 }
+.btnhead{
+  background: transparent;
+    border: 0px solid;
+    color: #ff027c;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 5px 10px !important;
+}
 
 @media only screen and (max-width: 1024px) {
   #style-switcher {
@@ -9701,20 +9710,20 @@ ul.plan-features {
     font-size: 12px;
   }
 }
-  .btnhead {
-
+  /* .btnhead {
+     
     padding: 10px 20px !important;
-  }
+  } */
 @media (max-width: 640px) {
-  .btnhead {
+  /* .btnhead {
     color: #fff !important;
-    padding: 8px 20px !important;
-  }
+       padding: 4px 17px 6px !important;
+  } */
 }
 @media (max-width: 430px) {
-  .btnhead {
+  /* .btnhead {
     display: none;
-  }
+  } */
 }
 .mm-menu .mm-navbar a,
 .mm-menu .mm-navbar > * {
@@ -10810,9 +10819,9 @@ display: none;
 }
 .btnpayment .fa{
       position: absolute;
-    right: 16px;
-    font-size: 18px;
-    top: 14px;
+     right: 20px;
+    font-size: 17px;
+    top: 10px;
 }
 .fntwe600{
 font-weight: 600 !important;
@@ -10838,9 +10847,9 @@ font-weight: 600 !important;
     border-radius: 3px;
 }
 .form-check-input {
-    width: 18px;
+    /* width: 18px;
     height: 18px;
-    margin-top: 2px;
+    margin-top: 2px; */
     vertical-align: top;
     background-color: #fff;
     background-repeat: no-repeat;
@@ -10850,5 +10859,5 @@ font-weight: 600 !important;
     padding: 4px;
 }
 .form-check-label{
-  margin-left: 4px;
+  /* margin-left: 4px; */
 }

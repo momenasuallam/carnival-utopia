@@ -408,7 +408,7 @@ select {
 
 .form-control:focus {
   background-color: #fff;
-  border-color: #2c7be5;
+  border-color: #ff027c;
   box-shadow: none;
   color: #12263f;
   outline: 0;

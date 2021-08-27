@@ -138,8 +138,9 @@
   top: 1px;
 }
 .faquest {
-  color: #86868b !important;
-  font-size: 16px !important;
+  width: 16px;
+      position: absolute;
+    top: 8px;
 }
 .titlech {
   font-size: 24px;
@@ -188,7 +189,7 @@
     margin-bottom: 20px;
   }
   .tooltpbtn {
-    left: 116px;
+    left: 120px;
   }
   .btnchnew {
     width: 100%;
@@ -247,18 +248,19 @@ input:not(:focus):valid ~ .floating-label
 }
 
 .formsele {
-  font-size: 16px;
+  margin-bottom: 0.82353rem;
+  color: #86868b;
+    font-size: 0.9375rem;
+    padding: 0.5rem 0.75rem 0;
   line-height: 1.23536;
   font-weight: 400;
   letter-spacing: -0.022em;
   width: 100%;
-  height: 3.29412rem;
-  border-radius: 12px;
-  border-width: 1px;
-  border-style: solid;
+  height: 46px;
   box-sizing: border-box;
   margin-bottom: 0.82353rem;
-  color: #86868b;
+  font-size: 0.9375rem;
+    padding: 1px 0.75rem 0;
 }
 .inputText:disabled {
   color: #86868b;
@@ -321,7 +323,7 @@ input:not(:focus):valid ~ .floating-label
   margin-bottom: 24px;
 }
 .button-group-pills .btn.active {
-  border-color: #0071e3;
+  border-color: #ff027c;
   border-width: 2px;
   box-shadow: none;
 }
@@ -498,12 +500,60 @@ input:not(:focus):valid ~ .floating-label
   .travmdl {
     top: 0px !important;
     padding-top: 40px;
-    height: 100vh !important;
+    height: calc(100vh - 40px) !important;
     width: 100% !important;
         padding: 55px 12px 5px;
     margin: 0px !important;
   }
   .travmdl .modal-content {
     height: 100%;
+  }
+}
+.form-select:focus {
+    border-color: #ff027c;
+    outline: 0;
+    box-shadow: 0 0 0 0px rgb(13 110 253 / 0%);
+}
+.inputText:focus {
+    background-color: #fff;
+    border-color: #ff027c;
+    box-shadow: none;
+    color: #12263f;
+    outline: 0;
+}
+
+
+.formselectqun{
+  border: 0px solid;
+    font-weight: 500;
+        padding: 2px 32px 2px 12px;
+ 
+}
+.formselectqun:focus{
+  border: 2px solid #ff027c;
+     border-radius: 16px;
+}
+.toptxtch{
+    background-color: #f5f5f7;
+    padding: .70588rem 6.25%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    border-radius: .70588rem;
+    padding: 1.17647rem 1rem;
+    margin-bottom: 3.29412rem;
+}
+.txtch11{
+font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+}
+@media(max-width:600px)
+{
+  .toptxtch{
+    margin-bottom: 20px;
   }
 }

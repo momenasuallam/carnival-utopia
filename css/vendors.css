@@ -2816,10 +2816,10 @@ Copyright (c) 2014 Daniel Eden
 .hamburger-inner,
 .hamburger-inner::after,
 .hamburger-inner::before {
-  width: 30px;
+  width: 24px;
   height: 2px;
   background-color: #fff;
-  border-radius: 0;
+  border-radius: 50px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
@@ -2831,10 +2831,10 @@ Copyright (c) 2014 Daniel Eden
   display: block;
 }
 .hamburger-inner::before {
-  top: -8px;
+  top: -6px;
 }
 .hamburger-inner::after {
-  bottom: -8px;
+  bottom: -6px;
 }
 .hamburger--3dx .hamburger-box {
   perspective: 80px;
