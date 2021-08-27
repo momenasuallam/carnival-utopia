@@ -38,7 +38,7 @@ h6 {
   align-items: center !important;
 }
 .border-primary {
-  border-color: #ff1493 !important;
+  border-color: #ff027c !important;
 }
 .border-top {
   border-top: 1px solid #e3ebf6;
@@ -313,15 +313,15 @@ button:not(:disabled) {
   padding: 0.75rem 1.25rem;
 }
 a {
-  color: #ff1493;
+  color: #ff027c;
 }
 a:hover {
-  color: #ff1493b0 !important;
+  color: #ff027cb0 !important;
 }
 .btn_1 {
   border: none;
   color: #fff;
-  background: #ff1493;
+  background: #ff027c;
   outline: none;
   cursor: pointer;
   display: inline-block;
@@ -343,7 +343,7 @@ a:hover {
 }
 
 .btn_1:hover {
-  background: #ff1493b0;
+  background: #ff027cb0;
   color: #fff;
 }
 .btn {
@@ -532,7 +532,7 @@ a:hover {
 .buttonsub {
   position: relative;
   display: inline-block;
-    background: #ff1493;
+    background: #ff027c;
   color: #fff;
   text-align: center;
   font-size: 0.9375rem;
@@ -548,10 +548,10 @@ a:hover {
   width: 100%;
 }
 .buttonsub:not(:disabled):hover {
-  background-color: #ff1493b0;
+  background-color: #ff027cb0;
 }
 .buttonsub:hover {
-  background: #ff1493b0;
+  background: #ff027cb0;
   color: #fff;
 }
 .buttonsub.is-loading {

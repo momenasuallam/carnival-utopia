@@ -3,7 +3,7 @@ $("#form_email").keyup(function () {
   var email = $("#form_email").val();
 
   if (pattern.test(email) && email !== "") {
-    $("#form_email").css("border", "1px solid #ff1493");
+    $("#form_email").css("border", "1px solid #ff027c");
     $(".disnon-email").css("display", "block");
     $(".emailmsg").fadeOut("fast");
   } else {
@@ -73,7 +73,7 @@ $("#signupp1").click(function (e) {
   var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
   var email = $("#form_email").val();
   if (pattern.test(email) && email !== "") {
-    $("#form_email").css("border", "1px solid #ff1493");
+    $("#form_email").css("border", "1px solid #ff027c");
     $(".disnon-email").css("display", "block");
     $(".emailmsg").fadeOut("fast");
   } else {
@@ -244,9 +244,9 @@ $(".signupbtnjs").click(function () {
 
 $(".benefitsshowmore").click(function () {
   if ($(".benefitstext").hasClass("benefitsshow-more-height")) {
-    $(this).html("Hide Benefits <i class='fa fa-angle-up'></i>");
+    $(this).html("Hide Package Details <i class='fa fa-angle-up'></i>");
   } else {
-    $(this).html("Show Benefits <i class='fa fa-angle-down'></i>");
+    $(this).html("Show Package Details <i class='fa fa-angle-down'></i>");
   }
 
   $(".benefitstext").toggleClass("benefitsshow-more-height");
