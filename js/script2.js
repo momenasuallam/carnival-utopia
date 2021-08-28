@@ -312,3 +312,28 @@ $(".minuschild").click(function () {
 //    window.location.href = "./checkout3.html";
 
 // });
+
+$(".entercoupendid").click(function () {
+  $(".entercoupendid").css("display", "none");
+  $("#entercoupendiv").css("display", "flex");
+});
+$(".cancelcoupen").click(function () {
+  $("#entercoupendiv").css("display", "none");
+   $(".entercoupendid").css("display", "block");
+});
+
+function addslash(element) {
+  let ele = document.getElementById(element.id);
+  ele = ele.value.split("/").join(""); // Remove slash (/) if mistakenly entered.
+
+  let finalVal = ele.match(/.{1,2}/g).join("/");
+  document.getElementById(element.id).value = finalVal;
+}
+
+function addspace(element) {
+  let ele = document.getElementById(element.id);
+  ele = ele.value.split(" ").join(""); // Remove space ( ) if mistakenly entered.
+
+  let finalVal = ele.match(/.{1,4}/g).join(" ");
+  document.getElementById(element.id).value = finalVal;
+}

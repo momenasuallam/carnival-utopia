@@ -9688,7 +9688,7 @@ ul.plan-features {
   background: transparent;
     border: 0px solid;
     color: #ff027c;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: capitalize;
     padding: 5px 10px !important;
@@ -10491,7 +10491,7 @@ strong {
 }
 .bglight2 {
       background-color: rgba(80,102,144,.1) !important;
-    color: #506690 !important;
+    color: #506690c4 !important;
     font-size: 12px !important;
     text-transform: uppercase;
 }
@@ -10550,6 +10550,7 @@ tbody th {
 .table-nowrap th,
 .table [data-sort] {
   white-space: nowrap;
+  text-align: center;
 }
 .table td,
 .table th {
@@ -10835,18 +10836,18 @@ font-weight: 600 !important;
     box-shadow: 0 0 0 0 rgb(13 110 253 / 0%) !important;
 }
 
-.form-check-input:checked[type=checkbox] {
+.formchin:checked[type=checkbox] {
     background-image: url(../img/check.svg) !important;
 }
 
-.form-check-input:checked {
+.formchin:checked {
     background-color: #ffffff;
     border-color: #bfc2c5;
 }
-.form-check-input[type=checkbox] {
+.formchin[type=checkbox] {
     border-radius: 3px;
 }
-.form-check-input {
+.formchin {
     /* width: 18px;
     height: 18px;
     margin-top: 2px; */
@@ -10860,4 +10861,45 @@ font-weight: 600 !important;
 }
 .form-check-label{
   /* margin-left: 4px; */
+}
+.moreverti{
+  width: 20px;
+}
+.applyme{
+  position: absolute;
+    top: 8px;
+    right: 8px;
+    font-weight: 500;
+     cursor: pointer;
+}
+.cnacelme{
+  background-color: transparent;
+  border: 0px solid;
+   position: absolute;
+    top: 10px;
+    color: #ff027c;
+      font-weight: 500;
+      cursor: pointer;
+}
+.mtb20{
+  
+    margin-bottom: 20px;
+
+}
+.coupendiv{
+  max-width: 250px;
+      margin-top: 8px;
+}
+#entercoupendiv{
+  display: none;
+}
+.entercoupendid{
+      color: #ff027c;
+        cursor: pointer;
+}
+.roomtrav{
+     color: #ff027c;
+}
+.roomtrav .fa{
+     color: #ff027c !important;
 }

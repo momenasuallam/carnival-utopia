@@ -318,7 +318,7 @@ a {
 a:hover {
   color: #ff027cb0 !important;
 }
-.btn_1 {
+/* .btn_1 {
   border: none;
   color: #fff;
   background: #ff027c;
@@ -359,7 +359,7 @@ a:hover {
   -moz-user-select: none;
   user-select: none;
   vertical-align: middle;
-}
+} */
 [type="button"],
 [type="reset"],
 [type="submit"],

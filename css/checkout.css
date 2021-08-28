@@ -21,8 +21,8 @@
   overflow: hidden;
 }
 .benefitsshowmore {
-  font-size: 16px;
-  color: #ff027c;
+  font-size: 15px;
+  color: #000;
   cursor: pointer;
 }
 .benefitstext {
@@ -93,6 +93,9 @@
   justify-content: space-between;
   padding: 0px 0 10px;
 }
+.dflexch1 h4{
+  font-size: 24px;
+}
 .dflexch2 {
   display: flex;
   align-items: baseline;
@@ -149,6 +152,9 @@
 
   line-height: 30px;
 }
+.titlech h4{
+    font-size: 24px;
+}
 .pricech1 {
   font-size: 24px;
 }
@@ -160,6 +166,9 @@
 .btnch2new {
   margin-top: 20px;
   width: 100%;
+      height: 46px;
+    display: grid !important;
+    align-items: center;
 }
 .btnch2new:hover {
   color: #fff !important;
@@ -199,6 +208,8 @@
   }
 }
 
+/* input:not(:focus):valid ~ .floating-label */
+
 input:focus ~ .floating-label,
 input:disabled ~ .floating-label,
 input:not(:focus):valid ~ .floating-label
@@ -213,6 +224,8 @@ input:not(:focus):valid ~ .floating-label
   letter-spacing: -0.01em;
   color: #aaaac5;
 }
+
+
 
 .inputText {
   line-height: 1.23536;
@@ -274,6 +287,12 @@ input:not(:focus):valid ~ .floating-label
   letter-spacing: -0.016em;
   color: #86868b;
   margin-top: 7px;
+}
+@media(min-width:600px)
+{
+  .frominstch{
+     max-width: 400px;
+  }
 }
 .enternamedid {
   background: transparent;
@@ -363,7 +382,7 @@ input:not(:focus):valid ~ .floating-label
   margin-bottom: 30px;
 }
 .maindivcreditcard hr {
-  margin: 50px 0 8px;
+  margin: 25px 0 15px;
 }
 .maindivcreditcard p {
   margin: 20px 0 10px !important;
@@ -529,10 +548,10 @@ input:not(:focus):valid ~ .floating-label
         padding: 2px 32px 2px 12px;
  
 }
-.formselectqun:focus{
+/* .formselectqun:focus{
   border: 2px solid #ff027c;
      border-radius: 16px;
-}
+} */
 .toptxtch{
     background-color: #f5f5f7;
     padding: .70588rem 6.25%;
@@ -556,4 +575,9 @@ font-size: 14px;
   .toptxtch{
     margin-bottom: 20px;
   }
+}
+.befimg{
+  width: 17px;
+    position: relative;
+    top: -2px;
 }
