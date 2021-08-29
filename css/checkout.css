@@ -20,6 +20,15 @@
   height: 0px;
   overflow: hidden;
 }
+.benefitsdescription {
+  max-width: 400px;
+  position: relative;
+}
+
+.benefitsdescription .benefitsshow-more-height {
+  height: 0px;
+  overflow: hidden;
+}
 .benefitsshowmore {
   font-size: 15px;
   color: #000;
@@ -27,6 +36,23 @@
 }
 .benefitstext {
   padding-top: 12px;
+}
+.benefitsshowmore2 {
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+      padding: 10px 0px;
+    text-align: center;
+}
+.benefitsshowmore3 {
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+      padding: 10px 0px;
+    text-align: center;
+}
+.benefitstext2 {
+  /* padding-top: 12px; */
 }
 .benefitstext ul.bullets2 li {
   padding-bottom: 0px;

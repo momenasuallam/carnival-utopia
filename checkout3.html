@@ -91,7 +91,19 @@
     <!-- /header -->
 
     <main>
-      <div class="checkutpagemain">
+        <div class="choutdiv">
+           <div class="container">
+             <div class="choutflex">
+             <div>
+               <h3>Checkout</h3>
+             </div>
+             <div class="">
+               <span>Show trip summary: $909</span>
+             </div>
+           </div>
+           </div>
+         </div>
+      <div class="checkutpagemain pt125">
         <div class="container contch">
           <h2>How do you want to pay?</h2>
           <div class="paddingch2">
@@ -123,8 +135,9 @@
                           </div>
                           <div class="col-md-9">
                             <div class="prel">
-                              <input type="text" class="inputText" id="tbNum" onkeyup="addslash(this)" maxlength="4"
+                              <input type="text" class="inputText" id="tbNum" onkeyup="addslash(this)" maxlength="5"
                                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                pattern="\d{4}"
                                 required />
                               <span class="floating-label">Expiration MM/YY</span>
                             </div>
@@ -175,7 +188,7 @@
                     <div class="prel coupendiv">
                       <input type="text" class="inputText inputcoupen"  maxlength="6"
                         oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
-                      <span class="floating-label">Coupen Code PIN</span>
+                      <span class="floating-label"> Coupon Code PIN</span>
 
                       <p class="applyme">Apply</p>
                       <button class="cnacelme cancelcoupen">Cancel</button>
@@ -641,14 +654,14 @@
 
                     <div class="form-group mtsignup100">
                       <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="position: absolute"
+                        <input type="checkbox" class="form-check-input formchin" id="exampleCheck1" style="position: absolute"
                           required />
                         <label class="form-check-label" for="exampleCheck1">
                           l consent to receive emails from Carnival Utopia.*
                         </label>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck2" required />
+                        <input type="checkbox" class="form-check-input formchin" id="exampleCheck2" required />
                         <label class="form-check-label" for="exampleCheck2">I agree to allow Carnival Utopia to store
                           and
                           process my personal data.*

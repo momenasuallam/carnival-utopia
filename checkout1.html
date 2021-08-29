@@ -1,105 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta name="description" content="carnival utopia" />
+    <meta name="author" content="Momina" />
+    <title>Checkout</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-  <meta name="description" content="carnival utopia" />
-  <meta name="author" content="Momina" />
-  <title>Checkout</title>
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
 
-  <!-- Favicons-->
-  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/vendors.css" rel="stylesheet" />
+    <link href="css/signin.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/vendors.css" rel="stylesheet" />
-  <link href="css/signin.css" rel="stylesheet" />
-  <link href="css/checkout.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <style>
-    @media only screen and (min-width: 992px) {
-      .main-menu>ul>li span>a {
-        color: #1b3960;
-        font-weight: 400;
-        line-height: 1.5;
+    <style>
+      @media only screen and (min-width: 992px) {
+        .main-menu > ul > li span > a {
+          color: #1b3960;
+          font-weight: 400;
+          line-height: 1.5;
+        }
       }
-    }
 
-    @media (min-width: 600px) {
-      .header {
-        border-bottom: 1px solid #e9edef;
+      @media (min-width: 600px) {
+        .header {
+          border-bottom: 1px solid #e9edef;
+        }
       }
-    }
-  </style>
-</head>
+    </style>
+  </head>
 
-<body class="">
-  <!-- Remove this class to disable datepicker full on mobile -->
+  <body class="">
+    <!-- Remove this class to disable datepicker full on mobile -->
 
-  <div id="page" class="theia-exception">
-    <header class="header menu_fixed">
-      <div id="preloader">
-        <div data-loader="circle-side"></div>
-      </div>
-      <!-- /Page Preload -->
-      <div class="container">
-        <div id="logo">
-          <a href="index.html">
-            <img src="img/logo.svg" width="250" height="36" alt="" class="logo_normal" />
-            <img src="img/logo.svg" width="250" height="36" alt="" class="logo_sticky" />
-          </a>
+    <div id="page" class="theia-exception">
+      <header class="header menu_fixed">
+        <div id="preloader">
+          <div data-loader="circle-side"></div>
         </div>
-        <ul id="top_menu">
-          <li>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal" class="btnhead signinbtnjs">Sign
-              in</button>
-            <!-- <a href="#"  class="login loginkdaj" title="Sign In">Sign in</a> -->
-          </li>
-        </ul>
-        <!-- /top_menu -->
-        <a href="#menu" class="btn_mobile">
-          <div class="hamburger hamburger--spin" id="hamburger">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
-            </div>
+        <!-- /Page Preload -->
+        <div class="container">
+          <div id="logo">
+            <a href="index.html">
+              <img
+                src="img/logo.svg"
+                width="250"
+                height="36"
+                alt=""
+                class="logo_normal"
+              />
+              <img
+                src="img/logo.svg"
+                width="250"
+                height="36"
+                alt=""
+                class="logo_sticky"
+              />
+            </a>
           </div>
-        </a>
-        <nav id="menu" class="main-menu">
-          <ul>
+          <ul id="top_menu">
             <li>
-              <span><a href="#">Destinations</a></span>
-            </li>
-            <li>
-              <span><a href="./contact.html">Contact</a></span>
-            </li>
-            <li>
-              <span><a href="#"> Help Center</a></span>
-            </li>
-            <li>
-              <span><a href="#">Blog</a></span>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#signinmodal"
+                class="btnhead signinbtnjs"
+              >
+                Sign in
+              </button>
+              <!-- <a href="#"  class="login loginkdaj" title="Sign In">Sign in</a> -->
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- /header -->
+          <!-- /top_menu -->
+          <a href="#menu" class="btn_mobile">
+            <div class="hamburger hamburger--spin" id="hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </a>
+          <nav id="menu" class="main-menu">
+            <ul>
+              <li>
+                <span><a href="#">Destinations</a></span>
+              </li>
+              <li>
+                <span><a href="./contact.html">Contact</a></span>
+              </li>
+              <li>
+                <span><a href="#"> Help Center</a></span>
+              </li>
+              <li>
+                <span><a href="#">Blog</a></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- /header -->
 
-    <main>
-      <div class="checkutpagemain">
-        <div class="container contch">
-          <h2>Review your trip.</h2>
-          <div class="paddingch">
-            <div class="toptxtch">
-              <div class="txtch11"><span>Pay $29.83<span aria-hidden="true">/mo.</span><span
-                    class="">per month</span> at 0% APR<sup>◊</sup> for eligible items in your order when
-                  you choose Apple Card Monthly Installments at checkout. </span></div>
-                  </div>
+      <main>
+        <div class="checkutpagemain">
+          <div class="container contch">
+            <h2>Review your trip.</h2>
+            <div class="paddingch">
+              <div class="toptxtch">
+                <div class="txtch11">
+                  <span
+                    >Pay $29.83<span aria-hidden="true">/mo.</span
+                    ><span class="">per month</span> at 0% APR<sup>◊</sup> for
+                    eligible items in your order when you choose Apple Card
+                    Monthly Installments at checkout.
+                  </span>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-md-3 prel">
                   <div>
@@ -111,23 +143,30 @@
                     <a href="#" class="titlech">
                       <h4 class="marbot0">Barbados Crop Over</h4>
                     </a>
-                     <div class="prel">
-                      <select class="form-select formselectqun" aria-label="Default select example">
+                    <div class="prel">
+                      <select
+                        class="form-select formselectqun"
+                        aria-label="Default select example"
+                      >
                         <option value="1" selected="">1</option>
-                        <option value="1" >2</option>
-                        <option value="1" >3</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
                         <option value="1">4</option>
-                        <option value="1" >5</option>
-
+                        <option value="1">5</option>
                       </select>
                     </div>
                     <h4 class="pricech1 marbot0">$505</h4>
                   </div>
                   <div class="dflexch1">
-                    <button type="button" data-bs-toggle="modal" class="roomtrav" data-bs-target="#travelermodal">
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      class="roomtrav"
+                      data-bs-target="#travelermodal"
+                    >
                       1 room 2 travelers <i class="fa fa-angle-down"></i>
                     </button>
-                   <a href="#">Remove</a>
+                    <a href="#">Remove</a>
                   </div>
                   <div class="dflexch2 padbot0">
                     <div id="benefitsdescription">
@@ -167,14 +206,16 @@
                   <div class="dflexch1 padbot0">
                     <p class="fntwe600 fn17">
                       <img src="./img/diamond.svg" class="befimg" />
-                      Forntline Upgrade</p>
+                      Forntline Upgrade
+                    </p>
                     <a href="#" class="fn17">Add</a>
                   </div>
                   <hr />
                   <div class="dflexch1 padbot0">
                     <p class="fntwe600 fn17">
-                       <img src="./img/makeup.svg" class="befimg" />
-                      Professional Makeup</p>
+                      <img src="./img/makeup.svg" class="befimg" />
+                      Professional Makeup
+                    </p>
                     <a href="#" class="fn17">Add</a>
                   </div>
                 </div>
@@ -189,8 +230,13 @@
                   </div>
                   <div class="dflexch1 padbot0">
                     <p>
-                      <button type="button" class="tooltpbtn" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="The sales tax listed on the checkout page is only an estimate. Your invoice will contain the final sales tax, including state and local taxes, as well as any applicable rebates or fees. In California and Rhode Island, sales tax is collected on the unbundled price of iPhone.">
+                      <button
+                        type="button"
+                        class="tooltpbtn"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="The sales tax listed on the checkout page is only an estimate. Your invoice will contain the final sales tax, including state and local taxes, as well as any applicable rebates or fees. In California and Rhode Island, sales tax is collected on the unbundled price of iPhone."
+                      >
                         <img src="./img/help-circle.svg" class="faquest" />
                       </button>
                       Processing Fees
@@ -202,535 +248,820 @@
                     <h4>Total</h4>
                     <h4>$909</h4>
                   </div>
+
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12"></div>
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                      <h3 class="payh3">Choose a payment option.</h3>
+                      <div class="choosepaymemyrad">
+                        <input
+                          type="radio"
+                          id="pay1"
+                          name="radio"
+                        />
+                        <label for="pay1">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3>Apple Card Monthly Installments</h3>
+                            </div>
+                            <div class="col-md-6">
+                              <p>$38.29/mo for 24 mo</p>
+                            </div>
+                          </div>
+                          <hr />
+                          <div>
+                            <ul class="bullets2 bbbhssgdu">
+                              <li>
+                                Pay for your iPhone with low monthly payments
+                              </li>
+                              <li>Financed at 0% APR</li>
+                              <li>
+                                Get 3% cash back on the full cost of the iPhone,
+                                right away
+                              </li>
+                            </ul>
+                          </div>
+                        </label>
+                        <input type="radio" id="pay2" name="radio" />
+                        <label for="pay2">
+                           <div class="row">
+                            <div class="col-md-6">
+                              <h3>One-time payment</h3>
+                            </div>
+                            <div class="col-md-6">
+                              <p>$999.00</p>
+                            </div>
+                          </div>
+                          <hr />
+                          <div>
+                            <ul class="bullets2 bbbhssgdu">
+                              <li>
+                                Pay the total amount today
+                              </li>
+                              <li>
+                                Get 3% off daily Cash back if you pay with Apple Card
+                              </li>
+                            </ul>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="prel">
-                    <a href="checkout2.html" class="btn_1 btnchnew">Continue</a>
+                    <a href="checkout2.html" class="bigbtn btn_1 btnchnew"
+                      >Continue</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </main>
-    <!--/main-->
+      </main>
+      <!--/main-->
 
-    <footer>
-      <div class="container margin_60_35">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 p-r-5">
-            <p><img src="img/logo.svg" width="250" height="36" alt="" /></p>
-            <p>
-              Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea.
-              Id placerat tacimates definitionem sea, prima quidam vim no. Duo
-              nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus
-              expetendis vis.
-            </p>
-            <div class="follow_us">
-              <ul>
-                <li>Follow us</li>
+      <footer>
+        <div class="container margin_60_35">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 p-r-5">
+              <p><img src="img/logo.svg" width="250" height="36" alt="" /></p>
+              <p>
+                Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea.
+                Id placerat tacimates definitionem sea, prima quidam vim no. Duo
+                nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus
+                expetendis vis.
+              </p>
+              <div class="follow_us">
+                <ul>
+                  <li>Follow us</li>
+                  <li>
+                    <a href="#0"><i class="ti-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="ti-twitter-alt"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="ti-google"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="ti-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="ti-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="paymentcards">
+                <a href="#"><img src="./img/cards/visa.svg" /></a>
+                <a href="#"><img src="./img/cards/mastercard.svg" /></a>
+                <a href="#"><img src="./img/cards/amex.svg" /></a>
+                <a href="#"><img src="./img/cards/discover.svg" /></a>
+                <a href="#"><img src="./img/cards/paypal-svgrepo-com.svg" /></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 ml-lg-auto">
+              <h5>Information</h5>
+              <ul class="links">
+                <li><a href="./about.html">About Carnival Utopia</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
                 <li>
-                  <a href="#0"><i class="ti-facebook"></i></a>
+                  <a href="./terms-and-conditions.html">Terms of Condition</a>
+                </li>
+                <li><a href="#">Offers</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 ml-lg-auto">
+              <h5>Destinations</h5>
+              <ul class="links">
+                <li><a href="#">Trinidad</a></li>
+                <li><a href="#">Barbados</a></li>
+                <li><a href="#">Jamaica</a></li>
+                <li><a href="#">St Lucia</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5>Contact with Us</h5>
+              <ul class="contacts">
+                <li>
+                  <a href="tel://61280932400"
+                    ><i class="ti-mobile"></i> + 61 23 8093 3400</a
+                  >
                 </li>
                 <li>
-                  <a href="#0"><i class="ti-twitter-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-google"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-pinterest"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-instagram"></i></a>
+                  <a href="mailto:info@carnival utopia.com"
+                    ><i class="ti-email"></i> info@carnivalutopia.com</a
+                  >
                 </li>
               </ul>
             </div>
-            <div class="paymentcards">
-              <a href="#"><img src="./img/cards/visa.svg" /></a>
-              <a href="#"><img src="./img/cards/mastercard.svg" /></a>
-              <a href="#"><img src="./img/cards/amex.svg" /></a>
-              <a href="#"><img src="./img/cards/discover.svg" /></a>
-              <a href="#"><img src="./img/cards/paypal-svgrepo-com.svg" /></a>
+          </div>
+          <!--/row-->
+          <hr />
+          <div class="row">
+            <div class="col-lg-6">
+              <ul id="footer-selector">
+                <li>
+                  <span>© 2021 Carnival Utopia All rights reserved.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul id="additional_links">
+                <li>
+                  <a href="./terms-and-conditions.html">Terms and conditions</a>
+                </li>
+                <li><a href="./privacy-policy.html">Privacy</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 ml-lg-auto">
-            <h5>Information</h5>
-            <ul class="links">
-              <li><a href="./about.html">About Carnival Utopia</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-              <li>
-                <a href="./terms-and-conditions.html">Terms of Condition</a>
-              </li>
-              <li><a href="#">Offers</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 ml-lg-auto">
-            <h5>Destinations</h5>
-            <ul class="links">
-              <li><a href="#">Trinidad</a></li>
-              <li><a href="#">Barbados</a></li>
-              <li><a href="#">Jamaica</a></li>
-              <li><a href="#">St Lucia</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5>Contact with Us</h5>
-            <ul class="contacts">
-              <li>
-                <a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a>
-              </li>
-              <li>
-                <a href="mailto:info@carnival utopia.com"><i class="ti-email"></i> info@carnivalutopia.com</a>
-              </li>
-            </ul>
-          </div>
         </div>
-        <!--/row-->
-        <hr />
-        <div class="row">
-          <div class="col-lg-6">
-            <ul id="footer-selector">
-              <li>
-                <span>© 2021 Carnival Utopia All rights reserved.</span>
-              </li>
-            </ul>
+      </footer>
+      <!--/footer-->
+    </div>
+    <!-- page -->
+
+    <!-- Modal sign in -->
+    <div
+      class="modal modalsign"
+      id="signinmodal"
+      tabindex="-1"
+      aria-labelledby="signinmodalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog dialogsign">
+        <div class="modal-content">
+          <div class="modal-header disnotsign">
+            <button
+              type="button"
+              class="btnclosesign"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z"
+                ></path>
+              </svg>
+            </button>
           </div>
-          <div class="col-lg-6">
-            <ul id="additional_links">
-              <li>
-                <a href="./terms-and-conditions.html">Terms and conditions</a>
-              </li>
-              <li><a href="./privacy-policy.html">Privacy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--/footer-->
-  </div>
-  <!-- page -->
+          <div class="modal-body">
+            <div class="">
+              <div class="container2" style="padding: 0px">
+                <div class="justify-content-center">
+                  <div class="signinpgpad">
+                    <!-- Heading -->
+                    <h1 class="display-4 text-center mb-3">Sign in</h1>
 
-  <!-- Modal sign in -->
-  <div class="modal modalsign" id="signinmodal" tabindex="-1" aria-labelledby="signinmodalLabel" aria-hidden="true">
-    <div class="modal-dialog dialogsign">
-      <div class="modal-content">
-        <div class="modal-header disnotsign">
-          <button type="button" class="btnclosesign" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z">
-              </path>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="">
-            <div class="container2" style="padding: 0px">
-              <div class="justify-content-center">
-                <div class="signinpgpad">
-                  <!-- Heading -->
-                  <h1 class="display-4 text-center mb-3">Sign in</h1>
-
-                  <!-- Subheading -->
-                  <p class="text-muted text-center mb-22">
-                    Free access to our dashboard.
-                  </p>
-                  <div>
-                    <button type="button" class="social-signing-button google-signing-button">
-                      <span class="_1AB8XqH provider-icon" style="width: 18px; height: 18px">
-                        <svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M9 7.84363V11.307H13.8438C13.6365 12.428 12.9994 13.373 12.0489 14.0064V16.2534H14.9562C16.6601 14.6951 17.641 12.4029 17.641 9.67839C17.641 9.04502 17.5854 8.43176 17.4792 7.84865H9V7.84363Z"
-                            fill="#3E82F1"></path>
-                          <path
-                            d="M9.00001 14.861C6.65394 14.861 4.67192 13.2876 3.96406 11.1714H0.955627V13.4937C2.43709 16.4142 5.48091 18.4198 9.00001 18.4198C11.432 18.4198 13.4697 17.6206 14.9562 16.2533L12.0489 14.0064C11.245 14.5443 10.2135 14.861 9.00001 14.861Z"
-                            fill="#32A753"></path>
-                          <path
-                            d="M3.96404 5.45605H0.955617C0.348876 6.66246 0 8.02972 0 9.47238C0 10.915 0.348876 12.2823 0.955617 13.4887L3.96404 11.1714C3.78202 10.6335 3.6809 10.0605 3.6809 9.47238C3.6809 8.88426 3.78202 8.31122 3.96404 7.77336V5.45605Z"
-                            fill="#F9BB00"></path>
-                          <path
-                            d="M0.955627 5.45597L3.96406 7.77327C4.67192 5.65703 6.65394 4.08368 9.00001 4.08368C10.3197 4.08368 11.5079 4.53608 12.4382 5.42078L15.0219 2.85214C13.4646 1.40948 11.427 0.52478 9.00001 0.52478C5.48091 0.52478 2.43709 2.53043 0.955627 5.45597Z"
-                            fill="#E74133"></path>
-                        </svg>
-                      </span>
-                      <p>Continue with Google</p>
-                    </button>
-                  </div>
-                  <div class="form-separator"><span>or</span></div>
-                  <!-- Form -->
-                  <form>
-                    <!-- Email address -->
-                    <div class="form-group">
-                      <!-- Label -->
-
-                      <!-- Input -->
-                      <input type="email" class="form-control" placeholder="Email" required />
+                    <!-- Subheading -->
+                    <p class="text-muted text-center mb-22">
+                      Free access to our dashboard.
+                    </p>
+                    <div>
+                      <button
+                        type="button"
+                        class="social-signing-button google-signing-button"
+                      >
+                        <span
+                          class="_1AB8XqH provider-icon"
+                          style="width: 18px; height: 18px"
+                        >
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9 7.84363V11.307H13.8438C13.6365 12.428 12.9994 13.373 12.0489 14.0064V16.2534H14.9562C16.6601 14.6951 17.641 12.4029 17.641 9.67839C17.641 9.04502 17.5854 8.43176 17.4792 7.84865H9V7.84363Z"
+                              fill="#3E82F1"
+                            ></path>
+                            <path
+                              d="M9.00001 14.861C6.65394 14.861 4.67192 13.2876 3.96406 11.1714H0.955627V13.4937C2.43709 16.4142 5.48091 18.4198 9.00001 18.4198C11.432 18.4198 13.4697 17.6206 14.9562 16.2533L12.0489 14.0064C11.245 14.5443 10.2135 14.861 9.00001 14.861Z"
+                              fill="#32A753"
+                            ></path>
+                            <path
+                              d="M3.96404 5.45605H0.955617C0.348876 6.66246 0 8.02972 0 9.47238C0 10.915 0.348876 12.2823 0.955617 13.4887L3.96404 11.1714C3.78202 10.6335 3.6809 10.0605 3.6809 9.47238C3.6809 8.88426 3.78202 8.31122 3.96404 7.77336V5.45605Z"
+                              fill="#F9BB00"
+                            ></path>
+                            <path
+                              d="M0.955627 5.45597L3.96406 7.77327C4.67192 5.65703 6.65394 4.08368 9.00001 4.08368C10.3197 4.08368 11.5079 4.53608 12.4382 5.42078L15.0219 2.85214C13.4646 1.40948 11.427 0.52478 9.00001 0.52478C5.48091 0.52478 2.43709 2.53043 0.955627 5.45597Z"
+                              fill="#E74133"
+                            ></path>
+                          </svg>
+                        </span>
+                        <p>Continue with Google</p>
+                      </button>
                     </div>
+                    <div class="form-separator"><span>or</span></div>
+                    <!-- Form -->
+                    <form>
+                      <!-- Email address -->
+                      <div class="form-group">
+                        <!-- Label -->
 
-                    <!-- Password -->
-                    <div class="form-group">
-                      <!-- / .row -->
-
-                      <input id="password-field" type="password" class="form-control paddingright30" name="password"
-                        placeholder="Password" />
-                      <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                    </div>
-
-                    <!-- Submit -->
-                    <button class="btn btn-lg w-100 btn_1 mb-3">
-                      Continue
-                    </button>
-
-                    <div class="remeberflex">
-                      <div class="form-check" style="margin-bottom: 0px">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                        <label class="form-check-label" for="exampleCheck1"
-                          style="font-weight: 400; font-size: 14px">Remember me</label>
+                        <!-- Input -->
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                          required
+                        />
                       </div>
-                      <div class="">
-                        <!-- Help text -->
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#resetpasswrd" class="
+
+                      <!-- Password -->
+                      <div class="form-group">
+                        <!-- / .row -->
+
+                        <input
+                          id="password-field"
+                          type="password"
+                          class="form-control paddingright30"
+                          name="password"
+                          placeholder="Password"
+                        />
+                        <span
+                          toggle="#password-field"
+                          class="fa fa-fw fa-eye field-icon toggle-password"
+                        ></span>
+                      </div>
+
+                      <!-- Submit -->
+                      <button class="btn btn-lg w-100 btn_1 mb-3">
+                        Continue
+                      </button>
+
+                      <div class="remeberflex">
+                        <div class="form-check" style="margin-bottom: 0px">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="exampleCheck1"
+                            style="font-weight: 400; font-size: 14px"
+                            >Remember me</label
+                          >
+                        </div>
+                        <div class="">
+                          <!-- Help text -->
+                          <button
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#resetpasswrd"
+                            class="
                               form-text
                               small
                               notlikebutton
                               text-muted
                               resetbtnjs
-                            " style="font-size: 14px; margin-bottom: 0px">
-                          Forgot password?
-                        </button>
+                            "
+                            style="font-size: 14px; margin-bottom: 0px"
+                          >
+                            Forgot password?
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
+                <!-- Link -->
+                <hr style="margin: 0px" />
+                <div class="text-center" style="padding: 12px 0">
+                  <small class="text-muted text-center">
+                    Don't have an account yet?
+                    <button
+                      class="notlikebutton signupbtnjs"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signupmodal"
+                    >
+                      Sign up
+                    </button>
+                  </small>
+                </div>
+                <!-- / .row -->
               </div>
-              <!-- Link -->
-              <hr style="margin: 0px" />
-              <div class="text-center" style="padding: 12px 0">
-                <small class="text-muted text-center">
-                  Don't have an account yet?
-                  <button class="notlikebutton signupbtnjs" type="button" data-bs-toggle="modal"
-                    data-bs-target="#signupmodal">
-                    Sign up
-                  </button>
-                </small>
-              </div>
-              <!-- / .row -->
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- modal reset password -->
-  <div class="modal modalsign" id="resetpasswrd" tabindex="-1" aria-labelledby="resetpasswrdLabel" aria-hidden="true">
-    <div class="modal-dialog dialogsign">
-      <div class="modal-content">
-        <div class="modal-header disnotsign">
-          <button type="button" class="btnclosesign" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z">
-              </path>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="">
-            <div class="container2" style="padding: 0px">
-              <div class="justify-content-center">
-                <div class="">
-                  <!-- Heading -->
-                  <!-- Form -->
-                  <form class="forgetpasspgpad2">
-                    <h1 class="display-4 text-center mb-3">Reset Password</h1>
-
-                    <!-- Subheading -->
-                    <p class="text-muted text-center linehei" style="margin-bottom: 12px !important">
-                      Please enter your email address and we'll send you a
-                      link to reset your password.
-                    </p>
-                    <!-- Email address -->
-                    <div class="form-group" style="margin-bottom: 12px !important">
-                      <!-- Label -->
-
-                      <!-- Input -->
-                      <input type="email" class="form-control" placeholder="Enter your email" required />
-                    </div>
-
-                    <!-- Submit -->
-                    <button class="btn btn-lg w-100 btn_1" style="margin-bottom: 0px !important">
-                      Submit
-                    </button>
-                  </form>
-                  <hr style="margin: 0px" />
-                  <!-- Link -->
-                  <div class="text-center" style="padding: 12px 0">
-                    <small class="text-muted text-center">
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#resetpasswrd"
-                        class="notlikebutton signinbtnjs">
-                        Back to Sign In
-                      </button>
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <!-- / .row -->
-            </div>
+    <!-- modal reset password -->
+    <div
+      class="modal modalsign"
+      id="resetpasswrd"
+      tabindex="-1"
+      aria-labelledby="resetpasswrdLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog dialogsign">
+        <div class="modal-content">
+          <div class="modal-header disnotsign">
+            <button
+              type="button"
+              class="btnclosesign"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z"
+                ></path>
+              </svg>
+            </button>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="container2" style="padding: 0px">
+                <div class="justify-content-center">
+                  <div class="">
+                    <!-- Heading -->
+                    <!-- Form -->
+                    <form class="forgetpasspgpad2">
+                      <h1 class="display-4 text-center mb-3">Reset Password</h1>
 
-  <!-- modal sign up -->
-  <div class="modal modalsign" id="signupmodal" tabindex="-1" aria-labelledby="signupmodalLabel" aria-hidden="true">
-    <div class="modal-dialog dialogsign">
-      <div class="modal-content">
-        <div class="modal-header disnotsign">
-          <button type="button" class="btnclosesign" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z">
-              </path>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="">
-            <div class="container2" style="padding: 0px">
-              <div class="justify-content-center signuppart1">
-                <div class="signinpgpad">
-                  <!-- Heading -->
-                  <h3 class="display-4 text-center mb-3">Sign Up</h3>
-                  <p class="text-muted text-center mb-22">
-                    Free access to our dashboard.
-                  </p>
-
-                  <div>
-                    <button type="button" class="social-signing-button google-signing-button">
-                      <span class="_1AB8XqH provider-icon" style="width: 18px; height: 18px">
-                        <svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M9 7.84363V11.307H13.8438C13.6365 12.428 12.9994 13.373 12.0489 14.0064V16.2534H14.9562C16.6601 14.6951 17.641 12.4029 17.641 9.67839C17.641 9.04502 17.5854 8.43176 17.4792 7.84865H9V7.84363Z"
-                            fill="#3E82F1"></path>
-                          <path
-                            d="M9.00001 14.861C6.65394 14.861 4.67192 13.2876 3.96406 11.1714H0.955627V13.4937C2.43709 16.4142 5.48091 18.4198 9.00001 18.4198C11.432 18.4198 13.4697 17.6206 14.9562 16.2533L12.0489 14.0064C11.245 14.5443 10.2135 14.861 9.00001 14.861Z"
-                            fill="#32A753"></path>
-                          <path
-                            d="M3.96404 5.45605H0.955617C0.348876 6.66246 0 8.02972 0 9.47238C0 10.915 0.348876 12.2823 0.955617 13.4887L3.96404 11.1714C3.78202 10.6335 3.6809 10.0605 3.6809 9.47238C3.6809 8.88426 3.78202 8.31122 3.96404 7.77336V5.45605Z"
-                            fill="#F9BB00"></path>
-                          <path
-                            d="M0.955627 5.45597L3.96406 7.77327C4.67192 5.65703 6.65394 4.08368 9.00001 4.08368C10.3197 4.08368 11.5079 4.53608 12.4382 5.42078L15.0219 2.85214C13.4646 1.40948 11.427 0.52478 9.00001 0.52478C5.48091 0.52478 2.43709 2.53043 0.955627 5.45597Z"
-                            fill="#E74133"></path>
-                        </svg>
-                      </span>
-                      <p>Continue with Google</p>
-                    </button>
-                  </div>
-                  <div class="form-separator"><span>or</span></div>
-                  <!-- Form -->
-                  <form>
-                    <!-- Email address -->
-                    <div class="form-group">
-                      <!-- Label -->
-
-                      <!-- Input -->
-                      <input type="email" id="form_email" class="form-control" placeholder="Email" />
-                      <p class="emailmsg errortxtst colorred" style="display: none">
-                        Looks like this email is incomplete.
+                      <!-- Subheading -->
+                      <p
+                        class="text-muted text-center linehei"
+                        style="margin-bottom: 12px !important"
+                      >
+                        Please enter your email address and we'll send you a
+                        link to reset your password.
                       </p>
-                    </div>
+                      <!-- Email address -->
+                      <div
+                        class="form-group"
+                        style="margin-bottom: 12px !important"
+                      >
+                        <!-- Label -->
 
-                    <!-- Submit -->
-                    <!-- <button
+                        <!-- Input -->
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter your email"
+                          required
+                        />
+                      </div>
+
+                      <!-- Submit -->
+                      <button
+                        class="btn btn-lg w-100 btn_1"
+                        style="margin-bottom: 0px !important"
+                      >
+                        Submit
+                      </button>
+                    </form>
+                    <hr style="margin: 0px" />
+                    <!-- Link -->
+                    <div class="text-center" style="padding: 12px 0">
+                      <small class="text-muted text-center">
+                        <button
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#resetpasswrd"
+                          class="notlikebutton signinbtnjs"
+                        >
+                          Back to Sign In
+                        </button>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <!-- / .row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal sign up -->
+    <div
+      class="modal modalsign"
+      id="signupmodal"
+      tabindex="-1"
+      aria-labelledby="signupmodalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog dialogsign">
+        <div class="modal-content">
+          <div class="modal-header disnotsign">
+            <button
+              type="button"
+              class="btnclosesign"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="container2" style="padding: 0px">
+                <div class="justify-content-center signuppart1">
+                  <div class="signinpgpad">
+                    <!-- Heading -->
+                    <h3 class="display-4 text-center mb-3">Sign Up</h3>
+                    <p class="text-muted text-center mb-22">
+                      Free access to our dashboard.
+                    </p>
+
+                    <div>
+                      <button
+                        type="button"
+                        class="social-signing-button google-signing-button"
+                      >
+                        <span
+                          class="_1AB8XqH provider-icon"
+                          style="width: 18px; height: 18px"
+                        >
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9 7.84363V11.307H13.8438C13.6365 12.428 12.9994 13.373 12.0489 14.0064V16.2534H14.9562C16.6601 14.6951 17.641 12.4029 17.641 9.67839C17.641 9.04502 17.5854 8.43176 17.4792 7.84865H9V7.84363Z"
+                              fill="#3E82F1"
+                            ></path>
+                            <path
+                              d="M9.00001 14.861C6.65394 14.861 4.67192 13.2876 3.96406 11.1714H0.955627V13.4937C2.43709 16.4142 5.48091 18.4198 9.00001 18.4198C11.432 18.4198 13.4697 17.6206 14.9562 16.2533L12.0489 14.0064C11.245 14.5443 10.2135 14.861 9.00001 14.861Z"
+                              fill="#32A753"
+                            ></path>
+                            <path
+                              d="M3.96404 5.45605H0.955617C0.348876 6.66246 0 8.02972 0 9.47238C0 10.915 0.348876 12.2823 0.955617 13.4887L3.96404 11.1714C3.78202 10.6335 3.6809 10.0605 3.6809 9.47238C3.6809 8.88426 3.78202 8.31122 3.96404 7.77336V5.45605Z"
+                              fill="#F9BB00"
+                            ></path>
+                            <path
+                              d="M0.955627 5.45597L3.96406 7.77327C4.67192 5.65703 6.65394 4.08368 9.00001 4.08368C10.3197 4.08368 11.5079 4.53608 12.4382 5.42078L15.0219 2.85214C13.4646 1.40948 11.427 0.52478 9.00001 0.52478C5.48091 0.52478 2.43709 2.53043 0.955627 5.45597Z"
+                              fill="#E74133"
+                            ></path>
+                          </svg>
+                        </span>
+                        <p>Continue with Google</p>
+                      </button>
+                    </div>
+                    <div class="form-separator"><span>or</span></div>
+                    <!-- Form -->
+                    <form>
+                      <!-- Email address -->
+                      <div class="form-group">
+                        <!-- Label -->
+
+                        <!-- Input -->
+                        <input
+                          type="email"
+                          id="form_email"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                        <p
+                          class="emailmsg errortxtst colorred"
+                          style="display: none"
+                        >
+                          Looks like this email is incomplete.
+                        </p>
+                      </div>
+
+                      <!-- Submit -->
+                      <!-- <button
                     type="submit"
                     class="btn btn-lg w-100 btn_1 mb-3"
                     id="signupp1"
                   >
                    <span>Continue</span>
                   </button> -->
-                    <button type="submit" id="signupp1" class="buttonsub loadingsubmitbtn mb-3">
-                      <span class="button__content">Continue</span>
-                    </button>
-                  </form>
+                      <button
+                        type="submit"
+                        id="signupp1"
+                        class="buttonsub loadingsubmitbtn mb-3"
+                      >
+                        <span class="button__content">Continue</span>
+                      </button>
+                    </form>
+                  </div>
                 </div>
-              </div>
-              <div class="justify-content-center signuppart2">
-                <div class="signinpgpad">
-                  <!-- Heading -->
-                  <h3 class="display-4 text-center mb-3">Sign Up</h3>
-                  <p class="text-muted text-center mb-22">
-                    Free access to our dashboard.
-                  </p>
-                  <!-- Form -->
-                  <form>
-                    <!-- Email address -->
-                    <div class="form-group">
-                      <!-- Input -->
-                      <input type="password" class="form-control" id="mypass" placeholder="Choose your password" />
-                      <p class="passmsg errortxtst colorred" style="">
-                        8 characters or longer. Combine upper and lowercase
-                        letters and numbers.
-                      </p>
-                    </div>
+                <div class="justify-content-center signuppart2">
+                  <div class="signinpgpad">
+                    <!-- Heading -->
+                    <h3 class="display-4 text-center mb-3">Sign Up</h3>
+                    <p class="text-muted text-center mb-22">
+                      Free access to our dashboard.
+                    </p>
+                    <!-- Form -->
+                    <form>
+                      <!-- Email address -->
+                      <div class="form-group">
+                        <!-- Input -->
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="mypass"
+                          placeholder="Choose your password"
+                        />
+                        <p class="passmsg errortxtst colorred" style="">
+                          8 characters or longer. Combine upper and lowercase
+                          letters and numbers.
+                        </p>
+                      </div>
 
-                    <div class="form-group">
-                      <!-- Input -->
-                      <div class="row">
-                        <div style="width: 50%">
-                          <input type="text" class="form-control" placeholder="First Name" id="firstname" />
-                          <p class="fnamemsg errortxtst colorred" style="display: none">
-                            First Name is required
-                          </p>
-                        </div>
-                        <div style="width: 50%">
-                          <input type="text" class="form-control" placeholder="Last Name" id="lastname" />
-                          <p class="lnamemsg errortxtst colorred" style="display: none">
-                            Last Name is required
-                          </p>
+                      <div class="form-group">
+                        <!-- Input -->
+                        <div class="row">
+                          <div style="width: 50%">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="First Name"
+                              id="firstname"
+                            />
+                            <p
+                              class="fnamemsg errortxtst colorred"
+                              style="display: none"
+                            >
+                              First Name is required
+                            </p>
+                          </div>
+                          <div style="width: 50%">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Last Name"
+                              id="lastname"
+                            />
+                            <p
+                              class="lnamemsg errortxtst colorred"
+                              style="display: none"
+                            >
+                              Last Name is required
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="form-group">
-                      <!-- Input -->
-                      <input type="text" class="form-control" placeholder="Phone" id="phonenum" maxlength="10"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
-                      <!-- (₋₋₋)₋₋₋⁻₋₋₋₋ -->
-                      <p class="phonemsg errortxtst colorred" style="display: none">
-                        Phone is required
-                      </p>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="gendercontainer">
-                        <input type="radio" id="male" checked="checked" name="radio" />
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="radio" />
-                        <label for="female">Female</label>
+                      <div class="form-group">
+                        <!-- Input -->
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Phone"
+                          id="phonenum"
+                          maxlength="10"
+                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                        />
+                        <!-- (₋₋₋)₋₋₋⁻₋₋₋₋ -->
+                        <p
+                          class="phonemsg errortxtst colorred"
+                          style="display: none"
+                        >
+                          Phone is required
+                        </p>
                       </div>
-                    </div>
 
-                    <div class="form-group">
-                      <!-- <label>Country</label> -->
-                      <div class="custom-select-form">
-                        <select class="wide add_bottom_15" name="country" id="country" style="display: none">
-                          <option value="" selected="">
-                            Select your country
-                          </option>
-                          <option value="Europe">Europe</option>
-                          <option value="United states">United states</option>
-                          <option value="South America">South America</option>
-                          <option value="Oceania">Oceania</option>
-                          <option value="Asia">Asia</option>
-                        </select>
-                        <div class="nice-select wide add_bottom_15" tabindex="0">
-                          <span class="current">Select your country</span>
-                          <ul class="list">
-                            <li data-value="" class="option focus">
+                      <div class="form-group">
+                        <div class="gendercontainer">
+                          <input
+                            type="radio"
+                            id="male"
+                            checked="checked"
+                            name="radio"
+                          />
+                          <label for="male">Male</label>
+                          <input type="radio" id="female" name="radio" />
+                          <label for="female">Female</label>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <!-- <label>Country</label> -->
+                        <div class="custom-select-form">
+                          <select
+                            class="wide add_bottom_15"
+                            name="country"
+                            id="country"
+                            style="display: none"
+                          >
+                            <option value="" selected="">
                               Select your country
-                            </li>
-                            <li data-value="Europe" class="option selected">
-                              Europe
-                            </li>
-                            <li data-value="United states" class="option">
-                              United states
-                            </li>
-                            <li data-value="South America" class="option">
-                              South America
-                            </li>
-                            <li data-value="Oceania" class="option">
-                              Oceania
-                            </li>
-                            <li data-value="Asia" class="option">Asia</li>
-                          </ul>
+                            </option>
+                            <option value="Europe">Europe</option>
+                            <option value="United states">United states</option>
+                            <option value="South America">South America</option>
+                            <option value="Oceania">Oceania</option>
+                            <option value="Asia">Asia</option>
+                          </select>
+                          <div
+                            class="nice-select wide add_bottom_15"
+                            tabindex="0"
+                          >
+                            <span class="current">Select your country</span>
+                            <ul class="list">
+                              <li data-value="" class="option focus">
+                                Select your country
+                              </li>
+                              <li data-value="Europe" class="option selected">
+                                Europe
+                              </li>
+                              <li data-value="United states" class="option">
+                                United states
+                              </li>
+                              <li data-value="South America" class="option">
+                                South America
+                              </li>
+                              <li data-value="Oceania" class="option">
+                                Oceania
+                              </li>
+                              <li data-value="Asia" class="option">Asia</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="form-group mtsignup100">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="position: absolute"
-                          required />
-                        <label class="form-check-label" for="exampleCheck1">
-                          l consent to receive emails from Carnival Utopia.*
-                        </label>
+                      <div class="form-group mtsignup100">
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input formchin"
+                            id="exampleCheck1"
+                            style="position: absolute"
+                            required
+                          />
+                          <label class="form-check-label" for="exampleCheck1">
+                            l consent to receive emails from Carnival Utopia.*
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input formchin"
+                            id="exampleCheck2"
+                            required
+                          />
+                          <label class="form-check-label" for="exampleCheck2"
+                            >I agree to allow Carnival Utopia to store and
+                            process my personal data.*
+                          </label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck2" required />
-                        <label class="form-check-label" for="exampleCheck2">I agree to allow Carnival Utopia to store
-                          and
-                          process my personal data.*
-                        </label>
+
+                      <div class="form-group">
+                        <p>
+                          By submitting this form you are agreeing to Carnival
+                          Utopia LLC's
+                          <a href="./terms-and-conditions.html" target="_blank"
+                            >Terms and Privacy Policy</a
+                          >
+                        </p>
                       </div>
-                    </div>
 
-                    <div class="form-group">
-                      <p>
-                        By submitting this form you are agreeing to Carnival
-                        Utopia LLC's
-                        <a href="./terms-and-conditions.html" target="_blank">Terms and Privacy Policy</a>
-                      </p>
-                    </div>
-
-                    <!-- Submit -->
-                    <button type="submit" class="btn btn-lg w-100 btn_1 mb-3" id="signupp2">
-                      <span>Continue</span>
-                    </button>
-                  </form>
+                      <!-- Submit -->
+                      <button
+                        type="submit"
+                        class="btn btn-lg w-100 btn_1 mb-3"
+                        id="signupp2"
+                      >
+                        <span>Continue</span>
+                      </button>
+                    </form>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Link -->
-              <hr style="margin: 0px" />
-              <div class="text-center" style="padding: 12px 0">
-                <small class="text-muted text-center">
-                  Already a member?
-                  <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal"
-                    class="notlikebutton signinbtnjs">
-                    Sign In
-                  </button>
-                </small>
+                <!-- Link -->
+                <hr style="margin: 0px" />
+                <div class="text-center" style="padding: 12px 0">
+                  <small class="text-muted text-center">
+                    Already a member?
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signinmodal"
+                      class="notlikebutton signinbtnjs"
+                    >
+                      Sign In
+                    </button>
+                  </small>
+                </div>
+                <!-- / .row -->
               </div>
-              <!-- / .row -->
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal Traveler -->
-  <div class="modal " id="travelermodal" tabindex="-1" aria-labelledby="travelermodalLabel" aria-hidden="true">
-    <div class="modal-dialog travmdl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="travelermodalLabel">Traveler</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="">
-            <h6>Room 1</h6>
-            <div class="dflexch1 bavgfh">
-              <div>
-                <p class="marbot0">Adults</p>
+    <!-- Modal Traveler -->
+    <div
+      class="modal"
+      id="travelermodal"
+      tabindex="-1"
+      aria-labelledby="travelermodalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog travmdl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="travelermodalLabel">Traveler</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <h6>Room 1</h6>
+              <div class="dflexch1 bavgfh">
+                <div>
+                  <p class="marbot0">Adults</p>
+                </div>
+                <div class="chadch1">
+                  <button type="button" class="minusadults btncoubtnt">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    id="inputadults1"
+                    min="1"
+                    max="14"
+                    tabindex="-1"
+                    class="inputnums"
+                    value="2"
+                    readonly
+                  />
+                  <button type="button" class="plusadults btncoubtnt">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
               </div>
-              <div class="chadch1">
-                <button type="button" class="minusadults btncoubtnt">
-                  <i class="fa fa-minus"></i>
-                </button>
-                <input type="text" id="inputadults1" min="1" max="14" tabindex="-1" class="inputnums" value="2"
-                  readonly />
-                <button type="button" class="plusadults btncoubtnt">
-                  <i class="fa fa-plus"></i>
-                </button>
-              </div>
-
-
-            </div>
-            <!-- <div class="dflexch1 bavgfh">
+              <!-- <div class="dflexch1 bavgfh">
               <div>
                 <p class="marbot0">Childern</p>
                 <small>Ages 0 to 17</small>
@@ -747,32 +1078,37 @@
 
 
             </div> -->
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn_1 full-width" data-bs-dismiss="modal">
-            Done
-          </button>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="bigbtn btn_1 full-width"
+              data-bs-dismiss="modal"
+            >
+              Done
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-  <script src="js/common_scripts.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/script2.js"></script>
-  <script>
-    var tooltipTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    );
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-  </script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/common_scripts.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script2.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
 </html>

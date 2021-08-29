@@ -252,6 +252,25 @@ $(".benefitsshowmore").click(function () {
   $(".benefitstext").toggleClass("benefitsshow-more-height");
 });
 
+$(".benefitsshowmore2").click(function () {
+  if ($(".benefitstext2").hasClass("benefitsshow-more-height")) {
+    $(this).html("Hide More <i class='fa fa-angle-up'></i>");
+  } else {
+    $(this).html("Show More <i class='fa fa-angle-down'></i>");
+  }
+
+  $(".benefitstext2").toggleClass("benefitsshow-more-height");
+});
+$(".benefitsshowmore3").click(function () {
+  if ($(".benefitstext3").hasClass("benefitsshow-more-height")) {
+    $(this).html("Hide More <i class='fa fa-angle-up'></i>");
+  } else {
+    $(this).html("Show More <i class='fa fa-angle-down'></i>");
+  }
+
+  $(".benefitstext3").toggleClass("benefitsshow-more-height");
+});
+
 $(".enternamedid").click(function () {
   $(".enternamedid").css("display", "none");
   $("#enternamediv").css("display", "flex");
