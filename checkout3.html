@@ -137,7 +137,6 @@
                             <div class="prel">
                               <input type="text" class="inputText" id="tbNum" onkeyup="addslash(this)" maxlength="5"
                                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
-                                pattern="\d{4}"
                                 required />
                               <span class="floating-label">Expiration MM/YY</span>
                             </div>
@@ -155,10 +154,11 @@
 
                         <div class="billingadd">
                           <h3>Billing Address</h3>
-                          <div class="mb-3 form-check">
-                             <input class="form-check-input formchin" type="checkbox"  id="" checked />
-                            <label class="form-check-label" for="">Use my shipping address.</label>
-                            
+                          <div class="mb-3">
+                             <label class="chbox2q"> Use my shipping address.
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
                           </div>
                           <div class="adressinf">
                             <span>Triston Payne</span>
@@ -174,7 +174,7 @@
                       <label class="btn btn-default btnrdiocust">
                         <input type="radio" name="options" />
                         <div class="readiocustdiv">
-                          <img src="./img/paymentoptions-paypal-logo.png" />
+                          <img src="./img/PayPal_logo.svg" />
                         </div>
                       </label>
                     </div>
@@ -385,10 +385,11 @@
                     </button>
 
                     <div class="remeberflex">
-                      <div class="form-check" style="margin-bottom: 0px">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                        <label class="form-check-label" for="exampleCheck1"
-                          style="font-weight: 400; font-size: 14px">Remember me</label>
+                      <div class="" style="margin-bottom: 0px">
+                          <label class="chbox2q2">Remember me
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                       
                       </div>
                       <div class="">
                         <!-- Help text -->
@@ -653,19 +654,21 @@
                     </div>
 
                     <div class="form-group mtsignup100">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input formchin" id="exampleCheck1" style="position: absolute"
-                          required />
-                        <label class="form-check-label" for="exampleCheck1">
-                          l consent to receive emails from Carnival Utopia.*
-                        </label>
+                      <div class="">
+                        <label class="chbox2q">l consent to receive emails from Carnival Utopia.*
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                       
                       </div>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input formchin" id="exampleCheck2" required />
-                        <label class="form-check-label" for="exampleCheck2">I agree to allow Carnival Utopia to store
+                      <div class="">
+                          <label class="chbox2q">I agree to allow Carnival Utopia to store
                           and
                           process my personal data.*
-                        </label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      
                       </div>
                     </div>
 

@@ -254,7 +254,7 @@ $(".benefitsshowmore").click(function () {
 
 $(".benefitsshowmore2").click(function () {
   if ($(".benefitstext2").hasClass("benefitsshow-more-height")) {
-    $(this).html("Hide More <i class='fa fa-angle-up'></i>");
+    $(this).html("Hide <i class='fa fa-angle-up'></i>");
   } else {
     $(this).html("Show More <i class='fa fa-angle-down'></i>");
   }
@@ -263,7 +263,7 @@ $(".benefitsshowmore2").click(function () {
 });
 $(".benefitsshowmore3").click(function () {
   if ($(".benefitstext3").hasClass("benefitsshow-more-height")) {
-    $(this).html("Hide More <i class='fa fa-angle-up'></i>");
+    $(this).html("Hide <i class='fa fa-angle-up'></i>");
   } else {
     $(this).html("Show More <i class='fa fa-angle-down'></i>");
   }
