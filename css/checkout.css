@@ -144,7 +144,8 @@
   margin-bottom: 0px;
   position: relative;
   color: #1f3c63;
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 25px;
 }
 .dflexch1 span {
   color: #1f3c63;
@@ -169,7 +170,7 @@
 .faquest {
   width: 16px;
       position: absolute;
-    top: 8px;
+    top: 4px;
 }
 .titlech {
   font-size: 24px;
@@ -509,12 +510,12 @@ input:not(:focus):valid ~ .floating-label
   background: transparent;
   color: #575b6e;
   display: inline;
-  padding: 0px 5px !important;
-  border-radius: 50%;
-  border: 2px solid #575b6e !important;
+  /* padding: 0px 5px !important;
+  border-radius: 50%; */
+  /* border: 2px solid #575b6e !important; */
 }
-.btncoubtnt .fa {
-  color: #575b6e;
+.btncoubtnt img {
+ width: 20px;
 }
 .btncoubtnt:disabled {
   opacity: 0.5;
@@ -528,6 +529,8 @@ input:not(:focus):valid ~ .floating-label
   text-align: center;
   width: 40px;
   border: 0px solid;
+      position: relative;
+    top: 3px;
 }
 .bavgfh {
   padding-bottom: 6px;
@@ -552,6 +555,9 @@ input:not(:focus):valid ~ .floating-label
   }
   .travmdl .modal-content {
     height: 100%;
+  }
+  .shosumdesk{
+    display: none !important;
   }
 }
 .form-select:focus {

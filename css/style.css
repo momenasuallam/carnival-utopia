@@ -11162,9 +11162,10 @@ color: #ff027c !important;
 }
 
 .btngrad{
-  background: rgb(255,2,124);
-background: linear-gradient(264deg, rgba(255,2,124,1) 29%, rgba(136,24,155,1) 100%) !important;
-    padding: 15px 36px !important;
+/* background-image: -webkit-radial-gradient(circle at center, #6C0D63 0%, #59086E 30%, #460479 55%, #440589 72.5%, #3B07BB 90%, #3B07BB 100% ) !important;
+    background-image: -moz-radial-gradient(circle at center, #6C0D63 0%, #59086E 30%, #460479 55%, #440589 72.5%, #3B07BB 90%, #3B07BB 100% ) !important; */
+    background-image: linear-gradient(to right, #59086E 0%, #460479 50%, #440589 100%) !important;
+    padding: 12px 20px !important;
 }
 .dialogsumry{
  
