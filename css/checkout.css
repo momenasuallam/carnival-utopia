@@ -1,8 +1,8 @@
-/* @media (min-width: 1200px) {
+@media (max-width: 600px) {
   .contch {
-    max-width: 900px !important;
+    padding: 0 25px;
   }
-} */
+}
 @media (min-width: 768px) {
   .nopadmin {
     padding: 0px !important;
@@ -248,7 +248,7 @@ input:not(:focus):valid ~ .floating-label
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -0.01em;
-  color: #aaaac5;
+  color: #62758c;
 }
 
 
@@ -279,7 +279,7 @@ input:not(:focus):valid ~ .floating-label
   left: 14px;
   top: 14px;
   transition: 0.1s ease all;
-  color: #86868b;
+  color: #62758c;
   font-size: 0.9375rem;
   line-height: 1.23536;
   font-weight: 400;
@@ -399,7 +399,7 @@ input:not(:focus):valid ~ .floating-label
   color: #1f3c63ad;
 }
 .readiocustdiv img {
-  max-height: 40px;
+  max-height: 35px;
   height: auto;
 }
 
