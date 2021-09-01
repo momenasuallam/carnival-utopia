@@ -519,7 +519,7 @@ input:not(:focus):valid ~ .floating-label
   /* border: 2px solid #575b6e !important; */
 }
 .btncoubtnt img {
- width: 20px;
+ width: 25px;
 }
 .btncoubtnt:disabled {
   opacity: 0.5;

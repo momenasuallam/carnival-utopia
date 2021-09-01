@@ -11162,15 +11162,20 @@ color: #ff027c !important;
 }
 
 .btngrad{
-/* background-image: -webkit-radial-gradient(circle at center, #6C0D63 0%, #59086E 30%, #460479 55%, #440589 72.5%, #3B07BB 90%, #3B07BB 100% ) !important;
-    background-image: -moz-radial-gradient(circle at center, #6C0D63 0%, #59086E 30%, #460479 55%, #440589 72.5%, #3B07BB 90%, #3B07BB 100% ) !important; */
-    /* background-image: linear-gradient(to right, #ff2e6c 0%, #460479 50%, #131344 100%) !important; */
-
-/* background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ff2e6c, #131344, #131344) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-image: -webkit-linear-gradient(to right, #fe058f, #ff4757) !important;
+    background-image: -moz-linear-gradient(to right, #fe058f, #ff4757) !important; 
+    
+background: linear-gradient(to right, #fe058f, #ff4757) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     
     padding: 12px 20px !important;
+}
+.btngrad:hover{
+  background-image: -webkit-linear-gradient(to right, #ff4757, #fe058f) !important;
+    background-image: -moz-linear-gradient(to right, #ff4757, #fe058f) !important; 
+    
+background: linear-gradient(to right, #ff4757, #fe058f) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .dialogsumry{
  
