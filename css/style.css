@@ -11168,7 +11168,7 @@ color: #ff027c !important;
 background: linear-gradient(to right, #fe058f, #ff4757) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     
-    padding: 12px 20px !important;
+    
 }
 .btngrad:hover{
   background-image: -webkit-linear-gradient(to right, #ff4757, #fe058f) !important;
