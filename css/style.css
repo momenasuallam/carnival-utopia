@@ -10734,7 +10734,7 @@ margin-bottom: 25px;
  height: 100%;
   margin: 0px !important;
 
-  top: 55px !important;
+  top: 10px !important;
 
 }
 .modal{
@@ -11170,13 +11170,13 @@ background: linear-gradient(to right, #fe058f, #ff4757) !important; /* W3C, IE 1
     
     
 }
-.btngrad:hover{
+/* .btngrad:hover{
   background-image: -webkit-linear-gradient(to right, #ff4757, #fe058f) !important;
     background-image: -moz-linear-gradient(to right, #ff4757, #fe058f) !important; 
     
 background: linear-gradient(to right, #ff4757, #fe058f) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}
+} */
 .dialogsumry{
  
  height: 100% !important;
@@ -11241,4 +11241,7 @@ background: linear-gradient(to right, #ff4757, #fe058f) !important; /* W3C, IE 1
 .colordrkbold{
   color: #1f3c63 !important;
   font-weight: 600;
+}
+.mrbotm0{
+  margin-bottom: 0px !important;
 }
