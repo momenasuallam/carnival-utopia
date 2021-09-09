@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/vendors.css" rel="stylesheet" />
@@ -56,9 +56,10 @@
         </div>
         <ul id="top_menu">
           <li>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal" class="btnhead signinbtnjs">Sign
-              in</button>
-             <a href="#" class="usercircle"><img src="./img/user_circle_icon_148611.svg" /></a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal" class="btnhead signinbtnjs">
+              Sign in
+            </button>
+            <a href="#" class="usercircle"><img src="./img/user_circle_icon_148611.svg" /></a>
           </li>
         </ul>
         <!-- /top_menu -->
@@ -90,27 +91,554 @@
     <!-- /header -->
 
     <main>
-      <div class="choutdiv">
-        <div class="container">
-          <div class="choutflex">
-            <div>
-              <h3>Checkout</h3>
-            </div>
-            <div class="">
-              <span><button class="notlikebutton" type="button" data-bs-toggle="modal"
-                  data-bs-target="#modalsumry"><span class="shosumdesk">Show trip summary:</span>
-                  $909.00</button></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="checkutpagemain pt125">
+      <div class="checkutpagemain">
         <div class="container contch">
-          <h2>Traveler Information</h2>
-          <div class="paddingch2">
+          <h2>Review your trip.</h2>
+          <div class="paddingch">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <img src="./img/tour_1.jpg" width="100%" style="border-radius: 4px;" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="reviretpch2">
+                  <div class="dflexch1">
+                    <a href="#" class="titlech">
+                      <h4 class="marbot0">Barbados Crop Over</h4>
+                    </a>
+                    <h4 class="pricech1 marbot0">$505.00</h4>
+                  </div>
+                  <div class="">
+                    <div id="benefitsdescription">
+                      <div class="benefitsshowmore">
+                        Show Package Details <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="benefitstext benefitsshow-more-height">
+                        <ul class="bullets2 bbbhssgdu">
+                          <li>6 Nights Hotel Accommodation</li>
+                          <li>5 Event Tlckets</li>
+                          <li>Backline Costume</li>
+                          <li>Airport and Event Transfers</li>
+                          <li>Professional Photographer</li>
+                          <li>Costume Pickup &amp; Delivery</li>
+                          <li>Personal Concierge</li>
+                          <li>Welcome Bag</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chooseopt" id="chsehotel">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Choose Hotel</h3>
+                      <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="pay1" name="radio1" />
+                          <label for="pay1">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">South Beach Hotel</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-12 col-lg-12 col-md-12">
+
+                        <div class="choosepaymemyrad">
+
+                          <input type="radio" id="pay2" name="radio1" />
+                          <label for="pay2">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3>No Accomodation</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chooseopt" id="chseroom">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Choose Room</h3>
+                      <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="room1" name="radio3" />
+                          <label for="room1">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">Junior Suite</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-12 col-lg-12 col-md-12">
+
+                        <div class="choosepaymemyrad">
+
+                          <input type="radio" id="room2" name="radio3" />
+                          <label for="room2">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3>Two Bedroom Suite</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chooseopt" id="chseocp">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Choose occupancy </h3>
+                      <div class="bscdu">
+                        <div class="dflexch1 bavgfhg">
+                          <div>
+                            <p class="marbot0">Junior Suite</p>
+                          </div>
+                          <div class="chadch1">
+                            <button type="button" class="minusJs btncoubtnt">
+                              <img src="./img/minus-circle (1).svg" />
+                            </button>
+                            <input type="text" id="inputJs" min="1" max="3" tabindex="-1" class="inputnums" value="2"
+                              readonly />
+                            <button type="button" class="plusJs btncoubtnt">
+                              <img src="./img/plus-circle (1).svg" />
+                            </button>
+                          </div>
+                        </div>
+                        <div class="dflexch1 bavgfhg">
+                          <div>
+                            <p class="marbot0">Bedroom </p>
+                          </div>
+                          <div class="chadch1">
+                            <button type="button" class="minusbed btncoubtnt">
+                              <img src="./img/minus-circle (1).svg" />
+                            </button>
+                            <input type="text" id="inputbed" min="3" max="4" tabindex="-1" class="inputnums" value="4"
+                              readonly />
+                            <button type="button" class="plusbed btncoubtnt" disabled>
+                              <img src="./img/plus-circle (1).svg" />
+                            </button>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                     <div class="chooseopt" id="chsestay">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Length of stay </h3>
+                       <div class="lenghtstay">
+                           <div class="choosepaymemyrad">
+                          <input type="radio" id="stay4" name="radio5" checked />
+                          <label for="stay4">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">4</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                          <div class="choosepaymemyrad">
+                          <input type="radio" id="stay5" name="radio5" />
+                          <label for="stay5">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">5</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                         <div class="choosepaymemyrad">
+                          <input type="radio" id="stay6" name="radio5" />
+                          <label for="stay6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">6</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                         <div class="choosepaymemyrad">
+                          <input type="radio" id="stay7" name="radio5" />
+                          <label for="stay7">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">7</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                         <div class="choosepaymemyrad">
+                          <input type="radio" id="stay8" name="radio5" />
+                          <label for="stay8">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">8</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                         <div class="choosepaymemyrad">
+                          <input type="radio" id="stay9" name="radio5" />
+                          <label for="stay9">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">9</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                         <div class="choosepaymemyrad">
+                          <input type="radio" id="stay10" name="radio5" />
+                          <label for="stay10">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">10</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+                       </div>
+                    </div>
+                  </div>
+
+                   <div class="chooseopt" id="chsegender">
+                      <div class="gendercontainer">
+                        <input type="radio" id="male" checked="checked" name="radio12" />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="radio12" />
+                        <label for="female">Female</label>
+                      </div>
+                  </div>
+
+                   <div class="chooseopt" id="chsecostume">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Carnival Costume </h3>
+                       <div class="myrwcousti">
+                               <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="cos1" name="radio14" />
+                          <label for="cos1">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">KRAVE Backline</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                       
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="cos2" name="radio15" />
+                          <label for="cos2">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">KRAVE Frontline</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="cos3" name="radio16" />
+                          <label for="cos3">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0"> KRAVE Male</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="cos4" name="radio17" />
+                          <label for="cos4">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">ZULU Backline</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="cos5" name="radio18" />
+                          <label for="cos5">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">ZULU Frontline</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="cos6" name="radio19" />
+                          <label for="cos6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">ZULU Male</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                       </div>
+                      
+
+                      
+                    </div>
+                  </div>
+
+                    <div class="chooseopt" id="chseevent">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Event Tickets </h3>
+                    
+                        <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket1" name="radio20" />
+                          <label for="evetticket1">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">WED JUL 28</small>
+                                <h3 class="mb0"> Fyah D Wuk</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                        <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket2" name="radio21" />
+                          <label for="evetticket2">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">WED JUL 28</small>
+                                <h3 class="mb0">Rise Barbados*</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket3" name="radio22" />
+                          <label for="evetticket3">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">THUR JUL 29</small>
+                                <h3 class="mb0"> Lifted Cooler Experience*</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket4" name="radio23" />
+                          <label for="evetticket4">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">FRI JULY 30</small>
+                                <h3 class="mb0">Candy Coated Cruise</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket5" name="radio24" />
+                          <label for="evetticket5">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">FRI JULY 30</small>
+                                <h3 class="mb0">Mimosa Ultra Breakfast Party*</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket6" name="radio25" />
+                          <label for="evetticket6">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">SAT JUL 31</small>
+                                <h3 class="mb0">Bliss*</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket7" name="radio26" />
+                          <label for="evetticket7">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">SAT JUL 31</small>
+                                <h3 class="mb0">Elevate: Lost in Paradise</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket8" name="radio27" />
+                          <label for="evetticket8">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">SUN AUG 1</small>
+                                <h3 class="mb0">Limerz Cruise*</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="evetticket9" name="radio28" />
+                          <label for="evetticket9">
+                            <div class="row">
+                              <div class="col-md-12">
+                                 <small class="smtopsmu">SUN AUG 1</small>
+                                <h3 class="mb0">Soca Brainwash BIM*</h3>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                       
+                    
+                      
+
+                      
+                    </div>
+                  </div>
+
+
+                   <div class="chooseopt" id="chseaddservice">
+                    <div class="row">
+                      <h3 class="payh3 mb10">Additional Services </h3>
+                       <div class="">
+                               <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="addser1" name="radio29" />
+                          <label for="addser1">
+                            <div class="row">
+                              <div class="col-md-12">
+                    
+                                <h3 class="mb0">Make Up</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+                       
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="addser2" name="radio30" />
+                          <label for="addser2">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0"> Island Tour</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+
+
+                       <div class="">
+                        <div class="choosepaymemyrad">
+                          <input type="radio" id="addser3" name="radio31" />
+                          <label for="addser3">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h3 class="mb0">VIP Travel</h3>
+                              </div>
+
+                            </div>
+
+                          </label>
+                        </div>
+                      </div>
+
+                  
+                       </div>
+                      
+
+                      
+                    </div>
+                  </div>
+
+                      <div class="chooseopt pdbot30" id="traveldet" style="display: none;">
+                      <div class="row">
+                      <h3 class=" ">Travel Details </h3>
+                        <div class="">
             <form method="POST">
-              <div class="">
-                <h4>Enter your name and address:</h4>
+              <div class="row">
+                <h6>Enter your name and address:</h6>
                 <div class="col-md-6">
                   <div class="prel">
                     <input type="text" class="inputText" required />
@@ -123,19 +651,19 @@
                     <span class="floating-label">Last Name</span>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="prel">
                     <input type="text" class="inputText" required />
                     <span class="floating-label">Street Address</span>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="prel">
                     <input type="text" class="inputText" required />
                     <span class="floating-label">Apt, Suite, Building (Optional)</span>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="prel">
                     <select class="form-select formsele" aria-label="Default select example">
                       <option value="" selected="">Country/Region</option>
@@ -388,8 +916,8 @@
                     </select>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-3 ">
+                <div class="">
+                  <div class="col-md-6 ">
                     <div class="prel">
                       <select class="form-select formsele" aria-label="Default select example">
                         <option value="" selected="">City, State</option>
@@ -401,7 +929,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-3 nopadmin">
+                  <div class="col-md-6 nopadmin">
                     <div class="prel">
                       <input type="text" class="inputText" maxlength="5"
                         oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
@@ -415,20 +943,20 @@
               </div>
               <br />
               <div class="row">
-                <h4>What’s your contact information?</h4>
-                <div class="col-md-6">
+                <h6>What’s your contact information?</h6>
+                <div class="col-md-12">
                   <div class="prel">
                     <input type="email" class="inputText" required />
                     <span class="floating-label">Email Address</span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <p class="frominstch">
+                <div class="col-md-12">
+                  <p class="" style="margin-top: -10px;">
                     We’ll email you a receipt and send order updates to your
                     mobile phone via SMS or iMessage.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="prel">
                     <input type="text" class="inputText" maxlength="11"
                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
@@ -436,8 +964,8 @@
                     <span class="floating-label">Phone Number</span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <p class="frominstch">
+                <div class="col-md-12">
+                  <p class="" style="margin-top: -10px;">
                     The phone number you enter can’t be changed after you
                     place your order, so please make sure it’s correct.
                   </p>
@@ -461,19 +989,113 @@
               </div>
               <div class="col-md-6">
                 <div class="prel">
-                  <hr />
-                  <a href="./checkout3.html" id="continuetopay" class="btn_1  btngrad btnch2new">Continue to Payment
+                 
+                  <a  id="conttopay" class="btn_1  btngrad">Continue to Payment
                   </a>
-                  <!-- <button
-                        type="submit"
-                        id="continuetopay"
-                        class="btn_1  btngrad btnch2new loadingsubmitbtn mb-3"
-                      >
-                        <span class="button__content">Continue to Payment</span>
-                      </button> -->
+                
                 </div>
               </div>
             </form>
+          </div>
+                      </div>
+                  </div>
+
+                    <div class="chooseopt pdbot30" id="chsepaymet" style="display: none;">
+                    <div class="row">
+                      <h3 class="payh3 "> Payment Method</h3>
+                      <div class="col-xl-12 col-lg-12 col-md-12">
+                         <form>
+              <div class="">
+                <div class="col-lg-12 col-xl-12 col-md-12">
+                  <div class="button-group-pills text-center" data-toggle="buttons">
+                    <div class="col-md-12">
+                      <label class="btn btn-default btnrdiocust">
+                        <input type="radio" name="options" class="creditcardactive" />
+                        <div class="readiocustdiv">
+                          <p>Credit or Debit Card</p>
+                          <span>Apple Card, Visa, Mastercard, AMEX, Discover,
+                            UnionPay</span>
+                        </div>
+                      </label>
+
+                      <div class="maindivcreditcard">
+                        <p>Enter your card information:</p>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="prel">
+                              <input type="text" class="inputText intcardtxt" id="tbsp" onkeyup="addspace(this)" maxlength="19"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                required />
+                              <span class="floating-label">Credit/Debit Card Number</span>
+                              <img src="img/cards_all.svg" class="allcardclas" />
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <div class="prel">
+                              <input type="text" class="inputText" id="tbNum" onkeyup="addslash(this)" maxlength="5"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                required />
+                              <span class="floating-label">Expiration MM/YY</span>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="prel">
+                              <input type="text" class="inputText" maxlength="3"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                required />
+                              <span class="floating-label">CVV</span>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+
+                        <!-- <div class="billingadd">
+                          <h3>Billing Address</h3>
+                          <div class="mb-3">
+                             <label class="chbox2q"> Use my traveler information.
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                          </div>
+                          <div class="adressinf">
+                            <span>Triston Payne</span>
+                            <span>2121 Beekman PI Apt 4k</span>
+                            <span>Apt 4k</span>
+                            <span>Brooklyn, NY 11225-4853</span>
+                            <span>United States</span>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="btn btn-default btnrdiocust">
+                        <input type="radio" name="options" />
+                        <div class="readiocustdiv">
+                          <img src="./img/PayPal_logo.svg" />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                 
+
+                  <div class="prel">
+
+                    <a href="checkout4.html" class="btn_1  btngrad ">Continue to Review</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+                      </div>
+                     
+                    </div>
+                  </div>
+
+                 
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -578,78 +1200,7 @@
   </div>
   <!-- page -->
 
-
-  <!-- modal summary -->
-  <div class="modal" id="modalsumry" tabindex="-1" aria-labelledby="modalsumryLabel" aria-hidden="true">
-    <div class="modal-dialog dialogsumry modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btnclosesumry" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="18" height="18" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z">
-              </path>
-            </svg>
-          </button>
-          <div class="">
-            <div class="container2" style="padding: 0px">
-              <div class="justify-content-center">
-                <div class="">
-                  <h3>Your Trip Total</h3>
-                  <hr>
-                </div>
-                <div class="dflexch1">
-                  <span>1 items</span>
-                  <a href="./checkout1.html">Edit</a>
-
-                </div>
-                <hr>
-                <div class="dflexch1 padbot0">
-                  <p>Subtotal</p>
-                  <span>$505.00</span>
-                </div>
-
-                <div class="dflexch1">
-                  <p>
-                    Processing fees
-                  </p>
-                  <span>$88.66</span>
-                </div>
-                <hr />
-                <div class="dflexch1">
-                  <h4>Total</h4>
-                  <h4>$909.00</h4>
-                </div>
-                <h3>Traveler Details</h3>
-                <!--<hr>
-                   <div>
-                    <p class="colordrkbold">Delivers On:</p>
-                    <p class="colordrk">Sep 16 - Sep 23</p>
-                  </div>
-                  <hr>
-                   <div>
-                    <p>Ships to:</p>
-                    <p>Sep 16 - Sep 23</p>
-                  </div> -->
-                <hr>
-                <div>
-                  <p>Payment</p>
-                </div>
-                <hr>
-                <div class="dflexch1">
-                  <p>Review</p>
-                  <!-- <a>Edit</a> -->
-                </div>
-              </div>
-              <!-- / .row -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Modal sign in -->
+  <!-- Modal sign in -->
   <div class="modal modalsign" id="signinmodal" tabindex="-1" aria-labelledby="signinmodalLabel" aria-hidden="true">
     <div class="modal-dialog dialogsign">
       <div class="modal-content">
@@ -1257,11 +1808,20 @@
     </div>
   </div>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/common_scripts.js"></script>
   <script src="js/main.js"></script>
   <script src="js/script2.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
 </body>
 
 </html>

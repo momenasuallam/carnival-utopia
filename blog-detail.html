@@ -1,592 +1,328 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <meta name="description" content="carnival utopia" />
-    <meta name="author" content="Momina" />
-    <title>carnival utopia</title>
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta name="description" content="carnival utopia" />
+  <meta name="author" content="Momina" />
+  <title>carnival utopia</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Favicons-->
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
 
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/vendors.css" rel="stylesheet" />
-      <link href="css/signin.css" rel="stylesheet">
+  <!-- BASE CSS -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
-    <style>
-      @media only screen and (min-width: 992px) {
-        .main-menu > ul > li span > a {
-          color: #1b3960;
-          font-weight: 400;
-          line-height: 1.5;
-        }
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/vendors.css" rel="stylesheet" />
+  <link href="css/signin.css" rel="stylesheet">
+  <link href="css/checkout.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    @media only screen and (min-width: 992px) {
+      .main-menu>ul>li span>a {
+        color: #1b3960;
+        font-weight: 400;
+        line-height: 1.5;
       }
-      @media (min-width: 600px) {
-        .header {
-          border-bottom: 1px solid #e9edef;
-        }
-      }
-      @media (max-width: 576px) {
-        header {
-          background-color: #fff !important;
-        }
-      }
-    </style>
-  </head>
+    }
 
-  <body class="">
-    <!-- Remove this class to disable datepicker full on mobile -->
+    @media (min-width: 600px) {
+      .header {
+        border-bottom: 1px solid #e9edef;
+      }
+    }
 
-    <div id="page" class="theia-exception">
-      <header class="header menu_fixed">
-        <div id="preloader">
-          <div data-loader="circle-side"></div>
+    @media (max-width: 576px) {
+      header {
+        background-color: #fff !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="datepicker_mobile_full">
+  <!-- Remove this class to disable datepicker full on mobile -->
+
+  <div id="page" class="theia-exception">
+    <header class="header menu_fixed">
+      <div id="preloader">
+        <div data-loader="circle-side"></div>
+      </div>
+      <!-- /Page Preload -->
+      <div class="container">
+        <div id="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" width="250" height="36" alt="" class="logo_normal" />
+            <img src="img/logo.svg" width="250" height="36" alt="" class="logo_sticky" />
+          </a>
         </div>
-        <!-- /Page Preload -->
-        <div class="container">
-          <div id="logo">
-            <a href="index.html">
-              <img
-                src="img/logo.svg"
-                width="250"
-                height="36"
-                alt=""
-                class="logo_normal"
-              />
-              <img
-                src="img/logo.svg"
-                width="250"
-                height="36"
-                alt=""
-                class="logo_sticky"
-              />
-            </a>
+        <ul id="top_menu">
+          <li>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal" class="btnhead signinbtnjs">Sign
+              in</button>
+            <a href="#" class="usercircle"><img src="./img/user_circle_icon_148611.svg" /></a>
+          </li>
+        </ul>
+        <!-- /top_menu -->
+        <a href="#menu" class="btn_mobile">
+          <div class="hamburger hamburger--spin" id="hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
           </div>
-          <ul id="top_menu">
+        </a>
+        <nav id="menu" class="main-menu">
+          <ul>
             <li>
-             <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal"
-              class="btnhead signinbtnjs">Sign in</button>
-              <a href="#" class="usercircle"><img src="./img/user_circle_icon_148611.svg" /></a>
+              <span><a href="#">Destinations</a></span>
+            </li>
+            <li>
+              <span><a href="./contact.html">Contact</a></span>
+            </li>
+            <li>
+              <span><a href="./help-center.html"> Help Center</a></span>
+            </li>
+            <li>
+              <span><a href="./blog.html">Blog</a></span>
             </li>
           </ul>
-          <!-- /top_menu -->
-          <a href="#menu" class="btn_mobile">
-            <div class="hamburger hamburger--spin" id="hamburger">
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main>
+      <div class="blogpage">
+        <div class="container cont2blogdetails">
+
+          <div class="bloghjui" style="text-align: center; margin-left: 0px; width: 100%;">
+            <small>VIDEO MARKETING</small>
+            <a href="">Google Loves Product Videos and You Should Too</a>
+            <div class="blogmetamain" style="justify-content: center; align-items: center;">
+              <span><b>By Fiverr Team</b></span>
+              <span>|</span>
+              <span>September 6, 2021</span>
             </div>
-          </a>
-          <nav id="menu" class="main-menu">
-            <ul>
+
+            <div class="imgbjjfui">
+              <img src="./img/blog-1.png" style="width: 100%;" />
+            </div>
+          </div>
+
+          <div>
+            <div class="rich-text w-richtext">
+              <p>If a picture is worth 1,000 words, a video is worth…way more. In today’s modern world, video is more
+                popular than ever. Whether you’re putting together a 15-second video bite for social media or if you’ve
+                compiled a tactical tutorial about your products for <a
+                  href="#"
+                  target="_blank">YouTube</a>, one thing remains the same: Google loves product videos, which means as a
+                business owner, you should too.</p>
+              <h2>How Product Videos Can Benefit Your Business</h2>
+              <h3>Increased Search Ranking Opportunities</h3>
+              <p>Anytime you search on Google, you will be met with a host of search results. These results will include
+                articles, news, images, shopping products, and of course, video. Having a blog or product page is great
+                for SEO, but adding an additional video to cover a certain topic is even better. Product videos expand
+                the opportunity for others to discover your business among their search results. This is especially true
+                if your competition doesn’t have any similar videos to compare against. The less content your
+                competition has in a certain space, the more opportunity you have to shine.</p>
+              <h3>Highly Shareable</h3>
+              <p>In a world where people are attuned to scrolling past a horde of content in a matter of minutes, the
+                more easily sharable and visual your content is, the better your chances are of being shared online. In
+                many cases, people are more inclined to share a video instead of a text page on their social platforms.
+                On the flip side of the coin, some people are more prone to spending a few minutes watching a video as
+                opposed to reading a full article. &nbsp;</p>
+              <h3>Convenience</h3>
+              <p>With a culture that admires being busy, we crave convenience. As a result, the easiest and most
+                convenient methods of consuming content are what people will gravitate toward. Watching a video requires
+                less focus and effort in comparison to scrolling through a long article.</p>
+              <p>With all this in mind, there are a few things you can do as a business owner to increase your SEO and
+                chances of being found online.</p>
+              <h2>Best SEO Tactics for Product Videos</h2>
+              <h3>Video Transcripts</h3>
+              <p>You may have noticed that more videos are including subtitles (also referred to as <a
+                  href="#"
+                  target="_blank">video transcripts</a>) at the bottom of their video. In the past, subtitles were
+                thought of as support for those with hearing impairments, however, in today’s current culture, subtitles
+                are convenient for anyone and everyone. Having subtitles on your video allows people to watch your video
+                without sound, meaning they can view it anywhere—on the bus, at work, sitting next to their significant
+                other on the couch—without disturbing the people around them. Including video transcripts also boosts
+                your SEO because search engines have more content to crawl through and can present these findings to
+                potential consumers.</p>
+              <h3>Thumbnail</h3>
+              <p>You can invest a mountain of time and effort into creating product videos, but without a captivating
+                thumbnail (or a cover photo) for your video, people may simply pass it by. When it comes to your video,
+                create a thumbnail that grabs the audience’s attention and lets the audience get a sneak peek as to what
+                your video contains.</p>
+              <h3>Title and Description</h3>
+              <p>Another way to boost your SEO in product videos is to strategize the title and description of your
+                video. The words you use for your title and description should be carefully calculated. These words will
+                be used by search engines and will determine if your video suits a consumer’s search. Incorporate strong
+                keywords in both your title and description, but make sure they both remain clear and easy to
+                understand.</p>
+              <h2>Start Creating Product Videos</h2>
+              <p>Product videos are a great way to boost your SEO in Google search results. With the proper title,
+                description, thumbnail, and video transcripts, you will greatly increase your chances of being found
+                within a consumer’s search results.</p>
+              <p>If you find yourself confused and could use a helping hand, <a
+                  href="#">Fiverr</a> has video creation and
+                <a
+                  href="#">online
+                  video marketing</a> strategies ready and waiting. Whether you’re looking to create <a
+                  href="#">unboxing
+                  videos</a>, custom <a
+                  href="#">3D
+                  product animations</a>, or even <a
+                  href="#">product
+                  photography</a> to use as your video thumbnail, Fiverr has bountiful options to help your business
+                flourish.</p>
+              <p>&zwj;</p>
+            </div>
+          </div>
+
+
+      
+
+
+        </div>
+        <div class="container">
+              <div>
+            <div class="row">
+                <div class="col-md-4">
+                <div class="blogsmdivs">
+                 <a href="blog-detail.html"> <img src="./img/blog-1.png" /></a>
+                 <a href="blog-detail.html"> <small>FREELANCER TIPS</small></a>
+                 <a href="blog-detail.html"><h3>6 Tips to Effectively Grow Your LinkedIn Network</h3></a>
+                 <p>Growing your professional network on LinkedIn is one of the first steps to gain valuable leads and attract potential clients. Here are six tips to effectively do so. </p>
+                </div>
+              </div>
+               <div class="col-md-4">
+                <div class="blogsmdivs">
+                 <a href="blog-detail.html"> <img src="./img/blog-1.png" /></a>
+                 <a href="blog-detail.html"> <small>FREELANCER TIPS</small></a>
+                 <a href="blog-detail.html"><h3>6 Tips to Effectively Grow Your LinkedIn Network</h3></a>
+                 <p>Growing your professional network on LinkedIn is one of the first steps to gain valuable leads and attract potential clients. Here are six tips to effectively do so. </p>
+                </div>
+              </div>
+               <div class="col-md-4">
+                <div class="blogsmdivs">
+                 <a href="blog-detail.html"> <img src="./img/blog-1.png" /></a>
+                 <a href="blog-detail.html"> <small>FREELANCER TIPS</small></a>
+                 <a href="blog-detail.html"><h3>6 Tips to Effectively Grow Your LinkedIn Network</h3></a>
+                 <p>Growing your professional network on LinkedIn is one of the first steps to gain valuable leads and attract potential clients. Here are six tips to effectively do so. </p>
+                </div>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--/main-->
+
+
+
+    <footer>
+      <div class="container margin_60_35">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 p-r-5">
+            <p><img src="img/logo.svg" width="250" height="36" alt="" /></p>
+            <p>
+              Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea.
+              Id placerat tacimates definitionem sea, prima quidam vim no. Duo
+              nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus
+              expetendis vis.
+            </p>
+            <div class="follow_us">
+              <ul>
+                <li>Follow us</li>
+                <li>
+                  <a href="#0"><i class="ti-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="ti-twitter-alt"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="ti-google"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="ti-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="ti-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="paymentcards">
+              <a href="#"><img src="./img/cards/visa.svg" /></a>
+              <a href="#"><img src="./img/cards/mastercard.svg" /></a>
+              <a href="#"><img src="./img/cards/amex.svg" /></a>
+              <a href="#"><img src="./img/cards/discover.svg" /></a>
+              <a href="#"><img src="./img/cards/paypal-svgrepo-com.svg" /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 ml-lg-auto">
+            <h5>Information</h5>
+            <ul class="links">
+              <li><a href="./about.html">About Carnival Utopia</a></li>
+              <li><a href="./help-center.html">Help Center</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./terms-and-conditions.html">Terms of Condition</a></li>
+              <li><a href="#">Offers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 ml-lg-auto">
+            <h5>Destinations</h5>
+            <ul class="links">
+              <li><a href="#">Trinidad</a></li>
+              <li><a href="#">Barbados</a></li>
+              <li><a href="#">Jamaica</a></li>
+              <li><a href="#">St Lucia</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact with Us</h5>
+            <ul class="contacts">
               <li>
-                <span><a href="#">Destinations</a></span>
+                <a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a>
               </li>
               <li>
-                <span><a href="./contact.html">Contact</a></span>
-              </li>
-              <li>
-                <span><a href="./help-center.html"> Help Center</a></span>
-              </li>
-              <li>
-                <span><a href="./blog.html">Blog</a></span>
+                <a href="mailto:info@carnival utopia.com"><i class="ti-email"></i> info@carnivalutopia.com</a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- /header -->
-
-      <main>
-        <div class="contentwrapperabut">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <nav class="side-nav side-nav--close" id="navsidebar">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="7"
-                    class="user-nav-arrow-icon useropen"
-                    fill="#9ca9ba"
-                  >
-                    <path
-                      fill="fill"
-                      fill-rule="evenodd"
-                      d="M4.293 5.893L1.025 2.625A1.062 1.062 0 011 1.15a.991.991 0 011.425-.025L5 3.7l2.575-2.575A.991.991 0 019 1.15c.39.418.38 1.07-.025 1.475L5.707 5.893a1 1 0 01-1.414 0z"
-                    ></path>
-                  </svg>
-                  <ul>
-                    <li>
-                      <a class="notactive" href="./about.html"
-                        >About Carnival Utopia</a
-                      >
-                    </li>
-                    <li>
-                      <a class="active" href="./privacy-policy.html"
-                        >privacy policy</a
-                      >
-                    </li>
-                    <li>
-                      <a class="notactive" href="./terms-and-conditions.html"
-                        >Terms of the organizer's contract</a
-                      >
-                    </li>
-                    <li>
-                      <a class="notactive" href="./contact.html">Contacts</a>
-                    </li>
-                    <li>
-                      <a class="notactive" href="./FAQ.html">FAQ</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="col-12 col-lg-9 offset-lg-3 paddingphy">
-                <section class="section-privacy section-privacy-box">
-                  <h1>Privacy Policy</h1>
-                  <div class="content-block">
-                    <p>I. DEFINITIONS:</p>
-                    <p>1. Website - online travel portal Carnival Utopia,</p>
-                    <p>
-                      2. Carnival Utopia - UAB Dovilta, a private limited company
-                      established in the Republic of Lithuania, legal entity
-                      code 302910935, registered office address - Dumburio str.
-                      14, Kaunas, office address - I. Kanto str. 21 - 4a, 44296,
-                      Kaunas, Lithuania.
-                    </p>
-                    <p>
-                      3. User - any person registered on the Website (both a
-                      natural person and a legal entity);
-                    </p>
-                    <p>
-                      4. User - any person (both a natural person and a legal
-                      entity) who has not registered with the Website and who
-                      uses the Website;
-                    </p>
-                    <p>
-                      5. Services - Carnival Utopia The website offers travel-related
-                      services such as the sale of tourist service packages,
-                      booking and sale of buses and airline tickets, hotel
-                      reservation and mediation, mediation in the sale of
-                      insurance and car rental services and other travel-related
-                      services that can be constantly updated. , supplemented or
-                      modified on the Website, and always the term Services will
-                      cover all such services listed on the Website;
-                    </p>
-                    <p>6. Account - a Carnival Utopia link on the relevant website;</p>
-                    <p>
-                      7. Partners - such legal entities are considered with
-                      which Carnival Utopia cooperates in providing the Services on the
-                      www.Carnival Utopia Website;
-                    </p>
-                    <p>
-                      8. A cookie is a small file that is sent to the device
-                      when any person visits the www.Carnival Utopia Website;
-                    </p>
-                    <p>
-                      9. Browser - is a program designed to display web pages
-                      (web pages) on the web or personal computer;
-                    </p>
-                    <p>
-                      10. "Personal data" shall mean any information relating to
-                      an individual, a data subject whose identity is known or
-                      can be directly or indirectly established by means of
-                      personal data, one or more personal, physical,
-                      physiological, psychological, economic, cultural or signs
-                      of a social nature;
-                    </p>
-                    <p>
-                      11. Recipient of personal data - a legal or natural person
-                      to whom personal data is provided, including Partners;
-                    </p>
-                    <p>
-                      12 Privacy Policy - this document, which sets out the
-                      basic rules for the collection, storage, processing and
-                      storage of personal data and other relevant information
-                      through the Website;
-                    </p>
-                    <p>
-                      13. Law - the Law on the Legal Protection of Personal Data
-                      of the Republic of Lithuania;
-                    </p>
-                    <p>
-                      14. General requirements - 2008 of the Director of the
-                      State Data Protection Inspectorate. November 12 order no.
-                      1T-17 (1.12) “On the approval of general requirements for
-                      organizational and technical measures for the security of
-                      personal data”;
-                    </p>
-                    <p>
-                      15. Website Administrator - a person responsible for the
-                      administration of the Website;
-                    </p>
-                    <p>
-                      16. IP Address - A unique number assigned to each computer
-                      connected to the Internet, known as an Internet Protocol
-                      (IP) address. Because these numbers are usually assigned
-                      by country blocks, an IP address can often be used to
-                      identify the country where your computer is connected to
-                      the Internet.
-                    </p>
-                    <p>privacy policy</p>
-                    <p>1. GENERAL PROVISIONS</p>
-                    <p>
-                      1.1. This privacy policy (hereinafter - the Policy)
-                      regulates the main UAB Dovilta, legal entity code
-                      302910935, I. Kanto str. 21 - 4a, LT-44296 Kaunas
-                      (hereinafter - Carnival Utopia), the principles and procedure for
-                      the collection, processing and storage of personal data.
-                    </p>
-                    <p>
-                      1.2. The controller engages in economic and commercial
-                      activities that include the sale of travel, airline
-                      tickets and other travel-related services. For the
-                      provision of these services, the Data Controller uses the
-                      Data Controller, on a legal basis, also processes personal
-                      data for direct marketing purposes.
-                    </p>
-                    <p>
-                      1.3. You must read and understand this Policy carefully
-                      before using the services provided by the Data Controller.
-                    </p>
-                    <p>
-                      2. GENERAL PROVISIONS ON THE PROCESSING OF PERSONAL DATA
-                    </p>
-                    <p>
-                      2.1. This Policy applies to all personal data provided by
-                      Users or collected and processed by Users using the
-                      Services of the Data Controller and / or provided on the
-                      Website. For purposes of this Policy, “Personal Data”
-                      means any information relating to the User that identifies
-                      or identifies Users (directly or indirectly) and any
-                      reference to Users based on such information.
-                    </p>
-                    <p>
-                      2.2. The provider follows the following data processing
-                      principles:
-                    </p>
-                    <p>
-                      2.2.1. Personal data is collected for defined and
-                      legitimate purposes.
-                    </p>
-                    <p>
-                      2.2.2. Personal data is processed accurately and fairly.
-                    </p>
-                    <p>2.2.3. Personal data is constantly updated.</p>
-                    <p>
-                      2.2.4. Personal data shall be kept for no longer than is
-                      necessary for the purposes for which the data are
-                      processed.
-                    </p>
-                    <p>
-                      2.2.5. Personal data is processed only by employees who
-                      have been granted such a right.
-                    </p>
-                    <p>
-                      2.2.6. All information about the processed personal data
-                      is confidential.
-                    </p>
-                    <p>
-                      2.3. When processing and storing the User's personal data,
-                      the Data Controller implements organizational and
-                      technical measures that will ensure the protection of
-                      personal data from accidental or unlawful destruction,
-                      alteration, disclosure, as well as from any other unlawful
-                      processing.
-                    </p>
-                    <p>
-                      2.4. The user is responsible for ensuring that the data
-                      provided by him is accurate, correct and complete.
-                      Entering incorrect data is considered a violation of the
-                      Policy. If the data provided by the User changes, he must
-                      immediately inform the Data Controller. In no event will
-                      the Data Controller be liable for any damage caused to the
-                      User and / or third parties as a result of the User
-                      providing incorrect and / or incomplete personal data or
-                      not requesting the addition and / or modification of the
-                      data due to changes.
-                    </p>
-                    <p>
-                      2.5. By submitting his personal data, the User also grants
-                      the Data Controller the right to collect, store,
-                      systematize, use and process for the purposes provided for
-                      in this Policy all and any personal data provided by the
-                      User directly or indirectly by visiting the Website and
-                      using the Data Controller's services.
-                    </p>
-                    <p>
-                      3. COLLECTION AND PROCESSING OF PERSONAL DATA FOR THE
-                      PURPOSE OF PROVIDING SERVICES
-                    </p>
-                    <p>
-                      3.1. When the User uses the services of the Data
-                      Controller or services provided by third parties through
-                      the Data Controller, the Data Controller processes
-                      personal data by providing them directly to the Data
-                      Controller and collects them when using the services
-                      provided by the Data Controller or outsourced by the Data
-                      Controller.
-                    </p>
-                    <p>
-                      3.2. Nurodydamas savo asmens duomenis, Vartotojas sutinka,
-                      kad Duomenų valdytojas juos valdys ir tvarkys šioje
-                      Politikoje bei teisės aktuose numatytais tikslais,
-                      priemonėmis ir tvarka.
-                    </p>
-                    <p>
-                      3.3. Duomenų valdytojas turi teisę perduoti Vartotojų
-                      duomenis trečiosioms šalims, kurioms būtina perduoti
-                      asmens duomenis kelionių organizavimui vykdyti:
-                    </p>
-                    <p>3.3.1. Kelionių organizatoriams;</p>
-                    <p>3.3.2. Skrydžių bendrovėms;</p>
-                    <p>3.3.3. Vežėjams;</p>
-                    <p>
-                      3.3.4. Kitiems duomenų gavėjams arba tvarkytojams, kuriems
-                      būtina perduoti duomenis aukščiau nurodytam tikslui
-                      įgyvendinti. 3.4. Duomenų valdytojas įsipareigoja perduoti
-                      trečiosioms šalims duomenis tik tokia apimtimi ir tik tais
-                      atvejais, kai tai būtina atitinkamoms paslaugoms suteikti.
-                      Jei konkrečios paslaugos suteikimui nėra būtini tam tikri
-                      duomenys, jie nėra perduodami.
-                    </p>
-                    <p>
-                      4. ASMENS DUOMENŲ RINKIMAS IR TVARKYMAS TIESIOGINĖS
-                      RINKODAROS TIKSLU
-                    </p>
-                    <p>
-                      4.1. Vartotojas gali gauti Duomenų valdytojo siunčiamus
-                      reklaminio pobūdžio pranešimus tada, jei davė sutikimą
-                      (pažymėdamas “Susipažinau ir sutinku su paslaugos
-                      įsigijimo sąlygomis” arba registruojantis svetainėje
-                      Carnival Utopia)&nbsp;Duomenų valdytojui naudoti jo Asmens
-                      duomenis tiesioginės rinkodaros tikslu.
-                    </p>
-                    <p>
-                      4.2. Tiesioginės rinkodaros tikslais Duomenų valdytojas
-                      siunčia Vartotojams reklaminio pobūdžio pranešimus paštu
-                      ir telefonu (SMS žinutes), el. paštu.
-                    </p>
-                    <p>
-                      4.3. Tiesioginės rinkodaros tikslais tvarkomi asmens
-                      duomenys trečiosioms šalims nėra perduodami.
-                    </p>
-                    <p>
-                      4.4. Visi vedami duomenis iš varotojo ar naudotojo į
-                      Carnival Utopia portalą yra dokumentuojami ir saugomi, Carnival Utopia
-                      duombazėje. Trečios šalys neturi galimybės prieiti prie
-                      šių duomenų.
-                    </p>
-                    <p>5. VARTOTOJO TEISĖS</p>
-                    <p>
-                      5.1. Vartotojas ar jo teisėtas atstovas gali kreiptis į
-                      Duomenų valdytoją dėl informacijos apie tvarkomus
-                      Vartotojo asmens duomenis pateikimo. Duomenų valdytojas,
-                      nustatęs Vartotojo tapatybę, Vartotojui ar jo teisėtam
-                      atstovui per protingą terminą pateikia informaciją apie
-                      Duomenų valdytojo tvarkomus Vartotojo asmens duomenis ir
-                      jų apdorojimą.
-                    </p>
-                    <p>
-                      5.2. Duomenų valdytojas, gavęs pranešimą iš Vartotojo, kad
-                      į duomenų bazę įvesti Vartotojo asmens duomenys yra
-                      klaidingi, netikslūs ar pasikeitę, imasi reikiamų
-                      atsargumo priemonių, jog tokie duomenys būtų nedelsiant
-                      ištaisyti. Jei nustatoma, kad buvo renkami Vartotojo
-                      asmens duomenys, nereikalingi paslaugoms teikti ar
-                      tiesioginei rinkodarai, tokie duomenys ištrinami iš
-                      duomenų bazės ir toliau netvarkomi.
-                    </p>
-                    <p>
-                      5.3. Vartotojui pareiškus nesutikimą su jo asmens duomenų
-                      tvarkymu, šio duomenų tvarkymas turi būti nedelsiant ir
-                      nemokamai nutrauktas, išskyrus kiek (ir laikotarpiui,
-                      kuriam), tokie duomenys būtini Vartotojo su Duomenų
-                      valdytoju sudarytai sutarčiai įvykdyti.
-                    </p>
-                    <p>
-                      5.4. Reklaminio pobūdžio SMS žinučių siuntimo Vartotojas
-                      gali atsisakyti kreipęsis į Duomenų valdytoją telefonu ar
-                      elektroniniu paštu arba atvykęs į Duomenų valdytojo
-                      buveinę, o reklaminio pobūdžio el. pašto pranešimų – ir
-                      paspaudęs el. laiške esančią nuorodą. Sutikimas gauti
-                      pranešimus yra savanoriškas ir bet kada nurodytais būdais
-                      gali būti nutrauktas nemokamai.
-                    </p>
-                    <p>6. BAIGIAMOSIOS NUOSTATOS</p>
-                    <p>
-                      6.1. Ši Politika sudaryta vadovaujantis Lietuvos
-                      Respublikos teisės aktais.
-                    </p>
-                    <p>
-                      6.2. Šios Politikos pagrindu kylantiems santykiams taikoma
-                      Lietuvos Respublikos teisė.
-                    </p>
-                    <p>
-                      6.3. Duomenų valdytojas turi teisę iš dalies ar visiškai
-                      pakeisti Politiką.
-                    </p>
-                    <p>
-                      6.4. Politikos papildymai ar pakeitimai įsigalioja nuo jų
-                      paskelbimo Interneto svetainėje dienos.
-                    </p>
-                    <p>
-                      6.5. Jei po Politikos papildymo ar pakeitimo Vartotojas ir
-                      toliau naudojasi Interneto svetaine ir Duomenų valdytojo
-                      teikiamomis paslaugomis, laikoma, kad Vartotojas sutinka
-                      su šiais papildymais ir/ar pakeitimais.
-                    </p>
-                  </div>
-                </section>
-              </div>
-            </div>
           </div>
         </div>
-      </main>
-      <!--/main-->
-
-       <div class="newsletter1">
-				<div class="nescy container">
-					<div class="row d-flex">
-						<div class="col-12 col-lg-6 justify-content-lg-start justify-content-center">
-							<h2 class="h2sss">
-								Subscribe to the Carnival Utopia newsletter
-							</h2>
-							<p class="csdkontent">
-								Don’t miss the opportunity to get the
-										cheapest deals, news and tips
-							</p>
-						</div>
-						<div class="col-12 col-lg-6">
-							<form action="" class="newsletter-form">
-								<div class="input-field"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="14">
-										<g fill="none" fill-rule="evenodd" stroke="#9CA9BA" stroke-linecap="round"
-											stroke-linejoin="round" stroke-width="2">
-											<path d="M3 1h11a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2V3a2 2 0 012-2z">
-											</path>
-											<path d="M2 2l6.5 6L15 2"></path>
-										</g>
-									</svg><input class="input" type="text" placeholder="Enter an email address"
-										aria-label="Enter an email address" value=""><button
-										class="btn_1  btngrad" type="submit" aria-label="Subscribe">
-										Subscribe
-									</button></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-
-      <footer>
-        <div class="container margin_60_35">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 p-r-5">
-              <p><img src="img/logo.svg" width="250" height="36" alt="" /></p>
-              <p>
-                Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea.
-                Id placerat tacimates definitionem sea, prima quidam vim no. Duo
-                nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus
-                expetendis vis.
-              </p>
-              <div class="follow_us">
-                <ul>
-                  <li>Follow us</li>
-                  <li>
-                    <a href="#0"><i class="ti-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#0"><i class="ti-twitter-alt"></i></a>
-                  </li>
-                  <li>
-                    <a href="#0"><i class="ti-google"></i></a>
-                  </li>
-                  <li>
-                    <a href="#0"><i class="ti-pinterest"></i></a>
-                  </li>
-                  <li>
-                    <a href="#0"><i class="ti-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-              	<div class="paymentcards">
-                           <a href="#"><img src="./img/cards/visa.svg" /></a>
-						    <a href="#"><img src="./img/cards/mastercard.svg" /></a>
-							<a href="#"><img src="./img/cards/amex.svg" /></a>
-						    <a href="#"><img src="./img/cards/discover.svg" /></a>
-							<a href="#"><img src="./img/cards/paypal-svgrepo-com.svg" /></a>
-						</div>
-            </div>
-            <div class="col-lg-3 col-md-6 ml-lg-auto">
-              <h5>Information</h5>
-              <ul class="links">
-                <li><a href="./about.html">About Carnival Utopia</a></li>
-                <li><a href="./help-center.html">Help Center</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="./terms-and-conditions.html">Terms of Condition</a></li>
-                <li><a href="#">Offers</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 ml-lg-auto">
-              <h5>Destinations</h5>
-              <ul class="links">
-                <li><a href="#">Trinidad</a></li>
-                <li><a href="#">Barbados</a></li>
-                <li><a href="#">Jamaica</a></li>
-                <li><a href="#">St Lucia</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h5>Contact with Us</h5>
-              <ul class="contacts">
-                <li>
-                  <a href="tel://61280932400"
-                    ><i class="ti-mobile"></i> + 61 23 8093 3400</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:info@carnival utopia.com"
-                    ><i class="ti-email"></i> info@carnivalutopia.com</a
-                  >
-                </li>
-              </ul>
-            </div>
+        <!--/row-->
+        <hr />
+        <div class="row">
+          <div class="col-lg-6">
+            <ul id="footer-selector">
+              <li>
+                <span>© 2021 Carnival Utopia All rights reserved.</span>
+              </li>
+            </ul>
           </div>
-          <!--/row-->
-          <hr />
-          <div class="row">
-            <div class="col-lg-6">
-              <ul id="footer-selector">
-                <li>
-                  <span>© 2021 Carnival Utopia All rights reserved.</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
+          <div class="col-lg-6">
             <ul id="additional_links">
-                <li><a href="./terms-and-conditions.html">Terms and conditions</a></li>
-                <li><a href="./privacy-policy.html">Privacy</a></li>
-              </ul>
-            </div>
+              <li><a href="./terms-and-conditions.html">Terms and conditions</a></li>
+              <li><a href="./privacy-policy.html">Privacy</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
-      <!--/footer-->
-    </div>
-    <!-- page -->
+      </div>
+    </footer>
+    <!--/footer-->
+  </div>
+  <!-- page -->
 
-<!-- Modal sign in -->
+  <!-- Modal sign in -->
   <div class="modal modalsign" id="signinmodal" tabindex="-1" aria-labelledby="signinmodalLabel" aria-hidden="true">
     <div class="modal-dialog dialogsign">
       <div class="modal-content">
@@ -1194,23 +930,20 @@
     </div>
   </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
     $(".user-nav-arrow-icon").click(function () {
-        $(".side-nav ul li .notactive").fadeToggle("fast");
-        var element = document.getElementById("navsidebar");
-        element.classList.toggle("side-nav--open");
-      });
-    </script>
+      $(".side-nav ul li .notactive").fadeToggle("fast");
+      var element = document.getElementById("navsidebar");
+      element.classList.toggle("side-nav--open");
+    });
+  </script>
 
-    <!-- COMMON SCRIPTS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- COMMON SCRIPTS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/common_scripts.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script2.js"></script>
+</body>
 
-    <script src="js/common_scripts.js"></script>
-    <script src="js/main.js"></script>
-     <script src="js/script2.js"></script>
-
-    <!-- INPUT QUANTITY  -->
-    <script src="js/input_qty.js"></script>
-  </body>
 </html>

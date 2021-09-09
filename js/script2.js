@@ -326,11 +326,59 @@ $(".minuschild").click(function () {
   }
 });
 
-// $("#continuetopay").submit(function () {
-//   // e.preventDefault();
-//    window.location.href = "./checkout3.html";
 
-// });
+
+$(".plusJs").click(function () {
+  $("#inputJs").val(parseInt($("#inputJs").val()) + 1);
+
+  if ($("#inputJs").val() >= 3) {
+    $(".plusJs").attr("disabled", true);
+  }
+  if ($("#inputJs").val() >= 1) {
+    $(".minusJs").removeAttr("disabled");
+  }
+});
+
+$(".minusJs").click(function () {
+  $("#inputJs").val(parseInt($("#inputJs").val()) - 1);
+
+  if ($("#inputJs").val() <= 1) {
+    $(".minusJs").attr("disabled", true);
+  }
+
+  if ($("#inputJs").val() <= 3) {
+    $(".plusJs").removeAttr("disabled");
+  }
+});
+
+$(".plusbed").click(function () {
+  $("#inputbed").val(parseInt($("#inputbed").val()) + 1);
+
+  if ($("#inputbed").val() >= 4) {
+    $(".plusbed").attr("disabled", true);
+  }
+  if ($("#inputbed").val() >= 3) {
+    $(".minusbed").removeAttr("disabled");
+  }
+});
+
+$(".minusbed").click(function () {
+  $("#inputbed").val(parseInt($("#inputbed").val()) - 1);
+
+  if ($("#inputbed").val() <= 3) {
+    $(".minusbed").attr("disabled", true);
+  }
+
+  if ($("#inputbed").val() <= 4) {
+    $(".plusbed").removeAttr("disabled");
+  }
+});
+
+
+
+
+
+
 
 $(".entercoupendid").click(function () {
   $(".entercoupendid").css("display", "none");
@@ -356,3 +404,88 @@ function addspace(element) {
   let finalVal = ele.match(/.{1,4}/g).join(" ");
   document.getElementById(element.id).value = finalVal;
 }
+
+
+
+// Click to Copy
+var tooltip = document.getElementById('myTooltip');
+var copyText = document.getElementById('couponCode');
+function myFunction() {
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand('copy');
+	tooltip.innerHTML = 'Copied: ' + copyText.value;
+}
+function outFunc() {
+	tooltip.innerHTML = 'Copy to clipboard';
+}
+
+
+// checkout new
+
+$("#chseroom").children().off("click");
+$("#chseroom").css("opacity", ".32");
+
+$("#chseocp").children().off("click");
+$("#chseocp").css("opacity", ".32");
+
+$("#chsestay").children().off("click");
+$("#chsestay").css("opacity", ".32");
+
+$("#chsegender").children().off("click");
+$("#chsegender").css("opacity", ".32");
+
+$("#chsecostume").children().off("click");
+$("#chsecostume").css("opacity", ".32");
+
+$("#chseevent").children().off("click");
+$("#chseevent").css("opacity", ".32");
+
+$("#chseaddservice").children().off("click");
+$("#chseaddservice").css("opacity", ".32");
+
+
+
+$("#chsehotel input[type=radio]").click(function () {
+  $("#chseroom").children().on("click");
+  $("#chseroom").css("opacity", "1");
+
+});
+
+$("#chseroom input[type=radio]").click(function () {
+  $("#chseocp").children().on("click");
+  $("#chseocp").css("opacity", "1");
+});
+
+$("#chseocp .minusJs, .plusJs, .minusbed, .plusbed").click(function () {
+  $("#chsestay").children().on("click");
+  $("#chsestay").css("opacity", "1");
+});
+
+$("#chsestay input[type=radio]").click(function () {
+  $("#chsegender").children().on("click");
+  $("#chsegender").css("opacity", "1");
+});
+
+$("#chsegender input[type=radio]").click(function () {
+  $("#chsecostume").children().on("click");
+  $("#chsecostume").css("opacity", "1");
+});
+
+$("#chsecostume input[type=radio]").click(function () {
+  $("#chseevent").children().on("click");
+  $("#chseevent").css("opacity", "1");
+});
+
+$("#chseevent input[type=radio]").click(function () {
+  $("#chseaddservice").children().on("click");
+  $("#chseaddservice").css("opacity", "1");
+});
+
+$("#chseaddservice input[type=radio]").click(function () {
+  $("#traveldet").css("display", "block");
+});
+$("#conttopay").click(function () {
+   $("#chsepaymet").css("display", "block");
+}); 
+
