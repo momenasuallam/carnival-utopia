@@ -861,6 +861,8 @@ ul#top_menu {
 @media (max-width: 991px) {
   ul#top_menu {
     margin: -2px 0 0 10px;
+    position: absolute;
+    right: 55px;
   }
 }
 ul#top_menu li {
@@ -1115,6 +1117,10 @@ header.sticky .hamburger-inner::after {
     width: 100%;
     text-align: center;
   }
+  #logo a {
+    position: absolute;
+    left: 15px;
+  }
   #logo img {
     width: auto;
     height: 30px;
@@ -1124,6 +1130,10 @@ header.sticky .hamburger-inner::after {
     height: 30px;
     margin: 12px 0 0 0;
     width: 180px;
+  }
+  .btn_mobile{
+    position: absolute;
+    right: 15px;
   }
 }
 
@@ -11339,6 +11349,12 @@ textarea {
 .usercircle{
   display:none;
 }
+.is-active{
+  position: absolute;
+    left: -425px;
+    top: -7px;
+}
+
 @media(max-width:768px)
 {
   .btnhead{
@@ -11349,7 +11365,7 @@ textarea {
    display: block;
   }
   .usercircle img{
-     width: 30px;
+     width: 25px;
   }
 
 }
@@ -11729,6 +11745,10 @@ font-size: 18px;
 }
 .mainblogdiv img{
 width: 100%;
+border-radius: 4px;
+}
+.imgbjjfui img{
+  border-radius: 4px;
 }
 .blibhjgu{
 
@@ -11802,7 +11822,8 @@ margin-bottom: 40px;
   text-decoration: none;
 }
 .blogsmdivs a img{
-  width: 100%
+  width: 100%;
+  border-radius: 4px;
 }
 .blogsmdivs a small{
 margin-top: 15px;

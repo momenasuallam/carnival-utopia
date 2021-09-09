@@ -256,7 +256,7 @@ $(".benefitsshowmore2").click(function () {
   if ($(".benefitstext2").hasClass("benefitsshow-more-height")) {
     $(this).html("Hide <i class='fa fa-angle-up'></i>");
   } else {
-    $(this).html("Show More <i class='fa fa-angle-down'></i>");
+    $(this).html("Hide <i class='fa fa-angle-down'></i>");
   }
 
   $(".benefitstext2").toggleClass("benefitsshow-more-height");
@@ -265,7 +265,7 @@ $(".benefitsshowmore3").click(function () {
   if ($(".benefitstext3").hasClass("benefitsshow-more-height")) {
     $(this).html("Hide <i class='fa fa-angle-up'></i>");
   } else {
-    $(this).html("Show More <i class='fa fa-angle-down'></i>");
+    $(this).html("Hide <i class='fa fa-angle-down'></i>");
   }
 
   $(".benefitstext3").toggleClass("benefitsshow-more-height");
@@ -472,7 +472,7 @@ $("#chsegender input[type=radio]").click(function () {
   $("#chsecostume").css("opacity", "1");
 });
 
-$("#chsecostume input[type=radio]").click(function () {
+$("#chsecostume ").click(function () {
   $("#chseevent").children().on("click");
   $("#chseevent").css("opacity", "1");
 });
