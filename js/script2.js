@@ -252,11 +252,18 @@ $(".benefitsshowmore").click(function () {
   $(".benefitstext").toggleClass("benefitsshow-more-height");
 });
 
+// $(".benefitsshowmore2").click(function () {
+//   $("#dura1").css("display", "none");
+// });
+
+
 $(".benefitsshowmore2").click(function () {
   if ($(".benefitstext2").hasClass("benefitsshow-more-height")) {
     $(this).html("Hide <i class='fa fa-angle-up'></i>");
+    $("#dura1").css("display", "none");
   } else {
-    $(this).html("Hide <i class='fa fa-angle-down'></i>");
+    $(this).html("Show more <i class='fa fa-angle-down'></i>");
+    $("#dura1").css("display", "block");
   }
 
   $(".benefitstext2").toggleClass("benefitsshow-more-height");
@@ -264,8 +271,10 @@ $(".benefitsshowmore2").click(function () {
 $(".benefitsshowmore3").click(function () {
   if ($(".benefitstext3").hasClass("benefitsshow-more-height")) {
     $(this).html("Hide <i class='fa fa-angle-up'></i>");
+    $("#dura2").css("display", "none");
   } else {
-    $(this).html("Hide <i class='fa fa-angle-down'></i>");
+    $(this).html("Show more <i class='fa fa-angle-down'></i>");
+    $("#dura2").css("display", "block");
   }
 
   $(".benefitstext3").toggleClass("benefitsshow-more-height");
@@ -444,6 +453,9 @@ $("#chseevent").css("opacity", ".32");
 $("#chseaddservice").children().off("click");
 $("#chseaddservice").css("opacity", ".32");
 
+$("#chsepayoption").children().off("click");
+$("#chsepayoption").css("opacity", ".32");
+
 
 
 $("#chsehotel input[type=radio]").click(function () {
@@ -477,14 +489,20 @@ $("#chsecostume ").click(function () {
   $("#chseevent").css("opacity", "1");
 });
 
-$("#chseevent input[type=radio]").click(function () {
+$("#chseevent input[type=checkbox]").click(function () {
   $("#chseaddservice").children().on("click");
   $("#chseaddservice").css("opacity", "1");
 });
 
-$("#chseaddservice input[type=radio]").click(function () {
+$("#chseaddservice input[type=checkbox]").click(function () {
+  $("#chsepayoption").children().on("click");
+  $("#chsepayoption").css("opacity", "1");
+});
+
+$("#chsepayoption input[type=radio]").click(function () {
   $("#traveldet").css("display", "block");
 });
+
 $("#conttopay").click(function () {
    $("#chsepaymet").css("display", "block");
 }); 

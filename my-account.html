@@ -136,12 +136,7 @@
                   Reviews
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Invoice-tab" data-bs-toggle="tab" data-bs-target="#Invoice" type="button"
-                  role="tab" aria-controls="Invoice" aria-selected="false">
-                  Invoice
-                </button>
-              </li>
+            
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
@@ -344,7 +339,9 @@
 
                           <div class="tripsinfo1">
                             <p class="card-text" style="margin-bottom: 0px">
-                              <small class="text-muted">08 08 08 - 15 08 2021</small>
+                              <small class="text-muted">TOTAL: $500</small>
+                              <br>
+                               <small class="text-muted">BALANCE: $100</small>
                             </p>
                             <span class="tripinfospan1">$451</span>
                           </div>
@@ -362,7 +359,7 @@
 
                           <div class="tripsinfo1">
                             <p class="card-text" style="margin-bottom: 0px">
-                              <small class="text-muted">08 08 08 - 15 08 2021</small>
+                              <small class="text-muted">TOTAL: $500</small>
                             </p>
                             <span class="tripinfospan1">$451</span>
                           </div>
@@ -374,15 +371,16 @@
                   <div class="card mt2form2">
                     <div class="card-header">
                       <!-- Title -->
-                      <h4 class="card-header-title">Invoices</h4>
+                      <h4 class="card-header-title">Payments</h4>
                     </div>
                     <div class="table-responsive">
                       <table class="table table-sm table-nowrap card-table">
                         <thead>
                           <tr>
-                            <th>Invoice ID</th>
+                            <th>PACKAGE ID</th>
                             <th>Date</th>
                             <th>Amount</th>
+                             <th>Balance</th>
                             <th>Status</th>
                           </tr>
                         </thead>
@@ -394,6 +392,7 @@
                             <td>
                               <time datetime="2020-04-24">Apr. 24, 2020</time>
                             </td>
+                            <td>$29.00</td>
                             <td>$29.00</td>
                             <td>
                               <span class="badge bg-secondary">Outstanding</span>
@@ -407,6 +406,7 @@
                               <time datetime="2020-03-24">Mar. 24, 2020</time>
                             </td>
                             <td>$29.00</td>
+                            <td>$29.00</td>
                             <td>
                               <span class="badge bg-success">Paid</span>
                             </td>
@@ -419,6 +419,7 @@
                               <time datetime="2020-02-24">Feb. 24, 2020</time>
                             </td>
                             <td>$29.00</td>
+                            <td>$29.00</td>
                             <td>
                               <span class="badge bg-success">Paid</span>
                             </td>
@@ -430,6 +431,7 @@
                             <td>
                               <time datetime="2020-01-24">Jan. 24, 2020</time>
                             </td>
+                            <td>$29.00</td>
                             <td>$29.00</td>
                             <td>
                               <span class="badge bg-success">Paid</span>
@@ -458,7 +460,7 @@
                           <!-- Button -->
                           <button class="btn_1  btngrad btn-sm btnsm2" href="#" style="font-size: 13px" type="button"
                             data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            Add New
+                            Add new
                           </button>
                         </div>
                       </div>
@@ -614,10 +616,10 @@
               <div class="tab-pane fade show" id="Offers" role="tabpanel" aria-labelledby="Offers-tab">
                 <div>
                   <div class="row">
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                       <img class="imgoff" src="./img/vistaprint_logo_13.png" />
-                    </div>
-                    <div class="col-md-9">
+                    </div> -->
+                    <div class="col-md-12">
                       <div class="offersecdiv">
                         <h2>Up to 30% Off Promo Code</h2>
                         <p>Groupon Users! Don't miss out on this Vistaprint promo code exclusively to Groupon. Get 20%
@@ -744,10 +746,8 @@
                   <div class="reviews-container">
                  
                     <!-- /review-box -->
-                    <div class="review-box clearfix">
-                      <figure class="rev-thumb">
-                        <img src="img/avatar2.jpg" alt="">
-                      </figure>
+                    <div class="review-box clearfix" style="padding-left: 0px;">
+                
                       <div class="rev-content">
                         <div class="rating">
                           <img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px">
@@ -763,10 +763,7 @@
                       </div>
                     </div>
                     <!-- /review-box -->
-                    <div class="review-box clearfix">
-                      <figure class="rev-thumb">
-                        <img src="img/avatar3.jpg" alt="">
-                      </figure>
+                    <div class="review-box clearfix" style="padding-left: 0px;">
                       <div class="rev-content">
                         <div class="rating">
                           <img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px"><img src="./img/star.svg" style="width: 14px; height: 14px">
@@ -832,168 +829,7 @@
                 </div>
                 </div>
                </div>
-              <div class="tab-pane fade show" id="Invoice" role="tabpanel" aria-labelledby="Invoice-tab">
-                <div>
-                  <div class="receiptcard">
-                    <div class="card card-body p-5">
-                      <div class="row">
-                        <div class="col text-end">
-
-                          <!-- Badge -->
-                          <div class="badge bg-danger">
-                            Overdue
-                          </div>
-
-                        </div>
-                      </div> <!-- / .row -->
-                      <div class="row">
-                        <div class="col text-center firsco">
-
-                          <!-- Logo -->
-                          <img src="./img/logo.svg" alt="..." class="img-fluid mb-4" style="width: 200px;">
-
-                          <!-- Title -->
-                          <h2 class="mb-2">
-                            Invoice from Carnival Utopia
-                          </h2>
-
-                          <!-- Text -->
-                          <p class="text-muted mb-6">
-                            Invoice #SDF9823KD
-                          </p>
-
-                        </div>
-                      </div> <!-- / .row -->
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-
-                          <!-- Heading -->
-                          <h6 class="text-uppercase text-muted">
-                            Invoiced from
-                          </h6>
-
-                          <!-- Text -->
-                          <p class="text-muted mb-4">
-                            <strong class="text-body">Kenny Blankenship</strong> <br>
-                            CEO of Good Themes <br>
-                            123 Happy Walk Way <br>
-                            San Francisco, CA
-                          </p>
-
-                          <!-- Heading -->
-                          <h6 class="text-uppercase text-muted">
-                            Invoiced ID
-                          </h6>
-
-                          <!-- Text -->
-                          <p class="mb-4">
-                            #SDF9823KD
-                          </p>
-
-                        </div>
-                        <div class="col-12 col-md-6 text-md-end">
-
-                          <!-- Heading -->
-                          <h6 class="text-uppercase text-muted">
-                            Invoiced to
-                          </h6>
-
-                          <!-- Text -->
-                          <p class="text-muted mb-4">
-                            <strong class="text-body">Jimmy LeBuyer</strong> <br>
-                            Acquisitions at Themers <br>
-                            236 Main St., #201 <br>
-                            Los Angeles, CA
-                          </p>
-
-                          <!-- Heading -->
-                          <h6 class="text-uppercase text-muted">
-                            Due date
-                          </h6>
-
-                          <!-- Text -->
-                          <p class="mb-4">
-                            <time datetime="2018-04-23">Apr 23, 2018</time>
-                          </p>
-
-                        </div>
-                      </div> <!-- / .row -->
-                      <div class="row">
-                        <div class="col-12">
-
-                          <!-- Table -->
-                          <div class="table-responsive">
-                            <table class="table my-4">
-                              <thead>
-                                <tr>
-                                  <th class="px-0 bg-transparent border-top-0">
-                                    <span class="h6">Description</span>
-                                  </th>
-                                  <th class="px-0 bg-transparent border-top-0">
-                                    <span class="h6">Hours</span>
-                                  </th>
-                                  <th class="px-0 bg-transparent border-top-0 text-end">
-                                    <span class="h6">Cost</span>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="px-0">
-                                    Custom theme development
-                                  </td>
-                                  <td class="px-0">
-                                    125
-                                  </td>
-                                  <td class="px-0 text-end">
-                                    $6,250
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="px-0">
-                                    Logo design
-                                  </td>
-                                  <td class="px-0">
-                                    15
-                                  </td>
-                                  <td class="px-0 text-end">
-                                    $750
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="px-0 border-top border-top-2">
-                                    <strong>Total amount due</strong>
-                                  </td>
-                                  <td colspan="2" class="px-0 text-end border-top border-top-2">
-                                    <span class="h3">
-                                      $7,000
-                                    </span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-
-                          <hr class="my-5">
-
-                          <!-- Title -->
-                          <h6 class="text-uppercase">
-                            Notes
-                          </h6>
-
-                          <!-- Text -->
-                          <p class="text-muted mb-0">
-                            We really appreciate your business and if there’s anything else we can do, please let us
-                            know! Also, should you need us to add VAT or anything else to this order, it’s super easy
-                            since this is a template, so just ask!
-                          </p>
-
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+         
             </div>
           </div>
           <!-- /row -->
