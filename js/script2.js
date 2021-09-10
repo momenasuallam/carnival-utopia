@@ -256,14 +256,16 @@ $(".benefitsshowmore").click(function () {
 //   $("#dura1").css("display", "none");
 // });
 
-
+$("#dura1").css("display", "none");
+$("#dura2").css("display", "none");
 $(".benefitsshowmore2").click(function () {
   if ($(".benefitstext2").hasClass("benefitsshow-more-height")) {
     $(this).html("Hide <i class='fa fa-angle-up'></i>");
-    $("#dura1").css("display", "none");
+    $("#dura1").css("display", "block");
   } else {
     $(this).html("Show more <i class='fa fa-angle-down'></i>");
-    $("#dura1").css("display", "block");
+    $("#dura1").css("display", "none");
+    
   }
 
   $(".benefitstext2").toggleClass("benefitsshow-more-height");
@@ -271,10 +273,10 @@ $(".benefitsshowmore2").click(function () {
 $(".benefitsshowmore3").click(function () {
   if ($(".benefitstext3").hasClass("benefitsshow-more-height")) {
     $(this).html("Hide <i class='fa fa-angle-up'></i>");
-    $("#dura2").css("display", "none");
+    $("#dura2").css("display", "block");
   } else {
     $(this).html("Show more <i class='fa fa-angle-down'></i>");
-    $("#dura2").css("display", "block");
+    $("#dura2").css("display", "none");
   }
 
   $(".benefitstext3").toggleClass("benefitsshow-more-height");
@@ -432,70 +434,74 @@ function outFunc() {
 
 // checkout new
 
-$("#chseroom").children().off("click");
+// $("#chseroom").children().off("click");
+$("#chseroom input[type=radio]").attr("disabled", true);
 $("#chseroom").css("opacity", ".32");
 
-$("#chseocp").children().off("click");
+
+$(".minusJs").attr("disabled", true);
+$(".plusJs").attr("disabled", true);
 $("#chseocp").css("opacity", ".32");
 
-$("#chsestay").children().off("click");
+$("#chsestay input[type=radio]").attr("disabled", true);
 $("#chsestay").css("opacity", ".32");
 
-$("#chsegender").children().off("click");
+$("#chsegender input[type=radio]").attr("disabled", true);
 $("#chsegender").css("opacity", ".32");
 
-$("#chsecostume").children().off("click");
+$("#chsecostume select").attr("disabled", "disabled");
 $("#chsecostume").css("opacity", ".32");
 
-$("#chseevent").children().off("click");
+$("#chseevent input[type=checkbox]").attr("disabled", true);
 $("#chseevent").css("opacity", ".32");
 
-$("#chseaddservice").children().off("click");
+$("#chseaddservice input[type=checkbox]").attr("disabled", true);
 $("#chseaddservice").css("opacity", ".32");
 
-$("#chsepayoption").children().off("click");
+$("#chsepayoption input[type=radio]").attr("disabled", true);
 $("#chsepayoption").css("opacity", ".32");
 
 
 
 $("#chsehotel input[type=radio]").click(function () {
-  $("#chseroom").children().on("click");
+  $("#chseroom input[type=radio]").attr("disabled", false);
   $("#chseroom").css("opacity", "1");
 
 });
 
 $("#chseroom input[type=radio]").click(function () {
-  $("#chseocp").children().on("click");
+   $(".minusJs").attr("disabled", false);
+   $(".plusJs").attr("disabled", false);
   $("#chseocp").css("opacity", "1");
 });
 
 $("#chseocp .minusJs, .plusJs, .minusbed, .plusbed").click(function () {
-  $("#chsestay").children().on("click");
+   $("#chsestay input[type=radio]").attr("disabled", false);
   $("#chsestay").css("opacity", "1");
 });
 
 $("#chsestay input[type=radio]").click(function () {
-  $("#chsegender").children().on("click");
+   $("#chsegender input[type=radio]").attr("disabled", false);
   $("#chsegender").css("opacity", "1");
 });
 
 $("#chsegender input[type=radio]").click(function () {
-  $("#chsecostume").children().on("click");
+  $("#chsecostume select").removeAttr("disabled");
   $("#chsecostume").css("opacity", "1");
 });
 
 $("#chsecostume ").click(function () {
-  $("#chseevent").children().on("click");
+    $("#chseevent input[type=checkbox]").attr("disabled", false);
   $("#chseevent").css("opacity", "1");
 });
 
 $("#chseevent input[type=checkbox]").click(function () {
-  $("#chseaddservice").children().on("click");
+  $("#chseaddservice input[type=checkbox]").attr("disabled", false);
   $("#chseaddservice").css("opacity", "1");
 });
 
 $("#chseaddservice input[type=checkbox]").click(function () {
-  $("#chsepayoption").children().on("click");
+   $("#chsepayoption input[type=radio]").attr("disabled", false);
   $("#chsepayoption").css("opacity", "1");
 });
 

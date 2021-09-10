@@ -91,9 +91,21 @@
     <!-- /header -->
 
     <main>
-      <div class="checkutpagemain">
+       <div class="choutdiv">
+        <div class="container">
+          <div class="choutflex">
+            <div>
+              <h3>Total</h3>
+            </div>
+            <div class="">
+             <span><button class="notlikebutton" type="button" data-bs-toggle="modal" data-bs-target="#modalsumry"><span class="shosumdesk">Show trip summary:</span> $909.00</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkutpagemain chpad2mainpch2">
         <div class="container contch">
-          <h2>Review your trip.</h2>
+          <h2>Create your trip.</h2>
           <div class="paddingch">
             <div class="row">
               <div class="col-md-6">
@@ -1001,10 +1013,10 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="prel">
                  
-                  <a  id="conttopay" class="btn_1  btngrad">Continue to Payment
+                  <a  id="conttopay" class="btn_1 btnch2new btngrad">Continue to Payment
                   </a>
                 
                 </div>
@@ -1095,7 +1107,7 @@
 
                   <div class="prel">
 
-                    <a href="checkout4.html" class="btn_1  btngrad ">Continue to Review</a>
+                    <a href="checkout4.html" class="btn_1 btnch2new btngrad ">Continue to Review</a>
                   </div>
                 </div>
               </div>
@@ -1813,6 +1825,92 @@
                     Sign In
                   </button>
                 </small>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- modal summary -->
+ <div class="modal" id="modalsumry" tabindex="-1" aria-labelledby="modalsumryLabel" aria-hidden="true">
+    <div class="modal-dialog dialogsumry modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+             <button type="button" class="btnclosesumry" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.48514 7.00022L12.9723 2.51308L13.8976 1.58774C14.0341 1.45123 14.0341 1.22941 13.8976 1.09291L12.9075 0.102816C12.771 -0.0336885 12.5492 -0.0336885 12.4127 0.102816L7.00022 5.5153L1.58774 0.102378C1.45123 -0.0341261 1.22941 -0.0341261 1.09291 0.102378L0.102378 1.09247C-0.0341261 1.22898 -0.0341261 1.4508 0.102378 1.5873L5.5153 7.00022L0.102378 12.4127C-0.0341261 12.5492 -0.0341261 12.771 0.102378 12.9075L1.09247 13.8976C1.22898 14.0341 1.4508 14.0341 1.5873 13.8976L7.00022 8.48514L11.4874 12.9723L12.4127 13.8976C12.5492 14.0341 12.771 14.0341 12.9075 13.8976L13.8976 12.9075C14.0341 12.771 14.0341 12.5492 13.8976 12.4127L8.48514 7.00022Z">
+              </path>
+            </svg>
+          </button>
+          <div class="">
+            <div class="container2" style="padding: 0px">
+              <div class="justify-content-center">
+                <div class="">
+                  <h3>Your Trip Total</h3>
+                  <hr>
+                </div>
+                <div class="dflexch1">
+                  <span>1 items</span>
+                  <a href="./checkout1.html">Edit</a>
+                  
+                </div>
+                <hr>
+                 <div class="dflexch1 padbot0">
+                      <p>Subtotal</p>
+                      <span>$505.00</span>
+                    </div>
+                    <!-- <div class="dflexch1 padbot0">
+                      <p>Shipping</p>
+                      <span>FREE</span>
+                    </div> -->
+                    <div class="dflexch1">
+                      <p>
+                        Processing fees
+                      </p>
+                      <span>$88.66</span>
+                    </div>
+                     <hr />
+                    <div class="dflexch1">
+                      <h4>Total</h4>
+                      <h4>$909.00</h4>
+                    </div>
+                    <h3>Travel Details</h3>
+                  <!-- <hr>
+                    <div class="dflexch1">
+                      <div>
+                    <p class="colordrkbold">Delivers On:</p>
+                    <p class="colordrk">Sep 16 - Sep 23</p>
+                  </div>
+                  <div>
+                       <a href="./checkout2.html">Change</a>
+                  </div>
+                    </div>
+                  -->
+                  <!-- <hr>
+                    <div class="dflexch1">
+                       <div>
+                    <p class="colordrkbold">Ships to:</p>
+                    <p class="colordrk">2121 Beekman PI Apt 4k</p>
+                  </div>
+                  <div>
+                       <a href="./checkout3.html">Change</a>
+                  </div>
+                    </div> -->
+                 
+                  <hr>
+                   <div>
+                    <p class="colordrkbold">Payment</p>
+                  </div>
+                  <hr>
+                   <div class="dflexch1">
+                      <p class="colordrkbold">Review</p>
+                      <a href="./checkout4.html">View</a>
+                    </div>
               </div>
               <!-- / .row -->
             </div>

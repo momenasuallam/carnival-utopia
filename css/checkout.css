@@ -11,6 +11,9 @@
 .checkutpagemain {
   padding: 85px 0 40px;
 }
+.chpad2mainpch2{
+    padding: 130px 0 40px !important; 
+}
 #benefitsdescription {
   max-width: 400px;
   position: relative;
