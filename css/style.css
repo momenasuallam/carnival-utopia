@@ -31,6 +31,7 @@
 
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 992px) {
   nav#menu.main-menu {
@@ -12220,8 +12221,8 @@ ul#myTab::-webkit-scrollbar-track
 
 ul#myTab::-webkit-scrollbar
 {
-	width: 2px;
-  height: 4px;
+	width: 0px;
+  height: 0px;
 	background-color: #F5F5F5;
 }
 
@@ -12239,4 +12240,5 @@ input[type="date"]{
   background-color: #fff !important;
     border: 1px solid #d2ddec !important;
         color: #1f3c63 !important;
+        width: 100%;
 }
