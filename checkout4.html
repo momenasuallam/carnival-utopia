@@ -7,33 +7,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   <meta name="description" content="carnival utopia" />
   <meta name="author" content="Momina" />
-  <title>Checkout</title>
+  <title>Review</title>
 
   <!-- Favicons-->
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/vendors.css" rel="stylesheet" />
-  <link href="css/signin.css" rel="stylesheet" />
-  <link href="css/checkout.css" rel="stylesheet" />
+  <link href="css/signin.css" rel="stylesheet">
+   <link href="css/checkout.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <style>
-    @media only screen and (min-width: 992px) {
-      .main-menu>ul>li span>a {
-        color: #1b3960;
-        font-weight: 400;
-        line-height: 1.5;
+  <style type="text/css">
+    .tiny_bullet_slider .tp-bullet:before {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 25px;
+      top: -12px;
+      left: 0px;
+      background: transparent
+    }
+
+    .bullet-bar.tp-bullets:before {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      padding: 10px;
+      margin-left: -10px;
+      margin-top: -10px;
+      box-sizing: content-box
+    }
+
+    .bullet-bar .tp-bullet {
+      width: 60px;
+      height: 3px;
+      position: absolute;
+      background: #aaa;
+      background: rgba(204, 204, 204, 0.5);
+      cursor: pointer;
+      box-sizing: content-box
+    }
+
+    .bullet-bar .tp-bullet:hover,
+    .bullet-bar .tp-bullet.selected {
+      background: rgba(204, 204, 204, 1)
+    }
+
+    #logo {
+      float: left;
+      position: absolute;
+    }
+
+    .header {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .main-menu>ul>li span>a {
+      color: #383839 !important;
+    }
+
+    header.header.sticky .logo_sticky {
+      display: inline-block;
+
+    }
+
+    header.header.sticky {
+      background-color: #fff !important;
+      border-bottom: 1px solid #fff !important;
+    }
+
+    @media(max-width:991px) {
+      .btn_mobile {
+        position: absolute;
+        right: 15px;
+        top: 16px;
       }
     }
 
-    @media (min-width: 600px) {
-      .header {
-        border-bottom: 1px solid #e9edef;
+    @media(min-width:600px) {
+      header {
+        background-color: transparent;
       }
+
+      .hamburger-inner {
+        background-color: #000 !important;
+      }
+
+      .hamburger-inner::before {
+        background-color: #000 !important;
+      }
+
+      .hamburger-inner::after {
+        background-color: #000 !important;
+      }
+
+      .btnhead {
+
+        color: #fff;
+
+      }
+    }
+
+    header.sticky .btnhead {
+      color: #ff027c !important;
     }
   </style>
 </head>
@@ -42,7 +129,8 @@
   <!-- Remove this class to disable datepicker full on mobile -->
 
   <div id="page" class="theia-exception">
-    <header class="header menu_fixed">
+  
+      <header class="header menu_fixed">
       <div id="preloader">
         <div data-loader="circle-side"></div>
       </div>
@@ -50,20 +138,11 @@
       <div class="container">
         <div id="logo">
           <a href="index.html">
-            <img src="img/logo.svg" width="250" height="36" alt="" class="logo_normal" />
-            <img src="img/logo.svg" width="250" height="36" alt="" class="logo_sticky" />
+            <img src="img/darklogo.svg" width="250" height="36" alt="" class="logo_normal imgindexdesk" />
+            <img src="img/mbllogo.svg" width="60" height="36" alt="" class="logo_normal imgindexmbl" />
+            <img src="img/darklogo.svg" width="250" height="36" alt="" class="logo_sticky" />
           </a>
         </div>
-        <ul id="top_menu">
-          <li>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#signinmodal" class="btnhead signinbtnjs">Sign
-              in</button>
-            <a href="#" class="usercircle"><button  class="notlikebutton usericobtnjs" type="button" data-bs-toggle="modal"
-                    data-bs-target="#modaluserico">
-                <img src="img/user_circle_icon_148611.svg" />
-              </button></a>
-          </li>
-        </ul>
         <!-- /top_menu -->
         <a href="#menu" class="btn_mobile">
           <div class="hamburger hamburger--spin" id="hamburger">
@@ -75,39 +154,34 @@
         <nav id="menu" class="main-menu">
           <ul>
             <li>
-              <span><a href="./trips.html">Destinations</a></span>
-            </li>
-            <li>
-              <span><a href="./contact.html">Contact</a></span>
+              <span><a><img src="./img/drakglobal.svg" /> English</a></span>
             </li>
             <li>
               <span><a href="./help-center.html"> Help Center</a></span>
             </li>
             <li>
-              <span><a href="./blog.html">Blog</a></span>
+              <span><a href="./contact.html">Trips </a></span>
             </li>
+
+            <li>
+              <span><a href="./blog.html">Login</a></span>
+            </li>
+
           </ul>
         </nav>
+        <div class="mblsdiv1">
+          <a href="#"><img src="./img/dar-search-normal.svg" /></a>
+          <a href="#"><img src="./img/darkbriefcase.svg" /></a>
+          <a href="#"><img src="./img/darkframe.svg" /></a>
+        </div>
       </div>
     </header>
     <!-- /header -->
 
     <main>
-      <div class="choutdiv">
-        <div class="container">
-          <div class="choutflex">
-            <div>
-              <h3>Checkout</h3>
-            </div>
-            <div class="">
-             <span><button class="notlikebutton" type="button" data-bs-toggle="modal" data-bs-target="#modalsumry"><span class="shosumdesk">Show trip summary:</span> $909.00</button></span>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="checkutpagemain pt125">
         <div class="container contch">
-          <h2>
+          <h2 class="h2tard">
             Ready to book your trip?<br />
             Let’s make sure everything’s right.
           </h2>
@@ -121,12 +195,19 @@
               </div>
               <div class="col-md-9">
                 <div class="dflexch1">
-                  <a href="#" class="titlech">
-                    <h4 class="marbot0">Barbados Crop Over</h4>
+                 <div>
+                    <a href="#" class="titlech">
+                    <h4 class="marbot0">Crop Over 2022: Barbados</h4>
                   </a>
-                  <h4 class="pricech1 marbot0">$505.00</h4>
+                  <a class="packde1">Show Package Details</a>
+                 </div>
 
-                  <div class="showbebeonmbl">
+                <!-- <div class="pricech1">
+                    <h4 class="pricech1 marbot0">$2,540.08</h4>
+                   <a href="#" class="bigbtn btn_1  btngrad  btnpayment ">Pay 2,540.08</a>
+
+                </div> -->
+                  <!-- <div class="showbebeonmbl">
                     <div id="benefitsdescription">
                       <div class="benefitsshowmore">
                         Show Package Details <i class="fa fa-angle-down"></i>
@@ -144,7 +225,7 @@
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -154,7 +235,7 @@
                 <div class="col-lg-4 col-md-4">
                   <div class="dtch1">
                     <h4 class="marbot0">Traveler Details</h4>
-                    <a href="./checkout2.html" class="mt10 disblock">Change <i class="fa fa-angle-right"></i></a>
+                    <a href="./checkout2.html" class="mt10 disblock editdtartyu">Edit Details <i class="fa fa-angle-down"></i></a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -163,10 +244,9 @@
                       <h5 class="marbot0">Details:</h5>
                     </div>
                     <div class="adressinf">
-                      <span>Triston Payne</span>
-                      <span>2121 Beekman PI Apt 4k</span>
-                      <span>Apt 4k</span>
-                      <span>Brooklyn, NY 11225-4853</span>
+                      <span> Name : Triston Payne</span>
+                      <span>Roomates: Bob Lee</span>
+                      <span>Travel Agent : Max Hope</span>
                       <span>•• ••••••22</span>
                     </div>
                   </div>
@@ -190,7 +270,7 @@
                 <div class="col-lg-4 col-md-4">
                   <div class="dtch1">
                     <h4 class="marbot0">Payment Details</h4>
-                    <a href="./checkout3.html" class="mt10 disblock">Change <i class="fa fa-angle-right"></i></a>
+                    <a href="./checkout3.html" class="mt10 disblock editdtartyu">Edit Details <i class="fa fa-angle-down"></i></a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -221,171 +301,146 @@
               </div>
             </div>
             <hr />
-            <div class="shppingchadd">
+            <div class="shppingchadd termaconddiv">
               <div class="row">
                 <div class="col-md-12">
                   <div class="dtch1">
                     <h4 class="">Terms & Conditions</h4>
                     <div class="mb-3 ">
-                      <label class="chbox2q"> By clicking on this checkbox, I represent that I have
-                        read and accept the terms and conditions of the
-                        Education Shopping Agreement and that I am a member of
-                        one of the defined groups, eligible to purchase and
-                        that the products being purchased direct from Apple
-                        Inc. are for the personal, education, and/or research
-                        use of a college student, faculty, or staff member.
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="shppingchadd">
-              <h4 class="">Your Total</h4>
-              <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-8">
-                  <div>
-                    <div class="dflexch1 padbot0">
-                      <p>Subtotal</p>
-                      <span>$505.00</span>
-                    </div>
-                    <!-- <div class="dflexch1 padbot0">
-                      <p>Shipping</p>
-                      <span>FREE</span>
-                    </div> -->
-                    <div class="dflexch1">
-                      <p>
-                        <button type="button" class="tooltpbtn" data-bs-toggle="tooltip" data-bs-placement="top"
-                          title="The sales tax listed on the checkout page is only an estimate. Your invoice will contain the final sales tax, including state and local taxes, as well as any applicable rebates or fees. In California and Rhode Island, sales tax is collected on the unbundled price of iPhone.">
-                          <img src="./img/help-circle.svg" class="faquest" />
-                        </button>Processing Fees
+                      <p>Before you continue, please be advised that by clicking on the “PAY” button below, you are agreeing to and accepting the following terms:
                       </p>
-                      <span>$88.66</span>
-                    </div>
-                    <hr />
-                    <div class="dflexch1">
-                      <h4>Total</h4>
-                      <h4>$909.00</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <ul>
+                        <li>Our customer terms of service located <a href="https://carnivalutopia.com/terms-and-conditions">https://carnivalutopia.com/terms-and-conditions</a></li>
+                        <li>Our customer participation agreement located <a href="https://carnivalutopia.com/customer-participation-agreement/">https://carnivalutopia.com/customer-participation-agreement/</a></li>
+                        <li>Deposits and payments are NON REFUNDABLE!</li>
+                        <li>If you are booking your accommodation as part of a group, and members of your group drop out or cancel, the remaining members of the group are responsible for the total cost of the accommodation/room. The total cost of your reservation will automatically change.</li>
+                        <li>Mas band section and size information CANNOT be changed after your choices have been submitted to the band without an increase in cost to you.</li>
+                        <li>J'ouvert band and size information CANNOT be changed after your choices have been submitted to the band without an increase in cost to you.</li>
+                        <li>Your event/fete list CANNOT be changed after tickets have been purchased for you without an increase in cost to you.</li>
+                        <li>The cost of your reservation is subject to change when prices are released by the hotel, mas band, J'ouvert band and event promoters/organizers.</li>
 
-              <div class="row">
-                <div class="col-md-8"></div>
-                <div class="col-md-4">
-                  <div class="chtmt20">
-                    <a href="#" class="bigbtn btn_1  btngrad full-width btnpayment">Pay $909.00 <i class="fa fa-lock"></i></a>
-                    <p class="smalltxtp">
-                      By clicking Place Your Order, you agree to Apple's Sales
-                      & Refund,(opens in new window) and applicable
-                      Product(opens in new window) terms, including Apple's
-                      Privacy Policy(opens in new window).
-                    </p>
+                      </ul>
+                      <p>
+                        If you DO NOT agree with any of the above, please close your browser tab or navigate away from this page. If you have any questions about the registration process, please email us at <a href="mailto:info@carnivalutopia.com">info@carnivalutopia.com</a>  with the subject line “REGISTRATION ISSUE”.
+                      </p>
+
+                        <a href="#" class="bigbtn btn_1  btngrad  btnpayment ">Pay 2,540.08 <i class="fa fa-lock"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          
           </div>
         </div>
       </div>
     </main>
     <!--/main-->
 
+    <div class="newsletter1 newsletter2">
+      <div class="nescy container">
+        <div class="row d-flex">
+          <div class="col-12 col-lg-6 justify-content-lg-start justify-content-center">
+            <h2 class="h2sss">
+              Get a proposal
+            </h2>
+            <p class="csdkontent">
+              If you want to learn more about how we can help grow your business, click below to schedule a free
+              discovery call and see how we can help your business scale!
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <form action="" class="newsletter-form">
+              <div class="input-field"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="14">
+                  <g fill="none" fill-rule="evenodd" stroke="#9CA9BA" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M3 1h11a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2V3a2 2 0 012-2z">
+                    </path>
+                    <path d="M2 2l6.5 6L15 2"></path>
+                  </g>
+                </svg><input class="input" type="text" placeholder="Enter an email address"
+                  aria-label="Enter an email address" value=""><button class="btn_1  btngrad" type="submit"
+                  aria-label="Subscribe">
+                  Subscribe
+                </button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container margin_60_35">
         <div class="row">
-          <div class="col-lg-4 col-md-12 p-r-5">
-            <p><img src="img/logo.svg" width="250" height="36" alt="" /></p>
-            <p>
-              Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea.
-              Id placerat tacimates definitionem sea, prima quidam vim no. Duo
-              nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus
-              expetendis vis.
-            </p>
-            <div class="follow_us">
-              <ul>
-                <li>Follow us</li>
-                <li>
-                  <a href="#0"><i class="ti-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-twitter-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-google"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-pinterest"></i></a>
-                </li>
-                <li>
-                  <a href="#0"><i class="ti-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="paymentcards">
-              <a href="#"><img src="./img/cards/visa.svg" /></a>
-              <a href="#"><img src="./img/cards/mastercard.svg" /></a>
-              <a href="#"><img src="./img/cards/amex.svg" /></a>
-              <a href="#"><img src="./img/cards/discover.svg" /></a>
-              <a href="#"><img src="./img/cards/paypal-svgrepo-com.svg" /></a>
+          <div class="col-lg-6 col-md-8 p-r-5">
+            <div class="footerwidtho">
+              <p><img src="img/home-page-logo.svg" width="250" height="36" alt="" style="margin-left: -16px;" /></p>
+              <p>
+                Suspendisse ridiculus eu, morbi nibh odio duis. Imperdiet consectetur augue nam iaculis hendrerit nullam
+                purus facilisis et. Sit egestas vel massa nec, volutpat sit ac tortor neque.
+              </p>
+              <div class="follow_us">
+                <ul>
+                  <li>
+                    <a href="#0">
+                      <img src="./img/instagram.svg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <img src="./img/whatsapp.svg" /></a>
+                  </li>
+                  <li>
+                    <a href="#0"> <img src="./img/facebook.svg" /></a>
+                  </li>
+                  <li>
+                    <a href="#0"> <img src="./img/ph_twitter-logo.svg" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 ml-lg-auto">
-            <h5>Information</h5>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 ml-lg-auto">
+            <h5>About</h5>
             <ul class="links">
-              <li><a href="./about.html">About Carnival Utopia</a></li>
-              <li><a href="./help-center.html">Help Center</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-              <li>
-                <a href="./terms-and-conditions.html">Terms of Condition</a>
-              </li>
-              <li><a href="#">Offers</a></li>
+              <li><a href="./about.html">About us</a></li>
+              <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-6 ml-lg-auto">
-            <h5>Destinations</h5>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 ml-lg-auto">
+            <h5>FAQ</h5>
             <ul class="links">
-              <li><a href="#">Trinidad</a></li>
-              <li><a href="#">Barbados</a></li>
-              <li><a href="#">Jamaica</a></li>
-              <li><a href="#">St Lucia</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Trips</a></li>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Refund policy</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h5>Contact with Us</h5>
-            <ul class="contacts">
-              <li>
-                <a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a>
-              </li>
-              <li>
-                <a href="mailto:info@carnival utopia.com"><i class="ti-email"></i> info@carnivalutopia.com</a>
-              </li>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 flexsupport">
+            <h5>Support</h5>
+            <ul class="links">
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Whatsapp</a></li>
+              <li><a href="#">Telegram</a></li>
+              <li><a href="#">imessage</a></li>
             </ul>
           </div>
         </div>
         <!--/row-->
-        <hr />
-        <div class="row">
+
+        <div class="row footerlastdiv">
           <div class="col-lg-6">
             <ul id="footer-selector">
               <li>
-                <span>© 2021 Carnival Utopia All rights reserved.</span>
+                <span>© 2000-2021, All Rights Reserved</span>
               </li>
             </ul>
           </div>
           <div class="col-lg-6">
-            <ul id="additional_links">
-              <li>
-                <a href="./terms-and-conditions.html">Terms and conditions</a>
-              </li>
-              <li><a href="./privacy-policy.html">Privacy</a></li>
-            </ul>
+            <div class="footercardsimg">
+              <img src="./img/visa.png" />
+              <img src="./img/master.png" />
+              <img src="./img/amex.png" />
+              <img src="./img/discover.png" />
+            </div>
           </div>
         </div>
       </div>

@@ -10952,9 +10952,20 @@ display: none;
 }
 .btnpayment .fa{
       position: absolute;
-     right: 20px;
+     left: 85px;
     font-size: 17px;
-    top: 14px;
+    top: 16px;
+}
+.pricech1 {
+
+}
+.pricech1 h4{
+color: #1C1C1C;
+font-size: 14px;
+font-weight: 600;
+}
+.pricech1 a{
+
 }
 .fntwe600{
 font-weight: 600 !important;
@@ -13213,9 +13224,91 @@ justify-content: center;
 .signup1psd .col-md-7{
   padding: 0px !important;
 }
+.h2tard{
+  color: #000000 !important;
+  font-size: 26px;
+  font-weight: 600;
+}
+.titlech h4{
+  color: #1C1C1C;
+  font-size: 20px !important;
+  font-weight: 600;
+  margin-bottom: 8px ;
+}
+.packde1{
+  color: #4A00E0;
+  font-size: 14px;
+  border-bottom: 1px solid #4A00E0;
+}
+.dtch1 {
 
-
-
+}
+.dtch1 h4{
+font-weight: 400;
+font-size: 18px;
+color: #1C1C1C;
+}
+.dtch2 h5{
+font-weight: 400;
+font-size: 18px;
+color: #1C1C1C;
+}
+.dtch3 h5{
+font-weight: 400;
+font-size: 18px;
+color: #1C1C1C;
+}
+.adressinf span{
+  color: #545455 !important;
+  font-size: 13px;
+  line-height: 15px;
+}
+.termaconddiv{
+  padding: 2.5rem 0 10rem !important;
+}
+.termaconddiv h4{
+color: #1C1C1C !important;
+font-size: 20px;
+}
+.termaconddiv p{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #545455;
+line-height: 20px;
+}
+.termaconddiv ul {
+list-style: disc;
+font-weight: 400;
+font-size: 14px;
+color: #545455;
+color:  #4A00E0 !important;
+margin-bottom: 7px !important;
+}
+.termaconddiv ul li{
+font-weight: 400;
+font-size: 14px;
+color: #545455;
+}
+.termaconddiv ul li a{
+color:  #4A00E0 !important;
+}
+.termaconddiv p a{
+color:  #4A00E0 !important;
+}
+.termaconddiv .btnpayment{
+background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%) !important;
+border-radius: 16px !important;
+width: 300px;
+}
+.editdtartyu{
+color: #4A00E0 !important;
+font-size: 12px !important;
+}
+.editdtartyu .fa{
+  color: #4A00E0 !important;
+  font-size: 12px !important;
+}
 
 /* @media(max-width: 1200px)
 {
