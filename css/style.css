@@ -8468,21 +8468,21 @@ ul.bullets2 li:before {
   font-family: "FontAwesome";
   float: left;
   margin-left: -1.5em;
-  color: #ff027c;
+  color: #4A00E0;;
 }
 ul.bullets2 .cross:before {
   content: "\f00d" !important;
   font-family: "FontAwesome";
   float: left;
   margin-left: -1.5em;
-  color: #ff027c;
+  color: #4A00E0;;
 }
 ul.bbbhssgdu li:before {
   content: "\f111" !important;
   font-family: "FontAwesome";
   float: left;
   margin-left: -16px;
-  color: #ff027c;
+  color: #4A00E0;;
   font-size: 5px;
   margin-top: 6px;
 }
@@ -8491,21 +8491,21 @@ ul.bullets2 .bathrm:before {
   font-family: "FontAwesome";
   float: left;
   margin-left: -1.5em;
-  color: #ff027c;
+  color: #4A00E0;;
 }
 ul.bullets2 .wifi:before {
   content: "\f1eb" !important;
   font-family: "FontAwesome";
   float: left;
   margin-left: -1.5em;
-  color: #ff027c;
+  color: #4A00E0;;
 }
 ul.bullets2 .hairdr:before {
   content: "" !important;
   font-family: "FontAwesome";
   float: left;
   margin-left: -1.5em;
-  color: #ff027c;
+  color: #4A00E0;;
 }
 .hairdr svg {
   position: absolute;
@@ -10957,7 +10957,13 @@ display: none;
     top: 16px;
 }
 .pricech1 {
-
+background: #FFFFFF;
+border: 1px solid #D4C0FD;
+box-sizing: border-box;
+box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+border-radius: 16px;
+padding: 16px;
+width: 300px;
 }
 .pricech1 h4{
 color: #1C1C1C;
@@ -10965,7 +10971,44 @@ font-size: 14px;
 font-weight: 600;
 }
 .pricech1 a{
-
+    background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%);
+    border-radius: 16px;
+    font-family: 'Sora', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 7px;
+    margin-top: 19px;
+}
+.priceflex1{
+display: flex;
+justify-content: space-between;
+}
+.priceflex1 h2{
+color: #1C1C1C;
+font-size: 15px;
+font-weight: 600;
+font-family: 'Sora', sans-serif !important;
+margin-bottom: 0px;
+}
+.flex22{
+  display: flex;
+  align-items: center;
+}
+.priceflex1 img{
+width: 20px;
+margin-right: 4px;
+}
+.priceflex1 h4{
+color: #1C1C1C;
+font-size: 15px !important;
+font-weight: 600;
+margin-bottom: 0px;
 }
 .fntwe600{
 font-weight: 600 !important;
@@ -13226,8 +13269,9 @@ justify-content: center;
 }
 .h2tard{
   color: #000000 !important;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 .titlech h4{
   color: #1C1C1C;
@@ -13236,9 +13280,20 @@ justify-content: center;
   margin-bottom: 8px ;
 }
 .packde1{
-  color: #4A00E0;
-  font-size: 14px;
-  border-bottom: 1px solid #4A00E0;
+  color: #4A00E0 !important;
+    font-size: 14px !important;
+    /* border-bottom: 1px solid #4A00E0; */
+    display: inline;
+    padding-bottom: 2px;
+    font-weight: 400 !important;
+}
+.packde1 span{
+    border-bottom: 1px solid #4A00E0;
+     color: #4A00E0 !important;
+    font-size: 14px !important;
+    display: inline;
+    padding-bottom: 2px;
+    font-weight: 400 !important;
 }
 .dtch1 {
 
@@ -13258,6 +13313,9 @@ font-weight: 400;
 font-size: 18px;
 color: #1C1C1C;
 }
+.adressinf{
+  margin-bottom: 15px;
+}
 .adressinf span{
   color: #545455 !important;
   font-size: 13px;
@@ -13268,14 +13326,17 @@ color: #1C1C1C;
 }
 .termaconddiv h4{
 color: #1C1C1C !important;
-font-size: 20px;
+    font-size: 19px;
+    margin-left: -14px;
+    font-weight: 600;
 }
 .termaconddiv p{
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 13px;
 color: #545455;
 line-height: 20px;
+    margin-left: -14px;
 }
 .termaconddiv ul {
 list-style: disc;
@@ -13287,7 +13348,7 @@ margin-bottom: 7px !important;
 }
 .termaconddiv ul li{
 font-weight: 400;
-font-size: 14px;
+font-size: 13px;
 color: #545455;
 }
 .termaconddiv ul li a{
@@ -13300,10 +13361,14 @@ color:  #4A00E0 !important;
 background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%) !important;
 border-radius: 16px !important;
 width: 300px;
+margin-left: -14px;
+margin-top: 10px;
+margin-bottom: 50px;
 }
 .editdtartyu{
 color: #4A00E0 !important;
 font-size: 12px !important;
+margin-bottom: 15px;
 }
 .editdtartyu .fa{
   color: #4A00E0 !important;
@@ -13334,7 +13399,10 @@ font-size: 12px !important;
   }
 }
 @media(max-width:768px){
- 
+ .pricech1{
+   width: 100%;
+   margin-top: 20px;
+ }
   .pagesign1 h3{
     font-size: 34px;
   }

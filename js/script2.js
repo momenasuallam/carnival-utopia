@@ -244,9 +244,13 @@ $(".signupbtnjs").click(function () {
 
 $(".benefitsshowmore").click(function () {
   if ($(".benefitstext").hasClass("benefitsshow-more-height")) {
-    $(this).html("Hide Package Details <i class='fa fa-angle-up'></i>");
+    $(this).html(
+      "<span>Hide Package Details</span> <img src='./img/arrow-square-down.svg' />"
+    );
   } else {
-    $(this).html("Show Package Details <i class='fa fa-angle-down'></i>");
+    $(this).html(
+      "<span>Show Package Details</span> <img src='./img/arrow-square-down.svg' />"
+    );
   }
 
   $(".benefitstext").toggleClass("benefitsshow-more-height");
