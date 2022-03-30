@@ -642,7 +642,7 @@ a.btn_1,
   -webkit-border-radius: 0.375rem;
   -moz-border-radius: 0.375rem;
   -ms-border-radius: 0.375rem;
-     border-radius: 10px;
+     border-radius: 16px;
   font-weight: 500 !important;
     line-height: 1.5 !important;
     padding: 10px 15px;
@@ -11282,17 +11282,21 @@ color: #ff027c !important;
 
 
 .chbox2q {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 400;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+ display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: -2px;
+    cursor: pointer;
+    font-size: 13px;
+text-transform: capitalize;
+
+/* black/800 */
+
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Hide the browser's default checkbox */
@@ -11307,12 +11311,12 @@ color: #ff027c !important;
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 3px;
+  top: 1px;
   left: 0;
-  height: 22px;
-  width: 22px;
-  background-color: #e9edef;
-  border: 1px solid #c3c6c7;
+  height: 17px;
+  width: 17px;
+  background-color: transparent;
+  border: 1px solid #1C1C1C;;
   border-radius: 4px;
 }
 
@@ -11422,10 +11426,8 @@ color: #ff027c !important;
 }
 
 .btngrad{
-background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%);
-
-    
-    
+background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%) !important;
+/* border-radius: 16px;   */
 }
 /* .btngrad:hover{
   background-image: -webkit-linear-gradient(to right, #ff4757, #fe058f) !important;
@@ -13374,13 +13376,27 @@ margin-bottom: 15px;
   color: #4A00E0 !important;
   font-size: 12px !important;
 }
-
+.pad2min{
+  margin-top: -16px;
+}
+.mtnab2{
+  margin: 20px 0 1rem;
+}
+.mtgfuy23{
+  margin-top: 0rem;
+}
 /* @media(max-width: 1200px)
 {
 .aboutlogoimgs img{
       max-width: 170px;
 }
 } */
+.topbillingad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
 @media(max-width: 920px)
 {

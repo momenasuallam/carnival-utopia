@@ -200,7 +200,7 @@
 .btnch2new {
   margin-top: 20px;
   width: 100%;
-      height: 46px;
+      height: 38px;
     display: grid !important;
     align-items: center;
 }
@@ -283,10 +283,10 @@ input:not(:focus):valid ~ .floating-label
   font-weight: 400;
   letter-spacing: -0.022em;
   width: 100%;
-  height: 46px;
+  height: 38px;
   box-sizing: border-box;
   margin-bottom: 0.82353rem;
-  font-size: 0.9375rem;
+  font-size: 13px;
     padding: 0.5rem 0.75rem 0;
   text-align: left;
   color: #1f3c63;
@@ -297,18 +297,21 @@ input:not(:focus):valid ~ .floating-label
     border-radius: 0.375rem;
   text-overflow: ellipsis;
 }
+.inputText::placeholder{
+  font-size: 13px !important;
+}
 
 .floating-label {
   position: absolute;
-  pointer-events: none;
-  left: 14px;
-  top: 14px;
-  transition: 0.1s ease all;
-  color: #62758c;
-  font-size: 0.9375rem;
-  line-height: 1.23536;
-  font-weight: 400;
-  letter-spacing: -0.022em;
+    pointer-events: none;
+    left: 14px;
+    top: 13px;
+    transition: 0.1s ease all;
+    color: #62758c;
+    font-size: 13px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -0.022em;
 }
 
 .formsele {
@@ -320,10 +323,10 @@ input:not(:focus):valid ~ .floating-label
   font-weight: 400;
   letter-spacing: -0.022em;
   width: 100%;
-  height: 46px;
+  height: 38px;
   box-sizing: border-box;
   margin-bottom: 0.82353rem;
-  font-size: 0.9375rem;
+  font-size: 13px;
     padding: 1px 0.75rem 0;
     
 }
@@ -397,7 +400,7 @@ input:not(:focus):valid ~ .floating-label
   margin-bottom: 24px;
 }
 .button-group-pills .btn.active {
-  border-color: #ff027c;
+  border-color: #4A00E0;;
   border-width: 2px;
   box-shadow: none;
 }
@@ -406,6 +409,11 @@ input:not(:focus):valid ~ .floating-label
   display: none;
 }
 .readiocustdiv {
+  display: flex;
+  align-items: center;
+}
+.readiocustdiv img{
+
 }
 .readiocustdiv p {
   font-size: 16px;
@@ -430,25 +438,31 @@ input:not(:focus):valid ~ .floating-label
 .readiocustdiv img {
   max-height: 35px;
   height: auto;
+      width: 28px;
+    margin-right: 5px;
 }
 
 .maindivcreditcard {
   display: none;
   margin-bottom: 30px;
+background: #F8F5FF;
+border-radius: 16px;
+padding: 16px;
 }
 .maindivcreditcard hr {
   margin: 25px 0 15px;
 }
 .maindivcreditcard p {
-  margin: 20px 0 10px !important;
+  margin: 0px 0 10px !important;
   text-align: left !important;
-  color: #1f3c63;
+  color: #383839;
   font-size: 16px;
+  font-weight: 600;
 }
 .allcardclas {
   position: absolute;
-  top: 18px;
-  width: 98px;
+  top: 13px;
+  width: 92px;
   right: 10px;
 }
 .intcardtxt {
