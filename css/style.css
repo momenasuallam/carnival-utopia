@@ -8452,8 +8452,8 @@ ul.bullets2 {
 }
 ul.bullets2 li {
   position: relative;
-  padding-left: 30px;
-  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-bottom: 5px;
 }
 ul.bullets2 li:before {
   /* content: "";
@@ -9913,7 +9913,7 @@ ul.plan-features {
   border-color: #e9edef;
 }
 .bbbhssgdu li {
-  font-size: 14px !important;
+  font-size: 13px !important;
   line-height: 1.14 !important;
   /* color: #1f3c63 !important; */
   margin-bottom: 15px;
@@ -11161,19 +11161,25 @@ color: #ff027c !important;
 }
 
 .choosepaymemyrad input[type="radio"] + label {
-  padding: 15px 25px;
+  padding: 15px 15px;
     border-radius: 6px;
     flex: 50%;
     text-align: left;
 }
 .choosepaymemyrad input[type="radio"] + label h3{
-  color: #1f3c63;
-     font-size: 17px;
-    line-height: 1.23536;
+  color: #545455;
+     font-size: 14px;
     font-weight: 500;
-    letter-spacing: -.022em;
-      margin-bottom: 6px;
 
+      margin-bottom: 6px;
+}
+.choosepaymemyrad input[type="radio"] + label h3 b{
+  color: #383839;
+    font-weight: 600;
+    
+}
+.boxchlabl{
+  border-bottom: 1px solid #E3E3E3;
 }
 .choosepaymemyrad input[type="radio"] + label p{
   color: #1f3c63;
@@ -11197,7 +11203,7 @@ color: #ff027c !important;
 }
 .choosepaymemyrad input[type="radio"] + label ul li {
         margin-bottom: 2px !important;
-        color: #1f3c63;
+      color: #545455;
 }
 
 
@@ -13279,8 +13285,9 @@ justify-content: center;
   margin-bottom: 30px;
 }
 .titlech h4{
+  font-family: 'Sora', sans-serif !important;
   color: #1C1C1C;
-  font-size: 20px !important;
+  font-size: 16px !important;
   font-weight: 600;
   margin-bottom: 8px ;
 }
