@@ -139,7 +139,7 @@
   padding-bottom: 0px !important;
 }
 .marbot0 {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 .mt10 {
   margin-top: 10px;
@@ -872,9 +872,116 @@ width: 14px !important;
     right: -25px !important;
 
 }
+.custrip1{
+  margin-bottom: 40px;
+}
+.tourimg1ct{
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 0px;
+}
+.cb1sbt7{
+display: flex;
+margin-top: 4px;
+border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 10px;
+}
+.cb1sbt7 div{
+  margin-right: 20px;
+}
+.cb1sbt7 h2{
+font-weight: 500;
+font-size: 13px;
+color: #344054;
+margin-bottom: 8px;
+}
+.cb1sbt7 button{
+background: #FFFFFF;
+border: 1px solid #D0D5DD;
+box-sizing: border-box;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+padding: 6px 25px 6px 12px;
+font-weight: 400;
+font-size: 13px;
+color: #667085;
+margin-bottom: 8px;
 
+}
+.cb1sbt7 button img{
+width: 14px;
+margin-right: 0px;
+position: relative;
+top: -2px;
+}
+.custrip2{
+  border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 0px;
+}
+.custrip2 p{
+font-weight: 400;
+font-size: 13px;
+margin-bottom: 20px;
+line-height: 15px;
+color: #545455;
+}
+.border0{
+  border: 0px solid !important;
+}
+.align-items-center{
+  align-items: center;
+}
+.juniorsuit{
 
-
+}
+.juniorsuit p{
+ color: #545455;
+    font-size: 15px;
+    margin-bottom: 0px !important;
+    line-height: 23px;
+    margin-right: 18px;
+}
+.juniorsuit .inputnums {
+    color: #545455;
+    font-size: 15px;
+    width: 21px !important;
+}
+.juniorsuit .btncoubtnt img {
+    width: 19px !important;
+}
+.kravemd{
+background: #FFFFFF;
+border: 1px solid #D0D5DD;
+box-sizing: border-box;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+padding: 12px 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.kravemd p{
+font-weight: 400;
+font-size: 14px;
+color: #667085;
+margin-bottom: 0px;
+}
+.kravemd img{
+width: 18px;
+}
+.smaltxt2{
+  color: #4A00E0;
+  font-size: 13px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.ptag22{
+  font-weight: 400;
+font-size: 13px !important;
+color: #667085 !important;
+margin-bottom: 10px !important;
+margin-top: 6px;
+}
 
 
 @media(max-width: 950px){
@@ -885,6 +992,9 @@ width: 14px !important;
 @media(max-width: 768px){
   .imgch{
     border-radius: 16px 16px 0px 0px;
+  }
+  .marbotmd{
+    margin-bottom: 20px !important;
   }
 }
 @media(max-width:600px)

@@ -11156,8 +11156,7 @@ color: #ff027c !important;
 }
 
 .choosepaymemyrad input[type="radio"]:checked + label {
-  border: 1px solid #ff027c;
-  
+ border: 2px solid #4A00E0;
 }
 
 .choosepaymemyrad input[type="radio"] + label {
@@ -11168,7 +11167,7 @@ color: #ff027c !important;
 }
 .choosepaymemyrad input[type="radio"] + label h3{
   color: #545455;
-     font-size: 14px;
+     font-size: 13px;
     font-weight: 500;
 
       margin-bottom: 6px;
@@ -11182,18 +11181,19 @@ color: #ff027c !important;
   border-bottom: 1px solid #E3E3E3;
 }
 .choosepaymemyrad input[type="radio"] + label p{
-  color: #1f3c63;
-     font-size: 17px;
-    line-height: 1.23536;
-    font-weight: 400;
+  font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #545455;
     letter-spacing: -.022em;
-    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-bottom: 0px;
 
 }
 @media(min-width:768px)
 {
 .choosepaymemyrad input[type="radio"] + label p{
-        text-align: right;
+        /* text-align: right; */
 
 }
 }
@@ -11237,34 +11237,43 @@ color: #ff027c !important;
 }
 
 .choosepaymemyrad input[type="checkbox"]:checked + label {
-  border: 1px solid #ff027c;
+      border: 2px solid #4A00E0;
   
 }
 
 .choosepaymemyrad input[type="checkbox"] + label {
-  padding: 15px 25px;
+  padding: 14px 14px;
     border-radius: 6px;
     flex: 50%;
     text-align: left;
 }
 .choosepaymemyrad input[type="checkbox"] + label h3{
-  color: #1f3c63;
-     font-size: 17px;
-    line-height: 1.23536;
+ color: #545455;
+     font-size: 14px;
     font-weight: 500;
-    letter-spacing: -.022em;
+
       margin-bottom: 6px;
 
 }
+.choosepaymemyrad input[type="checkbox"] + label h3 b{
+  color: #383839;
+    font-weight: 600;
+    font-size: 13px;
+
+    
+}
+
 .choosepaymemyrad input[type="checkbox"] + label p{
-  color: #1f3c63;
-     font-size: 17px;
-    line-height: 1.23536;
-    font-weight: 400;
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #545455;
     letter-spacing: -.022em;
-    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-bottom: 0px;
 
 }
+
 @media(min-width:768px)
 {
 .choosepaymemyrad input[type="checkbox"] + label p{
@@ -12306,8 +12315,8 @@ width: 40px !important;
     text-align: center;
 }
 .lenghtstay .choosepaymemyrad input[type="radio"]:checked + label {
-    border: 1px solid #ff027c;
-    background-color: #ff027c;
+    border: 2px solid #4A00E0;
+    background-color: #4A00E0;
     color: #fff;
 }
 
