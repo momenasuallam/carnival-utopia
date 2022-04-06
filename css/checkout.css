@@ -932,7 +932,9 @@ color: #545455;
   align-items: center;
 }
 .juniorsuit{
-
+display: flex;
+    align-items: center;
+    justify-content: end;
 }
 .juniorsuit p{
  color: #545455;
@@ -982,6 +984,10 @@ color: #667085 !important;
 margin-bottom: 10px !important;
 margin-top: 6px;
 }
+.phonetxtcols{
+
+}
+
 
 
 @media(max-width: 950px){
@@ -996,6 +1002,9 @@ margin-top: 6px;
   .marbotmd{
     margin-bottom: 20px !important;
   }
+  .juniorsuit {
+    justify-content: flex-start;
+}
 }
 @media(max-width:600px)
 {
@@ -1010,6 +1019,7 @@ margin-top: 6px;
   
     right: 112px !important;
 }
+
 }
 .befimg{
   width: 17px;
