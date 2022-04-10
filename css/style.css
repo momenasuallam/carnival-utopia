@@ -645,7 +645,7 @@ a.btn_1,
      border-radius: 16px;
   font-weight: 500 !important;
     line-height: 1.5 !important;
-    padding: 8px 22px;
+    padding: 12px 22px;
 }
 a.btn_1:hover,
 .btn_1:hover {
@@ -13647,10 +13647,56 @@ font-weight: 400;
 font-size: 13px;
 }
 .roomsdetails{
-  margin: 15px 0 10px;
+  margin: 15px 0 5px;
+ 
 }
-
-
+.mytripsaco{
+  padding: 100px 0 250px;
+  max-width: 500px;
+  margin: 0px auto 0px; 
+}
+.mytripsaco h3{
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.imgacco1{
+max-width: 100px;
+margin: 0 auto 25px;
+display: block;
+}
+.btnaccful{
+width: 100%;
+}
+.sideacco{
+margin: 50px auto 30px;
+border: 1px solid #E3E3E3;
+box-sizing: border-box;
+border-radius: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 15px;
+}
+.sideacco h2{
+font-family: 'Sora', sans-serif !important;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+text-transform: capitalize;
+color: #000000;
+margin-bottom: 0px;
+}
+.sideacco p{
+font-weight: 400;
+font-size: 13px;
+color: #000000;
+margin-bottom: 0px;
+}
+.sideacco img{
+width: 16px;
+cursor: pointer;
+}
 
 
 
