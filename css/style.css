@@ -13496,7 +13496,7 @@ top: 41px;
   text-transform: capitalize;
 }
 .textcon12 h1{
-    padding-top: 46px;
+    padding-top: 42px;
 }
 .createacc{
 margin: 0px 0 20px;
@@ -13868,5 +13868,14 @@ width: 100%;
 }
 #rooms{
   padding: 20px 0;
+}
+.imgacco1 {
+      max-width: 70px
+}
+.sideacco h2{
+  font-size: 12px;
+}
+.sideacco p{
+  font-size: 11px;
 }
 }

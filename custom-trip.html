@@ -171,7 +171,7 @@
         <div class="mblsdiv1">
           <a href="#"><img src="./img/dar-search-normal.svg" /></a>
           <a href="#"><img src="./img/darkbriefcase.svg" /></a>
-          <a href="#"><img src="./img/darkframe.svg" /></a>
+          <a href="./my-account.html"><svg style="width: 24px; height: 23px;"><path fill-rule="evenodd" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3a3 3 0 110 6 3 3 0 010-6zM6 15.98a7.2 7.2 0 0012 0c-.03-1.99-4.01-3.08-6-3.08-2 0-5.97 1.09-6 3.08z" clip-rule="evenodd"></path></svg></a>
         </div>
       </div>
     </header>
@@ -364,9 +364,15 @@
                        <p>Lectus amet, sed et imperdiet. Varius id nam sem purus sed vel. Adipiscing sapien praesent bibendum </p>
                         </div>
                           <div class="col-md-5">
-                           <div class="kravemd marbotmd">
+                           <!-- <div class="kravemd marbotmd">
                              <p>KRAVE Frontline</p>
                              <img src="./img/arrow-square-down-light.svg" />
+                           </div> -->
+                           <div>
+                              <select class="form-select" formsele="" aria-label="Default select example">
+                                    <option value="US" selected="">KRAVE Frontline</option>
+                                    <option value="UK" selected="">KRAVE Frontline 2</option>
+                                  </select>
                            </div>
                         </div>
                       </div>
@@ -607,14 +613,22 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="mb-3">
-                              <label for="firstname" class="form-label">First name</label>
-                              <input type="text" class="form-control" placeholder="First name" id="firstname" required="">
+                              <!-- <label for="firstname" class="form-label">First name</label>
+                              <input type="text" class="form-control" placeholder="First name" id="firstname" required=""> -->
+                               <div class="prel">
+                                <input type="text" class="inputText " required />
+                                <span class="floating-label">First name</span>
+                              </div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="mb-3">
-                              <label for="lastname" class="form-label">Last name</label>
-                              <input type="text" class="form-control" placeholder="Last name" id="lastname" required="">
+                              <!-- <label for="lastname" class="form-label">Last name</label>
+                              <input type="text" class="form-control" placeholder="Last name" id="lastname" required=""> -->
+                                <div class="prel">
+                                <input type="text" class="inputText " required />
+                                <span class="floating-label">Last name</span>
+                              </div>
                             </div>
                           </div>
 
@@ -643,8 +657,12 @@
                           </div>
                           <div class="col-md-6">
                             <div class="mb-3 ">
-                              <label for="" class="form-label">Add Roommate</label>
-                              <input type="text" class="form-control" placeholder="Roommate Name">
+                              <!-- <label for="" class="form-label">Add Roommate</label>
+                              <input type="text" class="form-control" placeholder="Roommate Name"> -->
+                                <div class="prel">
+                                <input type="text" class="inputText " required />
+                                <span class="floating-label">Roommate Name</span>
+                              </div>
                             </div>
                           </div>
                           <div class="col-md-6">
@@ -665,6 +683,10 @@
                             <div class="mb-3">
                               <label for="EmailAddress" class="form-label">Email Address</label>
                               <input type="text" class="form-control" placeholder="Email Address" id="EmailAddress" >
+                              <!-- <div class="prel">
+                                <input type="text" class="inputText " required />
+                                <span class="floating-label">Email Address</span>
+                              </div> -->
                               <p class="ptag22">
                                 We’ll email you a receipt and send order updates to your mobile phone via SMS or iMessage.
                               </p>
